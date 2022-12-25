@@ -301,6 +301,12 @@ li:nth-child(6) .img-wrap {
   position: relative;
 }
 
+/* 임포턴트 넣은 거 */
+.swiper-slide {
+  width: 452px !important;
+  margin-right: 18px !important;
+}
+
 .launching-food-link img {
   width: 452px;
   height: 452px;
