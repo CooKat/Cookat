@@ -290,7 +290,6 @@ li:nth-child(6) .img-wrap {
 .launching-menu-list {
   height: 584px;
   padding: 0 var(--spacing-lg) var(--spacing-xs);
-  display: flex;
 }
 
 .launching-food {
@@ -299,12 +298,6 @@ li:nth-child(6) .img-wrap {
 
 .launching-food-link {
   position: relative;
-}
-
-/* 임포턴트 넣은 거 */
-.swiper-slide {
-  width: 452px !important;
-  margin-right: 18px !important;
 }
 
 .launching-food-link img {
@@ -325,7 +318,7 @@ li:nth-child(6) .img-wrap {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   position: absolute;
-  bottom: 108px;
+  bottom: 106px;
 }
 
 .launching-food-count em {
