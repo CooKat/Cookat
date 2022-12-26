@@ -190,7 +190,7 @@
         <section class="launching-sale-container">
           <!-- 런칭 제목 -->
           <h2 class="launching-title">지금 핫한 할인, 런칭특가</h2>
-          <div class="swiper lauching carousel">
+          <div class="swiper lauching">
             <ul class="launching-menu-list swiper-wrapper">
               <li class="launching-food swiper-slide">
                 <a href="/" class="launching-food-link">
@@ -661,12 +661,14 @@
       });
 
       var launchingSwiper = new Swiper(".lauching", {
-        slidesPerView: "1.102",
+        slidesPerView: "1.10201",
         spaceBetween: 18,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+        // swiper 끝나고 여백 35px 주기
+        slidesOffsetAfter: 35,
       });
     </script>
   </body>

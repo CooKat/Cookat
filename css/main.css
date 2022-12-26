@@ -251,7 +251,7 @@ li:nth-child(6) .img-wrap {
   right: 0;
 }
 
-/* 앱 QR 코드 */
+/* 앱 QR 코드(선영) */
 .qr-info {
   width: 270px;
   height: 65px;
@@ -272,7 +272,7 @@ li:nth-child(6) .img-wrap {
   height: 60px;
 }
 
-/* 런칭 특가 */
+/* 런칭 특가(선영) */
 .launching-sale-container {
   position: relative;
   top: 30px;
