@@ -759,3 +759,220 @@ li:nth-child(6) .img-wrap {
 .my-cookat a:hover {
   background-image: url(../images/ic-orange-mycookat.svg);
 }
+.footer {
+  width: 500px;
+  margin: 0 auto;
+  color: #46433f;
+  font-size: 12px;
+  font-weight: 300px;
+  margin-top: 100px;
+}
+a {
+  text-decoration: none;
+}
+/* 버튼 스타일 제거 */
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+/* h2 폰트 사이즈 스타일 */
+.footer h2 {
+  font-size: 13px;
+}
+.center-info {
+  font-weight: 600;
+}
+
+/* 푸터 상단 스타일 */
+.center-info-container {
+  padding: 16px;
+  position: relative;
+  line-height: 16px;
+}
+
+.business-info-toggle-btn {
+  border: none;
+}
+.business-info-toggle-btn img {
+  border: none;
+}
+
+.center-contact {
+  color: #46433f;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 83px;
+  padding: 10px 13px 10px 26px;
+  transform: translateY(-50%);
+  border: 1px solid #bbb8b5;
+  border-radius: 3px;
+  background: url(https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-call-black.svg)
+    no-repeat;
+  background-position: 16% 50%;
+}
+
+/* 푸터 중단 스타일 */
+.business-info-container {
+  padding: 16px;
+  background-color: #f9f9f9;
+}
+.business-info-title-container {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bbb8b5;
+  position: relative;
+}
+
+.business-info-list {
+  margin-top: 12px;
+  line-height: 2.3em;
+}
+.business-info-item label {
+  color: #bbb8b5;
+  margin-right: 7px;
+}
+.business-info-item address {
+  display: inline-block;
+}
+.business-info-check {
+  color: red;
+  margin-left: 5px;
+}
+.business-info {
+  font-weight: 600;
+}
+.center-info-flexcontent-container {
+  display: flex;
+}
+.center-info-content-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  line-height: 1.5em;
+  padding-top: 2px;
+}
+.center-info-content-container a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #5b5752;
+}
+
+.copyright {
+  color: #bbb8b5;
+  margin-top: 12px;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.more-details-list {
+  display: flex;
+  margin-top: 16px;
+}
+.more-details-list li {
+  margin-right: 5px;
+  font-size: 13px;
+  padding: 0 10px;
+}
+
+.more-details {
+  color: #8e8e8e;
+}
+#qkdcla {
+  border-left: 1px solid #8e8e8e;
+  border-right: 1px solid #8e8e8e;
+  color: #46433f;
+  padding: 0 15px;
+}
+
+.additional-container {
+  align-items: center;
+  text-align: center;
+  padding: 25px 0;
+  border-bottom: 1px solid #cdcdcd;
+  margin-bottom: 60px;
+}
+.additional-container a {
+  border: none;
+  font-size: 14px;
+  display: inline-block;
+  width: 49%;
+  color: #46433f;
+}
+
+#app-down {
+  border-left: 1px solid #8e8e8e;
+}
+
+.footer-inner {
+  width: 500px;
+  height: 64px;
+  background-color: rgb(252, 252, 252);
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  border-top: 1px solid #cdcdcd;
+}
+
+.footer-inner-list {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  text-align: center;
+  color: #ff5833;
+  background-size: 22px;
+  line-height: 95px;
+}
+
+.footer-inner-list li {
+  display: inline-block;
+  width: 95px;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+}
+.footer-inner-list a {
+  font-weight: 600;
+  color: #46433f;
+}
+
+.home a {
+  color: red;
+}
+
+.home {
+  background: url("https://crcf.cookatmarket.com/assets/img/mobile/tabbar/ic-orange-home.svg")
+    no-repeat 0 0;
+  background-position: 50% 30%;
+}
+
+.video {
+  background: url("https://crcf.cookatmarket.com/assets/img/mobile/tabbar/ic-black-tabbar-tv-new.svg")
+    no-repeat 0 0;
+  background-position: 50% 30%;
+}
+.categori {
+  background: url("https://crcf.cookatmarket.com/assets/img/mobile/tabbar/ic-black-category.svg")
+    no-repeat 0 0;
+  background-position: 50% 30%;
+}
+.cart {
+  background: url("https://crcf.cookatmarket.com/assets/img/mobile/tabbar/ic-black-cart.svg")
+    no-repeat 0 0;
+  background-position: 50% 30%;
+}
+.my-cookat {
+  background: url("https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-24-mycookat-black.svg")
+    no-repeat 0 0;
+  background-position: 50% 30%;
+}
+summary::marker {
+  content: url("	https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-close-bold.svg");
+}
