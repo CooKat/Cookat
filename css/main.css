@@ -42,6 +42,11 @@ img {
   height: auto;
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
+
 .white * {
   color: var(--color-white);
 }
@@ -50,13 +55,18 @@ img {
   max-width: var(--max-width);
   margin: 0 auto 3.437rem auto;
   background: #fff;
+  margin-top: 104px;
 }
 
 /* 헤더 */
 .header {
-  position: relative;
+  position: fixed;
+  top:0;
   padding: var(--spacing-m) 0 0;
-  margin-bottom: -1px;
+  width: min(var(--max-width), 100%);
+  background-color: var(--color-white);
+  border-bottom: 1px solid #eee;
+  z-index: 2;
 }
 
 .logo {
@@ -67,9 +77,9 @@ img {
 .menu {
   margin: var(--spacing-m) 0 0 0;
   overflow: hidden;
-  border-bottom: 1px solid #eee;
   font-size: var(--text-sm);
   padding-left:var(--spacing-xxs);
+  margin-bottom: -1px;
 }
 
 .menu li {
@@ -375,7 +385,7 @@ li:nth-child(6) .img-wrap {
   font-weight: 700;
   margin: var(--spacing-xxl) 0 var(--spacing-xxs);
   padding: 0 var(--spacing-sm);
-  width:75%;
+  width:calc(100% - 90px);
 }
 
 .prd-sub-text {
@@ -388,6 +398,8 @@ li:nth-child(6) .img-wrap {
 
 .prd-thumb {
   position: relative;
+  border-radius: 8px;
+  overflow:hidden;
 }
 
 .prd-thumb a {
@@ -395,8 +407,8 @@ li:nth-child(6) .img-wrap {
   font-size: 0;
 }
 
-.prd-thumb img {
-  border-radius: 8px;
+.prd-video{
+  aspect-ratio: 1/1;
 }
 
 .prd-info {
@@ -417,7 +429,7 @@ li:nth-child(6) .img-wrap {
   font-weight: 700;
   font-size: var(--text-base);
   letter-spacing: -0.5px;
-  margin-right: var(--spacing-xxs);
+  margin: 0 var(--spacing-xxs) var(--spacing-xxs) 0;
   line-height: 1.2;
 }
 
@@ -645,9 +657,7 @@ li:nth-child(6) .img-wrap {
 }
 
 
-
 /* 슬라이드 상품 */
-
 .slide-prd {
   padding: 20px 0;
 }
@@ -714,7 +724,7 @@ li:nth-child(6) .img-wrap {
 
 .fix-footer-menu a {
   display: block;
-  padding: var(--spacing-xl) 0 var(--spacing-sm);
+  padding: var(--spacing-xxl) 0 var(--spacing-sm);
   background-repeat: no-repeat;
   background-position: center 8px;
   background-size: 20px;
@@ -908,7 +918,7 @@ button {
   text-align: center;
   padding: 25px 0;
   border-bottom: 1px solid #cdcdcd;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 .additional-container a {
   border: none;
@@ -922,7 +932,8 @@ button {
   border-left: 1px solid #8e8e8e;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 499px){
+  
   .prd-info h2{
     font-size: var(--text-xxs);
   }
@@ -931,6 +942,7 @@ button {
   .prd-info em {
     margin-bottom: var(--spacing-xs);
   }
+
   .prd-info .custom{
     font-size:var(--text-xxs);
     margin-bottom: var(--spacing-xxs);
