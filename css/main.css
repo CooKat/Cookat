@@ -52,7 +52,6 @@ img {
 }
 
 /* 헤더 */
-
 .header {
   position: relative;
   padding: var(--spacing-m) 0 0;
@@ -274,25 +273,16 @@ li:nth-child(6) .img-wrap {
 /* 런칭 특가(선영) */
 .launching-sale-container {
   position: relative;
-  top: 30px;
   width: 100%;
-  height: 640px;
-}
-
-.launching-title {
-  font-size: var(--text-xl);
-  font-weight: 700;
-  padding: 0 var(--spacing-lg);
-  line-height: 50px;
+  margin-bottom: 50px;
 }
 
 .launching-menu-list {
-  height: 584px;
   padding: 0 var(--spacing-lg) var(--spacing-xs);
 }
 
 .launching-food {
-  height: 559px;
+  min-height: 559px;
 }
 
 .launching-food-link {
@@ -300,8 +290,6 @@ li:nth-child(6) .img-wrap {
 }
 
 .launching-food-link img {
-  width: 452px;
-  height: 452px;
   border-radius: 10px;
 }
 
@@ -394,7 +382,7 @@ li:nth-child(6) .img-wrap {
   outline-offset: 2px;
 }
 
-.prd-title {
+.product-title {
   font-size: var(--text-xl);
   font-weight: 700;
   margin: var(--spacing-xxl) 0 var(--spacing-xxs);
@@ -473,21 +461,24 @@ li:nth-child(6) .img-wrap {
   font-size: 0;
 }
 
-.prd-more {
+.more {
   position: absolute;
-  right: 5px;
-  top: -7px;
   padding: var(--spacing-sm);
   font-size: var(--text-sm);
   font-weight: 400;
+  right: 5px;
+  top: -7px;
 }
 
-.prd-more::after {
+.more::after {
   content: '';
   margin-left: var(--spacing-xxs);
   padding-left: var(--spacing-md);
   background: url(../images/ic-16-next-fit.svg) no-repeat center/6px;
 }
+
+/* .prd-more {
+} */
 
 /* 영상장보기 */
 .market {
@@ -496,19 +487,6 @@ li:nth-child(6) .img-wrap {
   background-color: #fff;
   height: 400px;
   margin: 0;
-}
-
-.market-title {
-  width: 200px;
-  padding: 20px 0 17px 20px;
-  font-weight: 800;
-  margin-bottom: -3px;
-  font-size: 22px;
-  color: #46433f;
-}
-
-.market-title a {
-  color: #46433f;
 }
 
 .video-slide {
@@ -610,7 +588,6 @@ li:nth-child(6) .img-wrap {
 .slogan {
   background-color: #fff;
   display: block;
-  width: 500px;
   margin: 20px 0;
 }
 
@@ -644,13 +621,13 @@ li:nth-child(6) .img-wrap {
   padding: 0 10px;
 }
 
-.slide-prd .prd-title {
+.slide-prd .product-title {
   padding: 0 20px;
 }
 
 /* 타임세일 */
 
-.time-prd .prd-title::before {
+.time-prd .product-title::before {
   content: '';
   display: inline-block;
   background: url(../images/ic-16-clock-orange-full.svg) no-repeat center;
@@ -758,7 +735,6 @@ li:nth-child(6) .img-wrap {
   background-image: url(../images/ic-orange-mycookat.svg);
 }
 .footer {
-  width: 500px;
   margin: 0 auto;
   color: #46433f;
   font-size: 12px;
@@ -909,4 +885,7 @@ button {
 
 #app-down {
   border-left: 1px solid #8e8e8e;
+}
+
+@media (min-width: 320px) {
 }
