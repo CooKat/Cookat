@@ -1,0 +1,49 @@
+main{
+  padding: 0 18px;
+}
+.event{
+
+}
+
+.event-ing{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-xxl);
+  margin-bottom: var(--spacing-md);
+}
+
+.event-ing-title{
+  font-size: var(--text-xl);
+  line-height: var(--text-xxl);
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+.event-ing p{
+  color: #ff5833;
+}
+
+.item-list{
+
+}
+
+.item-list-item{
+
+}
+
+.item-list-item img{
+  border-radius: 10px;
+}
+
+.item-list-title{
+
+}
+
+
+
+
+
+
+
