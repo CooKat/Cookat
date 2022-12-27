@@ -487,7 +487,6 @@ li:nth-child(6) .img-wrap {
   background-color: #fff;
   max-height: 400px;
   margin: 0;
-  margin-bottom: var(--spacing-lg);
 }
 
 .market-title{

@@ -487,7 +487,6 @@ li:nth-child(6) .img-wrap {
   background-color: #fff;
   max-height: 400px;
   margin: 0;
-  margin-bottom: var(--spacing-lg);
 }
 
 .market-title{
@@ -576,12 +575,10 @@ li:nth-child(6) .img-wrap {
 
 .slide-wrapper {
   width: 40.5%;
-  height: 100%;
-  
 }
 
 .slide-img {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: 30px;
 }
 
 .slide-img img {
