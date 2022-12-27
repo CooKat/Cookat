@@ -23,22 +23,16 @@
     <div class="container">
       <header class="header">
         <a href="/" class="logo"><img src="./images/logo-main.svg" alt="쿠캣마켓" /></a>
-        <div class="menu swiper">
-          <ul class="swiper-wrapper" role="menubar" aria-hidden="false">
-            <li role="none" class="swiper-slide active">
-              <a role="menuitem" href="/">쿠캣추천</a>
-            </li>
-            <li class="swiper-slide" role="none"><a role="menuitem" href="/">10% 할인</a></li>
-            <li class="swiper-slide" role="none">
-              <a role="menuitem" href="./best.html">베스트</a>
-            </li>
-            <li class="swiper-slide" role="none"><a role="menuitem" href="/">신상품</a></li>
-            <li class="swiper-slide" role="none">
-              <a role="menuitem" href="./specialPrice.html">특가</a>
-            </li>
-            <li class="swiper-slide" role="none"><a role="menuitem" href="/">이벤트</a></li>
-          </ul>
-        </div>
+        <ul class="menu" role="menubar" aria-hidden="false">
+          <li role="none" class="active">
+            <a role="menuitem" href="/">쿠캣추천</a>
+          </li>
+          <li role="none"><a role="menuitem" href="/">10% 할인</a></li>
+          <li role="none"><a role="menuitem" href="/">베스트</a></li>
+          <li role="none"><a role="menuitem" href="/">신상품</a></li>
+          <li role="none"><a role="menuitem" href="/">특가</a></li>
+          <li role="none"><a role="menuitem" href="/">이벤트</a></li>
+        </ul>
         <button type="button" class="search">
           <img src="./images/ic-24-finder.svg" alt="검색 아이콘" />
         </button>
@@ -430,7 +424,7 @@
             <div class="swiper-wrapper video-wrapper">
               <div class="swiper-slide video-slide">
                 <a href="/">
-                  <img src="./images/img1.jpg" class="video-slide-img" />
+                  <img src="./images/img1.jpg" class="video-slide-img" height="288px"/>
                   <div class="img-content">바닐라빈 쏟아부어 만든 고급진 맛 끝판왕 바치케</div>
                 </a>
               </div>
@@ -625,10 +619,6 @@
           nextEl: '.visual .swiper-button-next',
           prevEl: '.visual .swiper-button-prev',
         },
-      });
-      var menu = new Swiper('.menu.swiper', {
-        slidesPerView: 'auto',
-        freeMode: true,
       });
       var img_menu_bar = new Swiper('.img-menu-bar .swiper', {
         slidesPerView: 4.5,

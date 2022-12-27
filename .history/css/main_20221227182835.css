@@ -64,15 +64,14 @@ img {
 }
 
 .menu {
-  margin: var(--spacing-m) 0 0 0;
+  margin: var(--spacing-m) 0 0 5px;
   overflow: hidden;
   border-bottom: 1px solid #eee;
   font-size: var(--text-sm);
-  padding-left:var(--spacing-xxs);
 }
 
 .menu li {
-  width: auto;
+  float: left;
 }
 
 .menu li:nth-child(2) {
@@ -194,8 +193,7 @@ img {
 }
 
 .img-menu-bar .img-wrap {
-  margin-top: var(--spacing-xxs);
-  padding-top:100%;
+  margin-top: 5px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
@@ -227,8 +225,9 @@ li:nth-child(6) .img-wrap {
 
 .img-menu-bar span {
   display: block;
+  padding-top: 110px;
   text-align: center;
-  margin: var(--spacing-sm) 0;
+  margin-bottom: var(--spacing-sm);
   font-size: var(--text-xs);
 }
 
@@ -252,38 +251,38 @@ li:nth-child(6) .img-wrap {
 
 /* 앱 QR 코드(선영) */
 .qr-info {
-  width: 16.875rem;
-  height: 4.062rem;
+  width: 270px;
+  height: 65px;
   left: 0;
+  right: 0;
   bottom: 0px;
   position: absolute;
 }
 
 .qr-code {
-  width: 3.875rem;
-  height: 3.875rem;
+  width: 62px;
+  height: 62px;
   margin-right: var(--spacing-base);
 }
 
 .qr-text {
-  width: 7.3125rem;
-  height: 3.75rem;
+  width: 117px;
+  height: 60px;
 }
 
 /* 런칭 특가(선영) */
 .launching-sale-container {
   position: relative;
   width: 100%;
-  margin-bottom: 3.125rem;
-}
-
-.launching-sale-container h2 {
-  margin-left: var(--spacing-xs);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 50px;
 }
 
 .launching-menu-list {
   padding: 0 var(--spacing-lg) var(--spacing-xs);
+}
+
+.launching-food {
+  min-height: 559px;
 }
 
 .launching-food-link {
@@ -291,22 +290,22 @@ li:nth-child(6) .img-wrap {
 }
 
 .launching-food-link img {
-  border-radius: var(--spacing-sm);
+  border-radius: 10px;
 }
 
 .launching-food-count {
   background-color: #ff5833;
   color: white;
   display: block;
-  width: 100%;
-  height: 1.75rem;
+  width: 452px;
+  height: 28px;
   font-size: var(--text-xxs);
   font-weight: 500;
   padding: var(--spacing-xs) 0 0 var(--spacing-xm);
-  border-bottom-right-radius: var(--spacing-sm);
-  border-bottom-left-radius: var(--spacing-sm);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   position: absolute;
-  bottom: 6.625rem;
+  bottom: 106px;
 }
 
 .launching-food-count em {
@@ -314,41 +313,55 @@ li:nth-child(6) .img-wrap {
 }
 
 .launching-menu-text {
+  height: 107px;
   padding-top: var(--spacing-sm);
 }
 
 .launching-content1 {
   font-size: var(--text-lg);
   font-weight: 700;
-  line-height: 1.875rem;
+  line-height: 30px;
   margin: 0 0 var(--spacing-sxxs);
 }
 
 .launching-content2 {
   display: block;
   font-size: var(--text-md);
-  margin: 0 0 var(--spacing-xs);
+  margin: 0 0 7px;
   font-weight: 500;
-  line-height: var(--text-lg);
+  line-height: 17px;
 }
 
 .launching-content3 {
   font-size: var(--text-sm);
   font-weight: 500;
-  line-height: var(--text-xs);
+  line-height: 13px;
   opacity: 0.5;
 }
 
 .launching-food-price em {
   color: #ff5833;
-  font-size: var(--text-lg);
+  font-size: 18px;
   font-weight: 700;
-  margin-right: var(--spacing-xxs);
+  margin-right: 4px;
 }
 
 .launching-food-price {
   font-size: var(--text-lg);
   font-weight: 700;
+}
+
+.all-view {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--spacing-lg) var(--spacing-lg) 0 0;
+  font-size: var(--text-sm);
+}
+
+.all-view img {
+  vertical-align: middle;
+  margin-left: var(--spacing-xxs);
 }
 
 /* 상품영역 */
@@ -482,7 +495,8 @@ li:nth-child(6) .img-wrap {
 }
 
 .video-slide {
-  aspect-ratio: 1/1.56;     
+  max-height: 288px;
+  height: auto;
 }
 
 .video-slide a {
@@ -587,7 +601,7 @@ li:nth-child(6) .img-wrap {
   margin-left: var(--spacing-l);
   bottom: var(--spacing-xl);
   color: #191919;
-  height: auto;
+
   z-index: 100;
 }
 
