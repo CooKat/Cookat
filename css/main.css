@@ -46,26 +46,25 @@ img {
 }
 
 .container {
-  max-width: 500px;
-  margin: 0 auto 55px auto;
+  max-width: var(--max-width);
+  margin: 0 auto 3.437rem auto;
   background: #fff;
 }
 
 /* 헤더 */
-
 .header {
   position: relative;
-  padding: 15px 0 0;
+  padding: var(--spacing-m) 0 0;
   margin-bottom: -1px;
 }
 
 .logo {
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 var(--spacing-m);
 }
 
 .menu {
-  margin: 15px 0 0 5px;
+  margin: var(--spacing-m) 0 0 5px;
   overflow: hidden;
   border-bottom: 1px solid #eee;
   font-size: var(--text-sm);
@@ -87,13 +86,13 @@ img {
   content: '';
   display: block;
   width: calc(100% - 20px);
-  border-top: 2px solid var(--color-deep-orange);
+  border-top: var(--spacing-sxxs) solid var(--color-deep-orange);
   margin: 0 auto;
 }
 .menu a {
   display: block;
-  line-height: 40px;
-  padding: 0 10px;
+  line-height: var(--spacing-xxl);
+  padding: 0 var(--spacing-sm);
 }
 
 .menu a:focus {
@@ -104,7 +103,7 @@ img {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 15px;
+  padding: var(--spacing-m);
   font-size: 2em;
   background: none;
   border: 0;
@@ -114,7 +113,7 @@ img {
 
 .visual .text-wrap {
   position: absolute;
-  left: 50px;
+  left: 3.125rem;
   top: 50%;
   transform: translateY(-50%);
   color: var(--color-black);
@@ -123,14 +122,14 @@ img {
 .visual .text-wrap p {
   font-size: var(--text-base);
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-l);
   font-weight: 500;
 }
 
 .visual .text-wrap h2 {
   font-size: var(--text-xxl);
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-l);
   font-weight: 700;
 }
 
@@ -147,7 +146,7 @@ img {
 .visual .swiper-button-prev {
   color: #fff;
   background: rgba(0, 0, 0, 0.3);
-  padding: 20px 12px;
+  padding: var(--spacing-l) var(--spacing-xm);
   width: auto;
   height: auto;
   transform: translateY(-50%);
@@ -176,7 +175,7 @@ img {
   right: 0;
   bottom: 0;
   width: auto;
-  padding: 5px 8px;
+  padding: 0.31rem var(--spacing-xs);
   color: #fff;
   background: rgba(0, 0, 0, 0.3);
   font-size: var(--text-xxs);
@@ -274,25 +273,16 @@ li:nth-child(6) .img-wrap {
 /* 런칭 특가(선영) */
 .launching-sale-container {
   position: relative;
-  top: 30px;
   width: 100%;
-  height: 640px;
-}
-
-.launching-title {
-  font-size: var(--text-xl);
-  font-weight: 700;
-  padding: 0 var(--spacing-lg);
-  line-height: 50px;
+  margin-bottom: 50px;
 }
 
 .launching-menu-list {
-  height: 584px;
   padding: 0 var(--spacing-lg) var(--spacing-xs);
 }
 
 .launching-food {
-  height: 559px;
+  min-height: 559px;
 }
 
 .launching-food-link {
@@ -300,8 +290,6 @@ li:nth-child(6) .img-wrap {
 }
 
 .launching-food-link img {
-  width: 452px;
-  height: 452px;
   border-radius: 10px;
 }
 
@@ -394,7 +382,7 @@ li:nth-child(6) .img-wrap {
   outline-offset: 2px;
 }
 
-.prd-title {
+.product-title {
   font-size: var(--text-xl);
   font-weight: 700;
   margin: var(--spacing-xxl) 0 var(--spacing-xxs);
@@ -473,21 +461,24 @@ li:nth-child(6) .img-wrap {
   font-size: 0;
 }
 
-.prd-more {
+.more {
   position: absolute;
-  right: 5px;
-  top: -7px;
   padding: var(--spacing-sm);
   font-size: var(--text-sm);
   font-weight: 400;
+  right: 5px;
+  top: -7px;
 }
 
-.prd-more::after {
+.more::after {
   content: '';
   margin-left: var(--spacing-xxs);
   padding-left: var(--spacing-md);
   background: url(../images/ic-16-next-fit.svg) no-repeat center/6px;
 }
+
+/* .prd-more {
+} */
 
 /* 영상장보기 */
 .market {
@@ -496,19 +487,6 @@ li:nth-child(6) .img-wrap {
   background-color: #fff;
   height: 400px;
   margin: 0;
-}
-
-.market-title {
-  width: 200px;
-  padding: 20px 0 17px 20px;
-  font-weight: 800;
-  margin-bottom: -3px;
-  font-size: 22px;
-  color: #46433f;
-}
-
-.market-title a {
-  color: #46433f;
 }
 
 .video-slide {
@@ -610,7 +588,6 @@ li:nth-child(6) .img-wrap {
 .slogan {
   background-color: #fff;
   display: block;
-  width: 500px;
   margin: 20px 0;
 }
 
@@ -644,13 +621,13 @@ li:nth-child(6) .img-wrap {
   padding: 0 10px;
 }
 
-.slide-prd .prd-title {
+.slide-prd .product-title {
   padding: 0 20px;
 }
 
 /* 타임세일 */
 
-.time-prd .prd-title::before {
+.time-prd .product-title::before {
   content: '';
   display: inline-block;
   background: url(../images/ic-16-clock-orange-full.svg) no-repeat center;
@@ -758,7 +735,6 @@ li:nth-child(6) .img-wrap {
   background-image: url(../images/ic-orange-mycookat.svg);
 }
 .footer {
-  width: 500px;
   margin: 0 auto;
   color: #46433f;
   font-size: 12px;
@@ -909,4 +885,7 @@ button {
 
 #app-down {
   border-left: 1px solid #8e8e8e;
+}
+
+@media (min-width: 320px) {
 }
