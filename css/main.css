@@ -64,14 +64,15 @@ img {
 }
 
 .menu {
-  margin: var(--spacing-m) 0 0 5px;
+  margin: var(--spacing-m) 0 0 0;
   overflow: hidden;
   border-bottom: 1px solid #eee;
   font-size: var(--text-sm);
+  padding-left:var(--spacing-xxs);
 }
 
 .menu li {
-  float: left;
+  width: auto;
 }
 
 .menu li:nth-child(2) {
