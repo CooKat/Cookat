@@ -402,9 +402,14 @@ li:nth-child(6) .img-wrap {
   overflow:hidden;
 }
 
+
 .prd-thumb a {
   display: block;
   font-size: 0;
+}
+
+.prd-thumb a:focus {
+  outline-offset: -2px;
 }
 
 .prd-video{
