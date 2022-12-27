@@ -64,14 +64,15 @@ img {
 }
 
 .menu {
-  margin: var(--spacing-m) 0 0 5px;
+  margin: var(--spacing-m) 0 0 0;
   overflow: hidden;
   border-bottom: 1px solid #eee;
   font-size: var(--text-sm);
+  padding-left:var(--spacing-xxs);
 }
 
 .menu li {
-  float: left;
+  width: auto;
 }
 
 .menu li:nth-child(2) {
@@ -193,7 +194,8 @@ img {
 }
 
 .img-menu-bar .img-wrap {
-  margin-top: 5px;
+  margin-top: var(--spacing-xxs);
+  padding-top:100%;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
@@ -225,9 +227,8 @@ li:nth-child(6) .img-wrap {
 
 .img-menu-bar span {
   display: block;
-  padding-top: 110px;
   text-align: center;
-  margin-bottom: var(--spacing-sm);
+  margin: var(--spacing-sm) 0;
   font-size: var(--text-xs);
 }
 
