@@ -1,7 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./theme.css);
-@import url(./responsive.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden,
@@ -65,15 +64,14 @@ img {
 }
 
 .menu {
-  margin: var(--spacing-m) 0 0 0;
+  margin: var(--spacing-m) 0 0 5px;
   overflow: hidden;
   border-bottom: 1px solid #eee;
   font-size: var(--text-sm);
-  padding-left:var(--spacing-xxs);
 }
 
 .menu li {
-  width: auto;
+  float: left;
 }
 
 .menu li:nth-child(2) {
@@ -195,8 +193,7 @@ img {
 }
 
 .img-menu-bar .img-wrap {
-  margin-top: var(--spacing-xxs);
-  padding-top:100%;
+  margin-top: 5px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
@@ -228,8 +225,9 @@ li:nth-child(6) .img-wrap {
 
 .img-menu-bar span {
   display: block;
+  padding-top: 110px;
   text-align: center;
-  margin: var(--spacing-sm) 0;
+  margin-bottom: var(--spacing-sm);
   font-size: var(--text-xs);
 }
 
@@ -253,38 +251,38 @@ li:nth-child(6) .img-wrap {
 
 /* 앱 QR 코드(선영) */
 .qr-info {
-  width: 16.875rem;
-  height: 4.062rem;
+  width: 270px;
+  height: 65px;
   left: 0;
+  right: 0;
   bottom: 0px;
   position: absolute;
 }
 
 .qr-code {
-  width: 3.875rem;
-  height: 3.875rem;
+  width: 62px;
+  height: 62px;
   margin-right: var(--spacing-base);
 }
 
 .qr-text {
-  width: 7.3125rem;
-  height: 3.75rem;
+  width: 117px;
+  height: 60px;
 }
 
 /* 런칭 특가(선영) */
 .launching-sale-container {
   position: relative;
   width: 100%;
-  margin-bottom: 3.125rem;
-}
-
-.launching-sale-container h2 {
-  margin-left: var(--spacing-xs);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 50px;
 }
 
 .launching-menu-list {
   padding: 0 var(--spacing-lg) var(--spacing-xs);
+}
+
+.launching-food {
+  min-height: 559px;
 }
 
 .launching-food-link {
@@ -292,22 +290,22 @@ li:nth-child(6) .img-wrap {
 }
 
 .launching-food-link img {
-  border-radius: var(--spacing-sm);
+  border-radius: 10px;
 }
 
 .launching-food-count {
   background-color: #ff5833;
   color: white;
   display: block;
-  width: 100%;
-  height: 1.75rem;
+  width: 452px;
+  height: 28px;
   font-size: var(--text-xxs);
   font-weight: 500;
   padding: var(--spacing-xs) 0 0 var(--spacing-xm);
-  border-bottom-right-radius: var(--spacing-sm);
-  border-bottom-left-radius: var(--spacing-sm);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   position: absolute;
-  bottom: 6.625rem;
+  bottom: 106px;
 }
 
 .launching-food-count em {
@@ -315,41 +313,55 @@ li:nth-child(6) .img-wrap {
 }
 
 .launching-menu-text {
+  height: 107px;
   padding-top: var(--spacing-sm);
 }
 
 .launching-content1 {
   font-size: var(--text-lg);
   font-weight: 700;
-  line-height: 1.875rem;
+  line-height: 30px;
   margin: 0 0 var(--spacing-sxxs);
 }
 
 .launching-content2 {
   display: block;
   font-size: var(--text-md);
-  margin: 0 0 var(--spacing-xs);
+  margin: 0 0 7px;
   font-weight: 500;
-  line-height: var(--text-lg);
+  line-height: 17px;
 }
 
 .launching-content3 {
   font-size: var(--text-sm);
   font-weight: 500;
-  line-height: var(--text-xs);
+  line-height: 13px;
   opacity: 0.5;
 }
 
 .launching-food-price em {
   color: #ff5833;
-  font-size: var(--text-lg);
+  font-size: 18px;
   font-weight: 700;
-  margin-right: var(--spacing-xxs);
+  margin-right: 4px;
 }
 
 .launching-food-price {
   font-size: var(--text-lg);
   font-weight: 700;
+}
+
+.all-view {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--spacing-lg) var(--spacing-lg) 0 0;
+  font-size: var(--text-sm);
+}
+
+.all-view img {
+  vertical-align: middle;
+  margin-left: var(--spacing-xxs);
 }
 
 /* 상품영역 */
@@ -375,11 +387,10 @@ li:nth-child(6) .img-wrap {
   font-weight: 700;
   margin: var(--spacing-xxl) 0 var(--spacing-xxs);
   padding: 0 var(--spacing-sm);
-  width:75%;
 }
 
 .prd-sub-text {
-  color: var(--color-cement);
+  color: #999;
   margin-bottom: var(--spacing-md);
   line-height: 1.4;
   padding: 0 var(--spacing-sm);
@@ -418,7 +429,6 @@ li:nth-child(6) .img-wrap {
   font-size: var(--text-base);
   letter-spacing: -0.5px;
   margin-right: var(--spacing-xxs);
-  line-height: 1.2;
 }
 
 .prd-info .custom {
@@ -426,6 +436,7 @@ li:nth-child(6) .img-wrap {
   font-weight: 300;
   color: #999;
   text-decoration: line-through;
+  line-height: 1.4;
 }
 
 .prd-info .custom.block {
@@ -438,26 +449,6 @@ li:nth-child(6) .img-wrap {
 
 .discount-rate {
   color: var(--color-deep-orange);
-}
-
-.icon{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: var(--text-xxs);
-  padding: var(--spacing-sxxs) var(--spacing-xxs);
-  border-radius: 4px;
-  font-weight:700;
-}
-
-.sale-icon{
-  background: var(--color-deep-orange);
-  color: var(--color-white);
-}
-
-.new-icon{
-  background: var(--color-white);
-  color: var(--color-black);
 }
 
 .cart-btn {
@@ -486,25 +477,8 @@ li:nth-child(6) .img-wrap {
   background: url(../images/ic-16-next-fit.svg) no-repeat center/6px;
 }
 
-.review-count{
-  display: block;
-  font-size: var(--text-sxxs);
-  color: var(--color-cement);
-  background:url(../images/ic-rate-nold.svg) no-repeat left center;
-  margin-bottom: var(--spacing-xs);
-  padding-left: var(--spacing-m);
-}
-
-.cookat-shipping-icon{
-  display: inline-block;
-  font-size: var(--text-sxxs);
-  color: var(--color-deep-orange);
-  background:rgba(245, 91, 4, 0.1) url(../images/ic-cookat-delivery-red.svg) no-repeat 2px center;
-  margin-bottom: var(--spacing-xxs);
-  padding: var(--spacing-xxs) var(--spacing-xxs) var(--spacing-xxs) var(--spacing-l);
-  border-radius: 4px;
-  font-weight: 400;
-}
+/* .prd-more {
+} */
 
 /* 영상장보기 */
 .market {
@@ -521,12 +495,12 @@ li:nth-child(6) .img-wrap {
 }
 
 .video-slide {
-  aspect-ratio: 1/1.56;     
+  height: 288px;
 }
 
 .video-slide a {
   display: block;
-  height: 100%;
+  height: auto;
 }
 
 .video-slide img {
@@ -626,7 +600,7 @@ li:nth-child(6) .img-wrap {
   margin-left: var(--spacing-l);
   bottom: var(--spacing-xl);
   color: #191919;
-  height: auto;
+
   z-index: 100;
 }
 
@@ -923,32 +897,4 @@ button {
 }
 
 @media (min-width: 320px) {
-  .prd-info h2{
-    font-size: var(--text-xxs);
-  }
-  .prd-info h2,
-  .prd-info p,
-  .prd-info em {
-    margin-bottom: var(--spacing-xs);
-  }
-  .prd-info .custom{
-    font-size:var(--text-xxs);
-    margin-bottom: var(--spacing-xxs);
-  }
-  .visual .text-wrap{
-    left: 1.25rem;
-  }
-  .visual .text-wrap p{
-    font-size: var(--text-md);
-    margin-bottom: var(--spacing-xs);
-  }
-
-  .visual .text-wrap h2{
-    font-size: var(--text-xl);
-    margin-bottom: var(--spacing-base);
-  }
-
-  .visual .text-wrap span{
-    font-size: var(--text-xxs);
-  }
 }

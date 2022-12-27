@@ -1,0 +1,26 @@
+.bargain-container {
+  position: relative;
+}
+
+.bargain-date {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  line-height: var(--text-base);
+  padding: 0 var(--spacing-lg);
+  position: absolute;
+  bottom: 28%;
+  left: 0;
+  right: 0;
+}
+
+.bargain-date span {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: var(--spacing-l);
+  color: #faecce;
+  line-height: var(--spacing-l);
+  padding: 0.37rem var(--spacing-l);
+}
+
+.bargain-menu-box {
+}

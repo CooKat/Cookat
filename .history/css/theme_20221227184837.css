@@ -21,9 +21,8 @@
   --spacing-base: 1rem; /* 16px */
   --spacing-lg: 1.125rem; /* 18px */
   --spacing-l: 1.25rem; /* 20px */
-  --spacing-xl: 1.5rem; /* 24px */
-  --spacing-xxl: 2rem; /* 32px */
-  --spacing-xxxl: 2.5rem; /* 40px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-xxl: 2.5rem; /* 40px */
 
   --text-sxxs: 0.6875rem; /* 11px */
   --text-xxs: 0.75rem; /* 12px */
