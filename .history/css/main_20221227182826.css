@@ -495,7 +495,7 @@ li:nth-child(6) .img-wrap {
 }
 
 .video-slide {
-  aspect-ratio: 1/1.56;     
+  height: auto;
 }
 
 .video-slide a {
@@ -600,7 +600,7 @@ li:nth-child(6) .img-wrap {
   margin-left: var(--spacing-l);
   bottom: var(--spacing-xl);
   color: #191919;
-  height: auto;
+
   z-index: 100;
 }
 

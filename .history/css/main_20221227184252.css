@@ -600,15 +600,15 @@ li:nth-child(6) .img-wrap {
   margin-left: var(--spacing-l);
   bottom: var(--spacing-xl);
   color: #191919;
-  height: auto;
+
   z-index: 100;
 }
 
 /* 선택된 점 */
 .swiper .swiper-pagination-bullet {
   background-color: rgb(237, 237, 237);
-  width: 7px;
-  height: 7px;
+  width:10%;
+  height: 10%;
   margin: 0 3px;
 }
 

@@ -608,7 +608,7 @@ li:nth-child(6) .img-wrap {
 .swiper .swiper-pagination-bullet {
   background-color: rgb(237, 237, 237);
   width: 7px;
-  height: 7px;
+  height: auto;
   margin: 0 3px;
 }
 

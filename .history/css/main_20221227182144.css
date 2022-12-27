@@ -495,7 +495,7 @@ li:nth-child(6) .img-wrap {
 }
 
 .video-slide {
-  aspect-ratio: 1/1.56;     
+  height: 288px;
 }
 
 .video-slide a {
@@ -587,8 +587,15 @@ li:nth-child(6) .img-wrap {
 .slide-img img {
   overflow: hidden;
   max-width: 100%;
-  height: auto;
+  height: 130px;
   border-radius: 10px;
+}
+
+/*@@@@@@@@@ 슬로건 @@@@@@@@@@@@@@@ */
+.slogan {
+  background-color: #fff;
+  display: block;
+  margin: 20px 0;
 }
 
 /* 스와이프 점 */
@@ -598,9 +605,9 @@ li:nth-child(6) .img-wrap {
   display: block;
   text-align: left;
   margin-left: var(--spacing-l);
-  bottom: var(--spacing-xl);
+  bottom: 20px;
   color: #191919;
-  height: auto;
+
   z-index: 100;
 }
 
@@ -611,14 +618,6 @@ li:nth-child(6) .img-wrap {
   height: 7px;
   margin: 0 3px;
 }
-
-/*@@@@@@@@@ 슬로건 @@@@@@@@@@@@@@@ */
-.slogan {
-  display: block;
-  margin: 20px 0;
-}
-
-
 
 /* 슬라이드 상품 */
 
