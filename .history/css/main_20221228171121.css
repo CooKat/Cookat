@@ -519,7 +519,7 @@ li:nth-child(6) .img-wrap {
 .img-content {
   position: absolute;
   font-size: var(--text-xxs);
-  padding: 0 var(--spacing-l) 0 var(--spacing-m);
+  padding: 0 20px 0 15px;
   color: #fff;
   bottom: 11px;
   text-align: left;
@@ -529,12 +529,12 @@ li:nth-child(6) .img-wrap {
 
 .market-plus {
   display: block;
-  width: var(--spacing-6);
+  width: 61px;
   line-height: 26px;
   position: absolute;
-  top: var(--spacing-xl);
-  right: var(--spacing-lg);
-  font-size: var(--text-sm);
+  top: 23px;
+  right: 18px;
+  font-size: 14px;
   color: #46433f;
 }
 
@@ -865,7 +865,7 @@ button {
   text-align: center;
   padding: 25px 0;
   border-bottom: 1px solid #cdcdcd;
-  margin-bottom: var(--spacing-6);
+  margin-bottom: 60px;
 }
 .additional-container a {
   border: none;

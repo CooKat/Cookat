@@ -518,8 +518,8 @@ li:nth-child(6) .img-wrap {
 
 .img-content {
   position: absolute;
-  font-size: var(--text-xxs);
-  padding: 0 var(--spacing-l) 0 var(--spacing-m);
+  font-size: 12px;
+  padding: 0 20px 0 15px;
   color: #fff;
   bottom: 11px;
   text-align: left;
@@ -529,12 +529,12 @@ li:nth-child(6) .img-wrap {
 
 .market-plus {
   display: block;
-  width: var(--spacing-6);
+  width: 61px;
   line-height: 26px;
   position: absolute;
-  top: var(--spacing-xl);
-  right: var(--spacing-lg);
-  font-size: var(--text-sm);
+  top: 23px;
+  right: 18px;
+  font-size: 14px;
   color: #46433f;
 }
 
@@ -548,8 +548,7 @@ li:nth-child(6) .img-wrap {
 /* 슬라이드 광고배너 (윤호)*/
 .slide {
   width: 100%;
-  margin-top: var(--spacing-xxxl);
-  margin-bottom: var(--spacing-xxl);
+  margin-bottom: 30px;
 }
 .market .autoSwiper {
   display: block;
@@ -557,8 +556,8 @@ li:nth-child(6) .img-wrap {
 }
 
 .slide-banner {
-  margin: 0 var(--spacing-lg);
-  border-radius: var(--spacing-sm);
+  margin: 0 18px;
+  border-radius: 10px;
 }
 
 .slide-wrapper {
@@ -574,11 +573,12 @@ li:nth-child(6) .img-wrap {
   overflow: hidden;
   max-width: 100%;
   height: auto;
-  border-radius: var(--spacing-sm);
+  border-radius: 10px;
 }
 
 /* 스와이프 점 */
 .slide .swiper-pagination {
+  size: 1px;
   position: absolute;
   display: block;
   text-align: left;
@@ -600,21 +600,21 @@ li:nth-child(6) .img-wrap {
 /*@@@@@@@@@ 슬로건 @@@@@@@@@@@@@@@ */
 .slogan {
   display: block;
-  margin: var(--spacing-l) 0;
+  margin: 20px 0;
 }
 
 /* 슬라이드 상품 */
 
 .slide-prd {
-  padding: var(--spacing-l) 0;
+  padding: 20px 0;
 }
 
 .slide-prd .swiper {
-  padding: 0 var(--spacing-sm);
+  padding: 0 10px;
 }
 
 .slide-prd .product-title {
-  padding: 0 var(--spacing-l);
+  padding: 0 20px;
 }
 
 /* 타임세일 */
@@ -623,10 +623,10 @@ li:nth-child(6) .img-wrap {
   content: '';
   display: inline-block;
   background: url(../images/ic-16-clock-orange-full.svg) no-repeat center;
-  width: var(--spacing-l);
-  height: 2var (--spacing-l);
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
-  margin-right: var(--spacing-xs);
+  margin-right: 8px;
 }
 
 /* 상품 진열 단수 */
@@ -865,7 +865,7 @@ button {
   text-align: center;
   padding: 25px 0;
   border-bottom: 1px solid #cdcdcd;
-  margin-bottom: var(--spacing-6);
+  margin-bottom: 60px;
 }
 .additional-container a {
   border: none;
