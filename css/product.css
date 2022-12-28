@@ -1,0 +1,82 @@
+
+.product-img-category{
+  padding:0 var(--spacing-lg);
+}
+
+.product-img-category h3{
+  margin: var(--spacing-xxl) 0 var(--spacing-xs);
+  font-size: var(--text-base);
+  font-weight:700;
+}
+
+.product-img-category ul{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.product-img-category li{
+  color: var(--color-black);
+  font-size:var(--text-sm);
+  width:50%;
+  margin:var(--spacing-xs) 0
+}
+
+.product-img-category a{
+  display: flex;
+  flex-flow:row nowrap;
+  align-items: center;
+  gap:10px;
+}
+
+.product-img-category a::before{
+  content: '';
+  display: inline-block;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-size: 2.25rem; 
+  border-radius: 50%;
+  background-position: center;
+  margin-right:var(--spacing-xxs);
+}
+
+.soup a::before{
+  background-image: url(../images/ic-60-category-soup.png);
+}
+
+.roast a::before{
+  background-image: url(../images/ic-60-category-fried.png);
+}
+
+.snackbar a::before{
+  background-image: url(../images/ic-60-category-snack-food.png);
+}
+
+.rice a::before{
+  background-image: url(../images/ic-60-category-rice.png);
+}
+
+.instant a::before{
+  background-image: url(../images/ic-60-category-mealkit.png);
+}
+
+.dessert a::before{
+  background-image: url(../images/ic-60-category-dessert.png);
+}
+
+.diet a::before{
+  background-image: url(../images/ic-60-category-healthy.png);
+}
+
+.fresh a::before{
+  background-image: url(../images/ic-60-category-fresh.png);
+}
+
+.alcohol a::before{
+  background-image: url(../images/ic-60-category-traditional-liquor.png);
+}
+
+.living a::before{
+  background-image: url(../images/ic-60-category-homeliving-221007.png);
+}
