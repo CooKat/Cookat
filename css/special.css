@@ -133,7 +133,8 @@
 }
 
 .bargain-graph-content {
-  overflow: hidden;
+  /* width: 100%; */
+  /* overflow: hidden; */
 }
 
 .bargain-graph-title img {
