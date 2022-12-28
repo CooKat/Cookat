@@ -737,6 +737,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
+    <script src="./js/ex1.js"></script>
     <script>
       var visual = new Swiper('.visual .swiper', {
         pagination: {
@@ -752,7 +753,7 @@
           prevEl: '.visual .swiper-button-prev',
         },
       });
-      var menu = new Swiper('.menu', {
+      var menu = new Swiper('.menu.swiper', {
         slidesPerView: 'auto',
         freeMode: true,
       });

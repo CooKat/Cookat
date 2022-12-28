@@ -1,7 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./theme.css);
-@import url(./responsive.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden,
@@ -43,11 +42,6 @@ img {
   height: auto;
 }
 
-video {
-  width: 100%;
-  height: auto;
-}
-
 .white * {
   color: var(--color-white);
 }
@@ -56,18 +50,13 @@ video {
   max-width: var(--max-width);
   margin: 0 auto 3.437rem auto;
   background: #fff;
-  margin-top: 104px;
 }
 
 /* 헤더 */
 .header {
-  position: fixed;
-  top:0;
+  position: relative;
   padding: var(--spacing-m) 0 0;
-  width: min(var(--max-width), 100%);
-  background-color: var(--color-white);
-  border-bottom: 1px solid #eee;
-  z-index: 2;
+  margin-bottom: -1px;
 }
 
 .logo {
@@ -78,8 +67,9 @@ video {
 .menu {
   margin: var(--spacing-m) 0 0 0;
   overflow: hidden;
+  border-bottom: 1px solid #eee;
   font-size: var(--text-sm);
-  padding-left:var(--spacing-xxs);
+  padding-left: var(--spacing-xxs);
 }
 
 .menu li {
@@ -385,11 +375,10 @@ li:nth-child(6) .img-wrap {
   font-weight: 700;
   margin: var(--spacing-xxl) 0 var(--spacing-xxs);
   padding: 0 var(--spacing-sm);
-  width:calc(100% - 90px);
 }
 
 .prd-sub-text {
-  color: var(--color-cement);
+  color: #999;
   margin-bottom: var(--spacing-md);
   line-height: 1.4;
   padding: 0 var(--spacing-sm);
@@ -398,22 +387,15 @@ li:nth-child(6) .img-wrap {
 
 .prd-thumb {
   position: relative;
-  border-radius: 8px;
-  overflow:hidden;
 }
-
 
 .prd-thumb a {
   display: block;
   font-size: 0;
 }
 
-.prd-thumb a:focus {
-  outline-offset: -2px;
-}
-
-.prd-video{
-  aspect-ratio: 1/1;
+.prd-thumb img {
+  border-radius: 8px;
 }
 
 .prd-info {
@@ -434,8 +416,7 @@ li:nth-child(6) .img-wrap {
   font-weight: 700;
   font-size: var(--text-base);
   letter-spacing: -0.5px;
-  margin: 0 var(--spacing-xxs) var(--spacing-xxs) 0;
-  line-height: 1.2;
+  margin-right: var(--spacing-xxs);
 }
 
 .prd-info .custom {
@@ -443,6 +424,7 @@ li:nth-child(6) .img-wrap {
   font-weight: 300;
   color: #999;
   text-decoration: line-through;
+  line-height: 1.4;
 }
 
 .prd-info .custom.block {
@@ -455,26 +437,6 @@ li:nth-child(6) .img-wrap {
 
 .discount-rate {
   color: var(--color-deep-orange);
-}
-
-.icon{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: var(--text-xxs);
-  padding: var(--spacing-sxxs) var(--spacing-xxs);
-  border-radius: 4px;
-  font-weight:700;
-}
-
-.sale-icon{
-  background: var(--color-deep-orange);
-  color: var(--color-white);
-}
-
-.new-icon{
-  background: var(--color-white);
-  color: var(--color-black);
 }
 
 .cart-btn {
@@ -503,25 +465,8 @@ li:nth-child(6) .img-wrap {
   background: url(../images/ic-16-next-fit.svg) no-repeat center/6px;
 }
 
-.review-count{
-  display: block;
-  font-size: var(--text-sxxs);
-  color: var(--color-cement);
-  background:url(../images/ic-rate-nold.svg) no-repeat left center;
-  margin-bottom: var(--spacing-xs);
-  padding-left: var(--spacing-m);
-}
-
-.cookat-shipping-icon{
-  display: inline-block;
-  font-size: var(--text-sxxs);
-  color: var(--color-deep-orange);
-  background:rgba(245, 91, 4, 0.1) url(../images/ic-cookat-delivery-red.svg) no-repeat 2px center;
-  margin-bottom: var(--spacing-xxs);
-  padding: var(--spacing-xxs) var(--spacing-xxs) var(--spacing-xxs) var(--spacing-l);
-  border-radius: 4px;
-  font-weight: 400;
-}
+/* .prd-more {
+} */
 
 /* 영상장보기 */
 .market {
@@ -573,8 +518,8 @@ li:nth-child(6) .img-wrap {
 
 .img-content {
   position: absolute;
-  font-size: var(--text-xxs);
-  padding: 0 var(--spacing-l) 0 var(--spacing-m);
+  font-size: 12px;
+  padding: 0 20px 0 15px;
   color: #fff;
   bottom: 11px;
   text-align: left;
@@ -584,12 +529,12 @@ li:nth-child(6) .img-wrap {
 
 .market-plus {
   display: block;
-  width: var(--spacing-6);
+  width: 61px;
   line-height: 26px;
   position: absolute;
-  top: var(--spacing-xl);
-  right: var(--spacing-lg);
-  font-size: var(--text-sm);
+  top: 23px;
+  right: 18px;
+  font-size: 14px;
   color: #46433f;
 }
 
@@ -603,8 +548,7 @@ li:nth-child(6) .img-wrap {
 /* 슬라이드 광고배너 (윤호)*/
 .slide {
   width: 100%;
-  margin-top: var(--spacing-xxxl);
-  margin-bottom: var(--spacing-xxl);
+  margin-bottom: 30px;
 }
 .market .autoSwiper {
   display: block;
@@ -612,8 +556,8 @@ li:nth-child(6) .img-wrap {
 }
 
 .slide-banner {
-  margin: 0 var(--spacing-lg);
-  border-radius: var(--spacing-sm);
+  margin: 0 18px;
+  border-radius: 10px;
 }
 
 .slide-wrapper {
@@ -629,16 +573,17 @@ li:nth-child(6) .img-wrap {
   overflow: hidden;
   max-width: 100%;
   height: auto;
-  border-radius: var(--spacing-sm);
+  border-radius: 10px;
 }
 
 /* 스와이프 점 */
 .slide .swiper-pagination {
+  size: 1px;
   position: absolute;
   display: block;
   text-align: left;
   margin-left: var(--spacing-l);
-  bottom: var(--spacing-xxl);
+  bottom: var(--spacing-xl);
   color: #191919;
   height: auto;
   z-index: 100;
@@ -655,22 +600,21 @@ li:nth-child(6) .img-wrap {
 /*@@@@@@@@@ 슬로건 @@@@@@@@@@@@@@@ */
 .slogan {
   display: block;
-  margin: var(--spacing-l) 0;
+  margin: 20px 0;
 }
 
-
-
 /* 슬라이드 상품 */
+
 .slide-prd {
-  padding: var(--spacing-l) 0;
+  padding: 20px 0;
 }
 
 .slide-prd .swiper {
-  padding: 0 var(--spacing-sm);
+  padding: 0 10px;
 }
 
 .slide-prd .product-title {
-  padding: 0 var(--spacing-l);
+  padding: 0 20px;
 }
 
 /* 타임세일 */
@@ -679,10 +623,10 @@ li:nth-child(6) .img-wrap {
   content: '';
   display: inline-block;
   background: url(../images/ic-16-clock-orange-full.svg) no-repeat center;
-  width: var(--spacing-l);
-  height: 2var (--spacing-l);
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
-  margin-right: var(--spacing-xs);
+  margin-right: 8px;
 }
 
 /* 상품 진열 단수 */
@@ -727,7 +671,7 @@ li:nth-child(6) .img-wrap {
 
 .fix-footer-menu a {
   display: block;
-  padding: var(--spacing-xxl) 0 var(--spacing-sm);
+  padding: var(--spacing-xl) 0 var(--spacing-sm);
   background-repeat: no-repeat;
   background-position: center 8px;
   background-size: 20px;
@@ -935,35 +879,5 @@ button {
   border-left: 1px solid #8e8e8e;
 }
 
-@media (max-width: 499px){
-  
-  .prd-info h2{
-    font-size: var(--text-xxs);
-  }
-  .prd-info h2,
-  .prd-info p,
-  .prd-info em {
-    margin-bottom: var(--spacing-xs);
-  }
-
-  .prd-info .custom{
-    font-size:var(--text-xxs);
-    margin-bottom: var(--spacing-xxs);
-  }
-  .visual .text-wrap{
-    left: 1.25rem;
-  }
-  .visual .text-wrap p{
-    font-size: var(--text-md);
-    margin-bottom: var(--spacing-xs);
-  }
-
-  .visual .text-wrap h2{
-    font-size: var(--text-xl);
-    margin-bottom: var(--spacing-base);
-  }
-
-  .visual .text-wrap span{
-    font-size: var(--text-xxs);
-  }
+@media (min-width: 320px) {
 }

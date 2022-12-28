@@ -30,21 +30,15 @@
             <li role="none" class="swiper-slide">
               <a role="menuitem" href="/">쿠캣추천</a>
             </li>
-            <li class="swiper-slide" role="none">
-              <a role="menuitem" href="/">10% 할인</a>
-            </li>
+            <li class="swiper-slide" role="none"><a role="menuitem" href="/">10% 할인</a></li>
             <li class="swiper-slide" role="none">
               <a role="menuitem" href="./best.html">베스트</a>
             </li>
-            <li class="swiper-slide" role="none">
-              <a role="menuitem" href="/">신상품</a>
-            </li>
+            <li class="swiper-slide" role="none"><a role="menuitem" href="/">신상품</a></li>
             <li class="swiper-slide active" role="none">
               <a role="menuitem" href="./specialPrice.html">특가</a>
             </li>
-            <li class="swiper-slide" role="none">
-              <a role="menuitem" href="/">이벤트</a>
-            </li>
+            <li class="swiper-slide" role="none"><a role="menuitem" href="/">이벤트</a></li>
           </ul>
         </div>
         <button type="button" class="search">
@@ -86,12 +80,7 @@
                 <div class="bargain-graph">
                   <button type="button" class="bargain-graph-title active">
                     오늘이 가장 저렴해요
-                    <img
-                      class="icon-arrow"
-                      src="https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-arrow-up.svg"
-                      src="./images/ic-16-close-bold.svg"
-                      alt="일별 특가 그래프"
-                    />
+                    <img src="./images/ic-16-close-bold.svg" alt="일별 특가 그래프" />
                   </button>
                   <div class="bargain-graph-content" style="display: block">
                     <div class="bargain-graph-wrap">
@@ -158,12 +147,7 @@
                 <div class="bargain-graph">
                   <button type="button" class="bargain-graph-title active">
                     오늘이 가장 저렴해요
-                    <img
-                      class="icon-arrow"
-                      src="https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-arrow-up.svg"
-                      src="./images/ic-16-close-bold.svg"
-                      alt="일별 특가 그래프"
-                    />
+                    <img src="./images/ic-16-close-bold.svg" alt="일별 특가 그래프" />
                   </button>
                   <div class="bargain-graph-content" style="display: block">
                     <div class="bargain-graph-wrap">
@@ -230,12 +214,7 @@
                 <div class="bargain-graph">
                   <button type="button" class="bargain-graph-title active">
                     오늘이 가장 저렴해요
-                    <img
-                      id="icon-arrow3"
-                      src="https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-arrow-up.svg"
-                      src="./images/ic-16-close-bold.svg"
-                      alt="일별 특가 그래프"
-                    />
+                    <img src="./images/ic-16-close-bold.svg" alt="일별 특가 그래프" />
                   </button>
                   <div class="bargain-graph-content" style="display: block">
                     <div class="bargain-graph-wrap">
@@ -498,16 +477,11 @@
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener('click', function () {
           this.classList.toggle('active');
-
           var content = this.nextElementSibling;
-          var img = this.lastElementChild;
-
           if (content.style.display === 'block') {
             content.style.display = 'none';
-            img.style = 'transform: rotate(-180deg)';
           } else {
             content.style.display = 'block';
-            img.style = 'transform: rotate(0deg)';
           }
         });
       }
