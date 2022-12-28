@@ -87,7 +87,7 @@
                   <button type="button" class="bargain-graph-title active">
                     오늘이 가장 저렴해요
                     <img
-                      id="icon-arrow1"
+                      class="icon-arrow"
                       src="https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-arrow-up.svg"
                       src="./images/ic-16-close-bold.svg"
                       alt="일별 특가 그래프"
@@ -159,7 +159,7 @@
                   <button type="button" class="bargain-graph-title active">
                     오늘이 가장 저렴해요
                     <img
-                      id="icon-arrow2"
+                      class="icon-arrow"
                       src="https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-arrow-up.svg"
                       src="./images/ic-16-close-bold.svg"
                       alt="일별 특가 그래프"
@@ -500,20 +500,14 @@
           this.classList.toggle('active');
 
           var content = this.nextElementSibling;
-          var arrow1 = document.getElementById('icon-arrow1');
-          var arrow2 = document.getElementById('icon-arrow2');
-          var arrow3 = document.getElementById('icon-arrow3');
+          var img = this.lastElementChild;
 
           if (content.style.display === 'block') {
             content.style.display = 'none';
-            arrow1.style = 'transform: rotate(-180deg)';
-            arrow2.style = 'transform: rotate(-180deg)';
-            arrow3.style = 'transform: rotate(-180deg)';
+            img.style = 'transform: rotate(-180deg)';
           } else {
             content.style.display = 'block';
-            arrow1.style = 'transform: rotate(0deg)';
-            arrow2.style = 'transform: rotate(0deg)';
-            arrow3.style = 'transform: rotate(0deg)';
+            img.style = 'transform: rotate(0deg)';
           }
         });
       }
