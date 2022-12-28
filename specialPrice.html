@@ -80,7 +80,11 @@
                 <div class="bargain-graph">
                   <button type="button" class="bargain-graph-title active">
                     오늘이 가장 저렴해요
-                    <img src="./images/ic-16-close-bold.svg" alt="일별 특가 그래프" />
+                    <img
+                      id="icon-arrow1"
+                      src="https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-arrow-up.svg"
+                      alt="일별 특가 그래프"
+                    />
                   </button>
                   <div class="bargain-graph-content" style="display: block">
                     <div class="bargain-graph-wrap">
@@ -147,7 +151,11 @@
                 <div class="bargain-graph">
                   <button type="button" class="bargain-graph-title active">
                     오늘이 가장 저렴해요
-                    <img src="./images/ic-16-close-bold.svg" alt="일별 특가 그래프" />
+                    <img
+                      id="icon-arrow2"
+                      src="https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-arrow-up.svg"
+                      alt="일별 특가 그래프"
+                    />
                   </button>
                   <div class="bargain-graph-content" style="display: block">
                     <div class="bargain-graph-wrap">
@@ -214,7 +222,11 @@
                 <div class="bargain-graph">
                   <button type="button" class="bargain-graph-title active">
                     오늘이 가장 저렴해요
-                    <img src="./images/ic-16-close-bold.svg" alt="일별 특가 그래프" />
+                    <img
+                      id="icon-arrow3"
+                      src="https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-arrow-up.svg"
+                      alt="일별 특가 그래프"
+                    />
                   </button>
                   <div class="bargain-graph-content" style="display: block">
                     <div class="bargain-graph-wrap">
@@ -477,11 +489,22 @@
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener('click', function () {
           this.classList.toggle('active');
+
           var content = this.nextElementSibling;
+          var arrow1 = document.getElementById('icon-arrow1');
+          var arrow2 = document.getElementById('icon-arrow2');
+          var arrow3 = document.getElementById('icon-arrow3');
+
           if (content.style.display === 'block') {
             content.style.display = 'none';
+            arrow1.style = 'transform: rotate(-180deg)';
+            arrow2.style = 'transform: rotate(-180deg)';
+            arrow3.style = 'transform: rotate(-180deg)';
           } else {
             content.style.display = 'block';
+            arrow1.style = 'transform: rotate(0deg)';
+            arrow2.style = 'transform: rotate(0deg)';
+            arrow3.style = 'transform: rotate(0deg)';
           }
         });
       }
