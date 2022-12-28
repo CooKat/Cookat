@@ -667,7 +667,7 @@ li:nth-child(6) .img-wrap {
 }
 
 .slide-prd .swiper {
-  padding: 0 var(--spacing-sm);
+  padding: 0 var(--spacing-l);
 }
 
 .slide-prd .product-title {

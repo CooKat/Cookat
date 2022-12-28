@@ -30,8 +30,8 @@
               <a role="menuitem" href="/">쿠캣추천</a>
             </li>
             <li class="swiper-slide" role="none"><a role="menuitem" href="/">10% 할인</a></li>
-            <li class="swiper-slide active" role="none"><a role="menuitem" href="./best.html">베스트</a></li>
-            <li class="swiper-slide" role="none"><a role="menuitem" href="./new.html">신상품</a></li>
+            <li class="swiper-slide" role="none"><a role="menuitem" href="./best.html">베스트</a></li>
+            <li class="swiper-slide active" role="none"><a role="menuitem" href="./new.html">신상품</a></li>
             <li class="swiper-slide" role="none"><a role="menuitem" href="./specialPrice.html">특가</a></li>
             <li class="swiper-slide" role="none"><a role="menuitem" href="./event.html">이벤트</a></li>
           </ul>
@@ -41,6 +41,50 @@
         </button>
       </header>
       <main class="main">
+        <section class="prd-list slide-prd best-prd">
+          <h2 class="product-title">주목 <span class="thunder-icon"></span> 인기 신상품</h2>
+          <div class="swiper">
+            <ul class="swiper-wrapper">
+              <li	class="swiper-slide" tabindex="0">
+                <div class="banner-wrap"><img src="./images/fivu_1672010924_6033_720.jpg" alt="소고기무국" /></div>
+                <div class="product-wrap">
+                  <div class="prd-thumb">
+                    <a href="/"><img src="./images/xolu_1670811324_5368_640.jpg" alt="막창" /></a>
+                  </div>
+                  <div class="prd-info">
+                    <h2>쿠캣 초벌 대구막창 300g</h2>
+                    <p><em class="a11y-hidden">판매가</em>3,500원</p>
+                  </div>
+                </div>
+              </li>
+              <li	class="swiper-slide"	tabindex="0">
+                <div class="banner-wrap"><img src="./images/fivu_1672010924_6033_720.jpg" alt="소고기무국" /></div>
+                <div class="product-wrap">
+                  <div class="prd-thumb">
+                    <a href="/"><img src="./images/xolu_1670811324_5368_640.jpg" alt="막창" /></a>
+                  </div>
+                  <div class="prd-info">
+                    <h2>쿠캣 초벌 대구막창 300g</h2>
+                    <p><em class="a11y-hidden">판매가</em>3,500원</p>
+                  </div>
+                </div>
+              </li>
+              <li	class="swiper-slide"	tabindex="0">
+                <div class="banner-wrap"><img src="./images/fivu_1672010924_6033_720.jpg" alt="소고기무국" /></div>
+                <div class="product-wrap">
+                  <div class="prd-thumb">
+                    <a href="/"><img src="./images/xolu_1670811324_5368_640.jpg" alt="막창" /></a>
+                  </div>
+                  <div class="prd-info">
+                    <h2>쿠캣 초벌 대구막창 300g</h2>
+                    <p><em class="a11y-hidden">판매가</em>3,500원</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
         <section class="prd-list">
           <ul class="grid2">
             <li tabindex="0">
@@ -254,6 +298,13 @@
       let menu = new Swiper('.menu.swiper', {
         slidesPerView: "auto",
         freeMode: true,
+      });
+      let slide_prd = new Swiper('.slide-prd .swiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: '.slide-prd .swiper-pagination',
+        },
       });
     </script>
   </body>
