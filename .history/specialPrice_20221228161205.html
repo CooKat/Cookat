@@ -102,12 +102,7 @@
                   <button type="button" class="bargain-graph-title active">
                     오늘이 가장 저렴해요
                     <img
-<<<<<<< HEAD
-                      id="icon-arrow1"
-                      src="https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-arrow-up.svg"
-=======
                       src="./images/ic-16-close-bold.svg"
->>>>>>> a1edb8763bb05577326f7b82ad8ee71a1e4f4434
                       alt="일별 특가 그래프"
                     />
                   </button>
@@ -184,12 +179,7 @@
                   <button type="button" class="bargain-graph-title active">
                     오늘이 가장 저렴해요
                     <img
-<<<<<<< HEAD
-                      id="icon-arrow2"
-                      src="https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-arrow-up.svg"
-=======
                       src="./images/ic-16-close-bold.svg"
->>>>>>> a1edb8763bb05577326f7b82ad8ee71a1e4f4434
                       alt="일별 특가 그래프"
                     />
                   </button>
@@ -266,12 +256,7 @@
                   <button type="button" class="bargain-graph-title active">
                     오늘이 가장 저렴해요
                     <img
-<<<<<<< HEAD
-                      id="icon-arrow3"
-                      src="https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-arrow-up.svg"
-=======
                       src="./images/ic-16-close-bold.svg"
->>>>>>> a1edb8763bb05577326f7b82ad8ee71a1e4f4434
                       alt="일별 특가 그래프"
                     />
                   </button>
@@ -586,22 +571,11 @@
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener('click', function () {
           this.classList.toggle('active');
-
           var content = this.nextElementSibling;
-          var arrow1 = document.getElementById('icon-arrow1');
-          var arrow2 = document.getElementById('icon-arrow2');
-          var arrow3 = document.getElementById('icon-arrow3');
-
           if (content.style.display === 'block') {
             content.style.display = 'none';
-            arrow1.style = 'transform: rotate(-180deg)';
-            arrow2.style = 'transform: rotate(-180deg)';
-            arrow3.style = 'transform: rotate(-180deg)';
           } else {
             content.style.display = 'block';
-            arrow1.style = 'transform: rotate(0deg)';
-            arrow2.style = 'transform: rotate(0deg)';
-            arrow3.style = 'transform: rotate(0deg)';
           }
         });
       }

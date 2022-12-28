@@ -532,9 +532,9 @@ li:nth-child(6) .img-wrap {
   width: var(--spacing-6);
   line-height: 26px;
   position: absolute;
-  top: var(--spacing-xl);
-  right: var(--spacing-lg);
-  font-size: var(--text-sm);
+  top: 23px;
+  right: 18px;
+  font-size: 14px;
   color: #46433f;
 }
 
