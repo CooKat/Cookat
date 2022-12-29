@@ -431,7 +431,6 @@ li:nth-child(6) .img-wrap {
 .prd-info p,
 .prd-info em {
   display: inline-block;
-
   letter-spacing: -0.5px;
   line-height: 1.2;
   margin: 0 var(--spacing-xxs) var(--spacing-xxs) 0;
