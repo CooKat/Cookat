@@ -387,6 +387,7 @@ li:nth-child(6) .img-wrap {
   margin: var(--spacing-xxl) 0 var(--spacing-xxs);
   padding: 0 var(--spacing-sm);
   width: calc(100% - 90px);
+  transform: translateX(-var(--spacing-l));
 }
 
 .prd-sub-text {
