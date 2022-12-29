@@ -1,9 +1,8 @@
 main {
   padding: 0 18px;
 }
-
-.event {
-  display: block;
+body {
+  margin-top: 30px;
 }
 
 .event-ing {
@@ -11,8 +10,8 @@ main {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: var(--spacing-xxxl);
   margin-bottom: var(--spacing-md);
-  padding-top: var(--text-lg);
 }
 
 .event-ing-title {

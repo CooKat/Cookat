@@ -209,32 +209,7 @@
   background-color: #181716;
 }
 
-/* 쿠캐할인 베스트  */
-.prd-thumb {
-  position: relative;
-}
-
-.sale {
-  border-radius: var(--spacing-xxs);
-  background-color: #ff5833;
-  position: absolute;
-  font-size: 11px;
-  z-index: 999;
-  top: var(--spacing-xs);
-  left: var(--spacing-xs);
-  color: #ffffff;
-  display: inline-block;
-  padding: var(--spacing-sxxs) var(--spacing-xxs);
-  line-height: 1.1;
-  font-weight: 600;
-}
-
 @media (max-width: 500px) {
-  .sale {
-    font-size: 1vw;
-    line-height: 1.1vh;
-  }
-
   .bargain-date {
     font-size: 3vw;
   }

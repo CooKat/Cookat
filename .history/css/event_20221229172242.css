@@ -2,17 +2,13 @@ main {
   padding: 0 18px;
 }
 
-.event {
-  display: block;
-}
-
 .event-ing {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: var(--spacing-xxl);
   margin-bottom: var(--spacing-md);
-  padding-top: var(--text-lg);
 }
 
 .event-ing-title {
@@ -48,7 +44,7 @@ main {
 .item-list-title {
   font-size: var(--text-lg);
   line-height: var(--text-xxl);
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: var(--spacing-xxxl);
 }
 
@@ -85,13 +81,8 @@ main {
 }
 
 @media (max-width: 500px) {
-  .event-ing-title {
-    font-size: 4vw;
-    line-height: 3vh;
-  }
-
   .item-list-title {
     font-size: 4vw;
-    line-height: 2vh;
+    line-height: 3vh;
   }
 }

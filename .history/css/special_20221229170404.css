@@ -226,15 +226,9 @@
   display: inline-block;
   padding: var(--spacing-sxxs) var(--spacing-xxs);
   line-height: 1.1;
-  font-weight: 600;
 }
 
 @media (max-width: 500px) {
-  .sale {
-    font-size: 1vw;
-    line-height: 1.1vh;
-  }
-
   .bargain-date {
     font-size: 3vw;
   }

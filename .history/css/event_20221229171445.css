@@ -2,17 +2,13 @@ main {
   padding: 0 18px;
 }
 
-.event {
-  display: block;
-}
-
 .event-ing {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: var(--spacing-xxl);
   margin-bottom: var(--spacing-md);
-  padding-top: var(--text-lg);
 }
 
 .event-ing-title {
@@ -48,7 +44,7 @@ main {
 .item-list-title {
   font-size: var(--text-lg);
   line-height: var(--text-xxl);
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: var(--spacing-xxxl);
 }
 
@@ -67,14 +63,9 @@ main {
   margin-bottom: var(--spacing-xxxl);
 }
 
-.icon-coupon {
-  width: 53px;
-  height: 19px;
-  background: url(../images/ic-event-sale-coupon-orange.svg) no-repeat center;
-  display: inline-block;
-  text-align: center;
+.item-list-item svg {
+  margin-left: var(--spacing-xxs);
 }
-
 .coupon-date {
   color: #ff5833;
   line-height: var(--text-xl);
@@ -85,13 +76,12 @@ main {
 }
 
 @media (max-width: 500px) {
-  .event-ing-title {
+  .item-list-title {
     font-size: 4vw;
     line-height: 3vh;
   }
 
-  .item-list-title {
-    font-size: 4vw;
-    line-height: 2vh;
+  .item-list-item svg {
+    height: 2vh;
   }
 }

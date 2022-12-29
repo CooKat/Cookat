@@ -12,7 +12,7 @@ main {
   justify-content: space-between;
   align-items: center;
   margin-bottom: var(--spacing-md);
-  padding-top: var(--text-lg);
+  padding-top: 30px;
 }
 
 .event-ing-title {

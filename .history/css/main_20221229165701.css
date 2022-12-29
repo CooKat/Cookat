@@ -965,9 +965,4 @@ button {
   .visual .text-wrap span {
     font-size: var(--text-xxs);
   }
-
-  .product-title {
-    font-size: 4vw;
-    line-height: 2vh;
-  }
 }

@@ -220,21 +220,16 @@
   position: absolute;
   font-size: 11px;
   z-index: 999;
-  top: var(--spacing-xs);
-  left: var(--spacing-xs);
+  top: 8px;
+  left: 8px;
   color: #ffffff;
   display: inline-block;
-  padding: var(--spacing-sxxs) var(--spacing-xxs);
+  padding: var(--spacing-xxs) 1px;
   line-height: 1.1;
-  font-weight: 600;
+  margin-right: 5px;
 }
 
 @media (max-width: 500px) {
-  .sale {
-    font-size: 1vw;
-    line-height: 1.1vh;
-  }
-
   .bargain-date {
     font-size: 3vw;
   }

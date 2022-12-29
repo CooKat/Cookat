@@ -675,14 +675,12 @@ li:nth-child(6) .img-wrap {
 
 /* 타임세일 */
 
-.icon-time-deal {
-  width: 19px;
-  height: 19px;
-  background: url(https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-clock-orange-full.svg)
-    no-repeat center / 19px;
-  display: inline-block;
-  text-align: center;
-  margin-right: var(--spacing-sxxs);
+.time-prd .product-title::before {
+  content: '';
+  background: url(../images/ic-16-clock-orange-full.svg) no-repeat 0 0;
+  width: var(--spacing-l);
+  height: 2var (--spacing-l);
+  vertical-align: middle;
 }
 
 /* 상품 진열 단수 */
@@ -964,10 +962,5 @@ button {
 
   .visual .text-wrap span {
     font-size: var(--text-xxs);
-  }
-
-  .product-title {
-    font-size: 4vw;
-    line-height: 2vh;
   }
 }

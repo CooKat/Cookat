@@ -215,26 +215,21 @@
 }
 
 .sale {
-  border-radius: var(--spacing-xxs);
+  border-radius: 4px;
   background-color: #ff5833;
   position: absolute;
   font-size: 11px;
   z-index: 999;
-  top: var(--spacing-xs);
-  left: var(--spacing-xs);
+  top: 0;
+  left: 0;
   color: #ffffff;
   display: inline-block;
-  padding: var(--spacing-sxxs) var(--spacing-xxs);
+  padding: 3px 4px;
   line-height: 1.1;
-  font-weight: 600;
+  margin-right: 5px;
 }
 
 @media (max-width: 500px) {
-  .sale {
-    font-size: 1vw;
-    line-height: 1.1vh;
-  }
-
   .bargain-date {
     font-size: 3vw;
   }

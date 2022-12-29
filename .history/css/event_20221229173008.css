@@ -11,8 +11,8 @@ main {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: var(--spacing-xxxl);
   margin-bottom: var(--spacing-md);
-  padding-top: var(--text-lg);
 }
 
 .event-ing-title {

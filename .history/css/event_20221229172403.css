@@ -2,20 +2,17 @@ main {
   padding: 0 18px;
 }
 
-.event {
-  display: block;
-}
-
 .event-ing {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: var(--spacing-xxl);
   margin-bottom: var(--spacing-md);
-  padding-top: var(--text-lg);
 }
 
 .event-ing-title {
+  margin-top: var(--spacing-l);
   font-size: var(--text-xl);
   line-height: var(--text-xxl);
   color: var(--color-black);
@@ -91,7 +88,7 @@ main {
   }
 
   .item-list-title {
-    font-size: 4vw;
-    line-height: 2vh;
+    font-size: 7vw;
+    line-height: 5vh;
   }
 }
