@@ -67,7 +67,7 @@ video {
   width: min(var(--max-width), 100%);
   background-color: var(--color-white);
   border-bottom: 1px solid #eee;
-  z-index: 2;
+  z-index: 999;
 }
 
 .logo {
@@ -431,15 +431,13 @@ li:nth-child(6) .img-wrap {
 .prd-info p,
 .prd-info em {
   display: inline-block;
-  font-weight: 700;
-  font-size: var(--text-base);
+
   letter-spacing: -0.5px;
-  margin: 0 var(--spacing-xxs) var(--spacing-xxs) 0;
   line-height: 1.2;
+  margin: 0 var(--spacing-xxs) var(--spacing-xxs) 0;
 }
 
 .prd-info .custom {
-  font-size: var(--text-sm);
   font-weight: 300;
   color: #999;
   text-decoration: line-through;
@@ -455,6 +453,13 @@ li:nth-child(6) .img-wrap {
 
 .discount-rate {
   color: var(--color-deep-orange);
+  font-weight: 700;
+  font-size: var(--text-base);
+}
+
+.discount-price {
+  font-weight: 700;
+  font-size: var(--text-base);
 }
 
 .icon {
