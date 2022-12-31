@@ -8,7 +8,7 @@ body {
 }
 
 .bargain-date {
-  font-size: 1rem;
+  font-size: min(1rem, 3vw);
   display: flex;
   justify-content: center;
   line-height: var(--text-base);
@@ -236,10 +236,6 @@ body {
 }
 
 @media (max-width: 399px) {
-  .bargain-date {
-    font-size: 4vw;
-  }
-
   .bargain-food-count {
     font-size: 3vw;
     bottom: 82%;
