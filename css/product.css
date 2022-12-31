@@ -1,4 +1,3 @@
-
 .product-img-category{
   padding:0 var(--spacing-lg);
 }
@@ -79,4 +78,59 @@
 
 .living a::before{
   background-image: url(../images/ic-60-category-homeliving-221007.png);
+}
+
+
+.best-prd{
+  position: relative;
+}
+
+.thunder-icon{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../images/ic-thunder.png) no-repeat center / 18px 24px;
+  vertical-align: bottom;
+}
+
+.best-prd .swiper{
+  padding-bottom: var(--spacing-xxl)
+}
+
+.best-prd .swiper .swiper-pagination-bullet{
+  background:rgba(0, 0, 0, 0.35);
+}
+
+.best-prd .product-wrap{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-flow : row nowrap;
+  background: var(--color-white);
+  overflow: hidden;
+  border-radius: 8px;
+  margin: var(--spacing-l);
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+}
+
+.best-prd .prd-thumb{
+  border-radius: 8px 0 0 8px;
+  width:25%;
+}
+
+.best-prd .prd-info{
+  padding: 0 var(--spacing-sm);
+}
+
+
+.banner-wrap{
+  font-size: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: var(--spacing-sm);
+}
+
+.best-prd .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 0;
 }

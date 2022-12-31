@@ -1,0 +1,82 @@
+main{
+  padding: 0 18px;
+}
+.event{
+
+}
+
+.event-ing{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-xxl);
+  margin-bottom: var(--spacing-md);
+}
+
+.event-ing-title{
+  font-size: var(--text-xl);
+  line-height: var(--text-xxl);
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+.event-ing p{
+  color: #ff5833;
+  font-size: var(--text-sm);
+}
+.event-ing p::after{
+  content: '';
+  color: #ff5833;
+  margin-left: var(--spacing-xxs);
+  padding-left: var(--spacing-md);
+  background: url(../images/ic-16-next-fit.svg) no-repeat center/6px;
+}
+
+.item-list{
+
+}
+
+.item-list-item{
+
+}
+
+.item-list-item img{
+  border-radius: 10px;
+}
+
+.item-list-title{
+  font-size: var(--text-lg);
+  line-height: var(--text-xxl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xxxl);
+}
+
+.item-list-title :first-child{
+  margin-bottom: 0;
+}
+
+.coupon-day{
+  margin-top:var(--spacing-xxs);
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.item-list-item svg{
+  margin-left: var(--spacing-sm);
+}
+.coupon-date{
+  color: #ff5833;
+  line-height: var(--text-xl);
+  font-size: var(--text-xs);
+  align-items: center;
+  font-weight: 700;
+  padding-left: var(--spacing-sm);
+}
+
+
+
+
+
+
+
