@@ -216,13 +216,16 @@
 
   .bargain-food-count {
     height: 2vh;
-    font-size: 1vw;
+    font-size: 3vw;
     bottom: 82%;
     padding: 2vw 0 0 3vw;
   }
 
   .bargain-food-count span {
     margin-top: 1vw;
+  }
+  .bargain-food-count em {
+    margin-top: 1.5vw;
   }
 
   .bargain-menu-text {
