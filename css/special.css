@@ -3,7 +3,7 @@
 }
 
 .bargain-date {
-  font-size: 1rem;
+  font-size: min(1rem, 3vw);
   display: flex;
   justify-content: center;
   line-height: var(--text-base);
@@ -209,10 +209,25 @@
   background-color: #181716;
 }
 
-@media (max-width: 500px) {
-  .bargain-date {
-    font-size: 3vw;
-  }
+/* 쿠캐할인 베스트  */
+.prd-thumb {
+  position: relative;
+}
+
+.sale {
+  border-radius: var(--spacing-xxs);
+  background-color: #ff5833;
+  position: absolute;
+  font-size: 11px;
+  z-index: 500;
+  top: var(--spacing-xs);
+  left: var(--spacing-xs);
+  color: #ffffff;
+  display: inline-block;
+  padding: var(--spacing-sxxs) var(--spacing-xxs);
+  line-height: 1.1;
+  font-weight: 600;
+}
 
   .bargain-food-count {
     height: 2vh;
