@@ -229,9 +229,7 @@
   font-weight: 600;
 }
 
-<<<<<<< HEAD
 @media (max-width: 399px) {
-=======
   .bargain-food-count {
     height: 2vh;
     font-size: 3vw;
@@ -246,7 +244,6 @@
     margin-top: 1.5vw;
   }
 
->>>>>>> 0dd62097b6eb0b0ae0044e93fcef7c3eea5dbdd8
   .bargain-menu-text {
     padding-top: 0;
   }
