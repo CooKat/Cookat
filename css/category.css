@@ -1,12 +1,21 @@
 main {
   padding: 0 var(--spacing-lg);
 }
+
+body {
+  margin-top: 50px;
+}
+
 .container {
   margin: 0 auto;
 }
 
 .right-container {
-  padding: 9px var(--spacing-lg) 0 var(--spacing-lg);
+  position: fixed;
+  top: 0;
+  width: var(--max-width);
+  background-color: #fff;
+  padding: var(--spacing-xs) var(--spacing-lg) var(--spacing-sxs);
 }
 
 .search-container {
@@ -38,7 +47,7 @@ main {
 
 /* 카테고리 */
 .category-menu {
-  margin-top: var(--spacing-xxl);
+  padding-top: var(--spacing-xxl);
 }
 
 .category-menu-title {
