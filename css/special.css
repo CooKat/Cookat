@@ -12,7 +12,7 @@
   bottom: 28%;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 999;
 }
 
 .bargain-date span {
@@ -219,7 +219,7 @@
   background-color: #ff5833;
   position: absolute;
   font-size: 11px;
-  z-index: 500;
+  z-index: 100;
   top: var(--spacing-xs);
   left: var(--spacing-xs);
   color: #ffffff;
@@ -237,14 +237,14 @@
     padding: 2vw 0 0 3vw;
   }
 
-  .bargain-food-count span {
+  /* .bargain-food-count span {
     margin-top: 1vw;
   }
   .bargain-food-count em {
     margin-top: 1.5vw;
-  }
+  } */
 
-  .bargain-menu-text {
+  /* .bargain-menu-text {
     padding-top: 0;
   }
 
@@ -300,5 +300,5 @@
     font-size: 1vw;
     line-height: 4vw;
     padding: 1vw 1.5vw;
-  }
+  } */
 }

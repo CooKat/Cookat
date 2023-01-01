@@ -30,9 +30,10 @@ a {
 body {
   font-size: 1rem;
   color: #191919;
-  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
-    Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
   background: #eee;
 }
 
@@ -61,12 +62,12 @@ video {
 /* 헤더 */
 .header {
   position: fixed;
-  top:0;
+  top: 0;
   padding: var(--spacing-m) 0 0;
   width: min(var(--max-width), 100%);
   background-color: var(--color-white);
   border-bottom: 1px solid #eee;
-  z-index: 2;
+  z-index: 999;
 }
 
 .logo {
@@ -78,8 +79,8 @@ video {
   margin: var(--spacing-m) 0 0 0;
   overflow: hidden;
   font-size: var(--text-sm);
-  padding-left:var(--spacing-xxs);
-  margin-bottom:-1px;
+  padding-left: var(--spacing-xxs);
+  margin-bottom: -1px;
 }
 
 .menu li {
@@ -385,7 +386,7 @@ li:nth-child(6) .img-wrap {
   font-weight: 700;
   margin: var(--spacing-xxl) 0 var(--spacing-xxs);
   padding: 0 var(--spacing-sm);
-  width:calc(100% - 90px);
+  width: calc(100% - 90px);
 }
 
 .prd-sub-text {
@@ -399,9 +400,8 @@ li:nth-child(6) .img-wrap {
 .prd-thumb {
   position: relative;
   border-radius: 8px;
-  overflow:hidden;
+  overflow: hidden;
 }
-
 
 .prd-thumb a {
   display: block;
@@ -412,7 +412,7 @@ li:nth-child(6) .img-wrap {
   outline-offset: -2px;
 }
 
-.prd-video{
+.prd-video {
   aspect-ratio: 1/1;
 }
 
@@ -457,22 +457,22 @@ li:nth-child(6) .img-wrap {
   color: var(--color-deep-orange);
 }
 
-.icon{
+.icon {
   position: absolute;
   top: 10px;
   left: 10px;
   font-size: var(--text-xxs);
   padding: var(--spacing-sxxs) var(--spacing-xxs);
   border-radius: 4px;
-  font-weight:700;
+  font-weight: 700;
 }
 
-.sale-icon{
+.sale-icon {
   background: var(--color-deep-orange);
   color: var(--color-white);
 }
 
-.new-icon{
+.new-icon {
   background: var(--color-white);
   color: var(--color-black);
 }
@@ -503,22 +503,24 @@ li:nth-child(6) .img-wrap {
   background: url(../images/ic-16-next-fit.svg) no-repeat center/6px;
 }
 
-.review-count{
+.review-count {
   display: block;
   font-size: var(--text-sxxs);
   color: var(--color-cement);
-  background:url(../images/ic-rate-nold.svg) no-repeat left center;
+  background: url(../images/ic-rate-nold.svg) no-repeat left center;
   margin-bottom: var(--spacing-xs);
   padding-left: var(--spacing-m);
 }
 
-.cookat-shipping-icon{
+.cookat-shipping-icon {
   display: inline-block;
   font-size: var(--text-sxxs);
   color: var(--color-deep-orange);
-  background:rgba(245, 91, 4, 0.1) url(../images/ic-cookat-delivery-red.svg) no-repeat 2px center;
+  background: rgba(245, 91, 4, 0.1) url(../images/ic-cookat-delivery-red.svg)
+    no-repeat 2px center;
   margin-bottom: var(--spacing-xxs);
-  padding: var(--spacing-xxs) var(--spacing-xxs) var(--spacing-xxs) var(--spacing-l);
+  padding: var(--spacing-xxs) var(--spacing-xxs) var(--spacing-xxs)
+    var(--spacing-l);
   border-radius: 4px;
   font-weight: 400;
 }
@@ -657,8 +659,6 @@ li:nth-child(6) .img-wrap {
   display: block;
   margin: var(--spacing-l) 0;
 }
-
-
 
 /* 슬라이드 상품 */
 .slide-prd {
@@ -935,9 +935,8 @@ button {
   border-left: 1px solid #8e8e8e;
 }
 
-@media (max-width: 499px){
-  
-  .prd-info h2{
+@media (max-width: 499px) {
+  .prd-info h2 {
     font-size: var(--text-xxs);
   }
   .prd-info h2,
@@ -946,24 +945,24 @@ button {
     margin-bottom: var(--spacing-xs);
   }
 
-  .prd-info .custom{
-    font-size:var(--text-xxs);
+  .prd-info .custom {
+    font-size: var(--text-xxs);
     margin-bottom: var(--spacing-xxs);
   }
-  .visual .text-wrap{
+  .visual .text-wrap {
     left: 1.25rem;
   }
-  .visual .text-wrap p{
+  .visual .text-wrap p {
     font-size: var(--text-md);
     margin-bottom: var(--spacing-xs);
   }
 
-  .visual .text-wrap h2{
+  .visual .text-wrap h2 {
     font-size: var(--text-xl);
     margin-bottom: var(--spacing-base);
   }
 
-  .visual .text-wrap span{
+  .visual .text-wrap span {
     font-size: var(--text-xxs);
   }
 }
