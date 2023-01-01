@@ -70,7 +70,7 @@
   border-bottom-right-radius: var(--spacing-sm);
   border-bottom-left-radius: var(--spacing-sm);
   position: absolute;
-  bottom: 88%;
+  top: -10%;
 }
 
 .bargain-food-count em {
@@ -82,21 +82,23 @@
 }
 
 .bargain-content1 {
-  font-size: var(--text-lg);
+  font-size: min(4.5vw, var(--text-lg));
   font-weight: 700;
   line-height: 1.875rem;
+  max-height: 1vh;
 }
 
 .bargain-content2 {
   display: block;
-  font-size: var(--text-md);
+  font-size: min(4vw, var(--text-md));
   margin: 0 0 var(--spacing-xs);
   font-weight: 400;
   line-height: var(--text-base);
+  max-height: 1.2vh;
 }
 
 .bargain-content3 {
-  font-size: var(--text-sm);
+  font-size: min(4vw, var(--text-sm));
   font-weight: 500;
   line-height: var(--text-xxs);
   opacity: 0.5;
@@ -104,17 +106,18 @@
 
 .bargain-food-price em {
   color: #ff5833;
-  font-size: var(--text-lg);
+  font-size: min(4vw, var(--text-lg));
   font-weight: 700;
   margin-right: var(--spacing-xxs);
 }
 
 .bargain-food-price {
-  font-size: var(--text-lg);
+  font-size: min(4vw, var(--text-lg));
   font-weight: 700;
 }
 
 .bargain-graph {
+  height: auto;
   margin-top: 14px;
   border-radius: 8px;
   border: 1px solid #ededed;
@@ -128,7 +131,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 0.875rem;
+  font-size: min(3.5vw, 0.875rem);
   cursor: pointer;
 }
 
@@ -138,24 +141,28 @@
 
 .bargain-graph-title img {
   vertical-align: baseline;
+  width: var(--spacing-base);
+  max-width: 3vw;
 }
 
 .bargain-graph-wrap {
   max-width: 380px;
-  margin: 0 auto;
-  padding: 44px 0 40px;
+  margin: var(--spacing-xl) 6vw var(--spacing-xxl) 6vw;
+  padding-top: var(--spacing-l);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
 .bargain-bar {
-  min-width: 20px;
-  max-width: 20px;
+  width: var(--spacing-xxl);
+
   height: 46px;
   flex: 1 1 0;
   text-align: center;
   position: relative;
+  max-width: 4vw;
+  max-height: 12vw;
 }
 
 .bar-box {
@@ -171,7 +178,7 @@
 .bargain-bar-date {
   display: inline-block;
   color: #bbb8b5;
-  font-size: 11px;
+  font-size: min(1vw, var(--text-sxxs));
   position: absolute;
   bottom: -22px;
   left: 50%;
@@ -185,7 +192,7 @@
 
 .bargain-graph .tooltip {
   display: inline-block;
-  font-size: 13px;
+  font-size: min(1vw, var(--text-xs));
   color: #fff;
   line-height: 18px;
   position: absolute;
@@ -193,7 +200,10 @@
   left: 50%;
   transform: translateX(-50%);
   background: #181716;
-  padding: 4px 6px;
+
+  padding-top: min(1vh, var(--spacing-xxs));
+  padding-bottom: min(1vh, var(--spacing-xxs));
+
   border-radius: 5px;
 }
 
@@ -214,26 +224,6 @@
   position: relative;
 }
 
-.product-title {
-  font-size: min(5vw, var(--text-xl));
-}
-
-.prd-sub-text {
-  font-size: min(3.5vw, var(--text-sm));
-}
-
-.prd-info h2 {
-  font-size: min(3vw, var(--text-sm));
-}
-
-.prd-info em {
-  font-size: min(3.5vw, var(--text-base));
-}
-
-.prd-info p {
-  font-size: min(3.5vw, var(--text-base));
-}
-
 .sale {
   border-radius: var(--spacing-xxs);
   background-color: #ff5833;
@@ -247,78 +237,4 @@
   padding: var(--spacing-sxxs) var(--spacing-xxs);
   line-height: 1.1;
   font-weight: 600;
-}
-
-@media (max-width: 399px) {
-  .bargain-food-count {
-    height: 2vh;
-    font-size: 3vw;
-    bottom: 82%;
-    padding: 2vw 0 0 3vw;
-  }
-
-  /* .bargain-food-count span {
-    margin-top: 1vw;
-  }
-  .bargain-food-count em {
-    margin-top: 1.5vw;
-  } */
-
-  /* .bargain-menu-text {
-    padding-top: 0;
-  }
-
-  .bargain-content1 {
-    font-size: 4vw;
-    line-height: 2vh;
-  }
-
-  .bargain-content2 {
-    font-size: 3vw;
-    margin: 0 0 0.5vw;
-    font-weight: 400;
-    line-height: 1vh;
-  }
-
-  .bargain-content3 {
-    font-size: 0.5vw;
-    line-height: 1vh;
-  }
-
-  .bargain-food-price em {
-    font-size: 3vw;
-    margin-right: 0.3vw;
-  }
-
-  .bargain-food-price {
-    font-size: 3vw;
-  }
-
-  .bargain-graph-title {
-    padding: 3vw 3.2vw;
-    font-size: 2.5vw;
-  }
-
-  .bargain-graph-title img {
-    width: 2.5vw;
-  }
-
-  .bargain-graph-wrap {
-    margin: 0 8vw;
-  }
-
-  .bargain-bar {
-    min-width: 3vw;
-    max-width: 3vw;
-  }
-
-  .bargain-bar-date {
-    font-size: 1vw;
-  }
-
-  .bargain-graph .tooltip {
-    font-size: 1vw;
-    line-height: 4vw;
-    padding: 1vw 1.5vw;
-  } */
 }
