@@ -12,7 +12,7 @@
   bottom: 28%;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 100;
 }
 
 .bargain-date span {
@@ -209,9 +209,29 @@
   background-color: #181716;
 }
 
-/* 쿠캐할인 베스트  */
+/* 할인 베스트  */
 .prd-thumb {
   position: relative;
+}
+
+.product-title {
+  font-size: min(5vw, var(--text-xl));
+}
+
+.prd-sub-text {
+  font-size: min(3.5vw, var(--text-sm));
+}
+
+.prd-info h2 {
+  font-size: min(3vw, var(--text-sm));
+}
+
+.prd-info em {
+  font-size: min(3.5vw, var(--text-base));
+}
+
+.prd-info p {
+  font-size: min(3.5vw, var(--text-base));
 }
 
 .sale {
