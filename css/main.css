@@ -478,7 +478,7 @@ li:nth-child(6) .img-wrap {
 }
 
 .cart-btn {
-  width: 100%;
+  width: 25%;
   max-width: 12vw;
   position: absolute;
   right: 0;

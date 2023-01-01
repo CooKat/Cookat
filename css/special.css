@@ -147,7 +147,7 @@
 
 .bargain-graph-wrap {
   max-width: 380px;
-  margin: var(--spacing-xl) 6vw var(--spacing-xxl) 6vw;
+  margin: var(--spacing-xl) 4vw var(--spacing-xxl) 4vw;
   padding-top: var(--spacing-l);
   display: flex;
   justify-content: space-between;
@@ -155,13 +155,12 @@
 }
 
 .bargain-bar {
-  width: var(--spacing-xxl);
-
+  width: var(--spacing-xs);
   height: 46px;
   flex: 1 1 0;
   text-align: center;
   position: relative;
-  max-width: 4vw;
+  max-width: 2.5vw;
   max-height: 12vw;
 }
 
@@ -228,8 +227,8 @@
   border-radius: var(--spacing-xxs);
   background-color: #ff5833;
   position: absolute;
-  font-size: 11px;
-  z-index: 100;
+  font-size: min(3vw, var(--text-xs));
+  z-index: 1;
   top: var(--spacing-xs);
   left: var(--spacing-xs);
   color: #ffffff;
