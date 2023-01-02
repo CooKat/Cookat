@@ -7,8 +7,8 @@ main {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: var(--spacing-l);
-  margin-bottom: var(--spacing-md);
+  margin-top: 5%;
+  margin-bottom: 3%;
 }
 
 .event-ing-title {
@@ -43,7 +43,7 @@ main {
 
 .item-list-title {
   font-size: min(3.8vw, var(--text-lg));
-  line-height: var(--text-xxl);
+  line-height: 100%;
   font-weight: 600;
   margin-bottom: var(--spacing-xxxl);
 }
@@ -57,14 +57,14 @@ main {
 }
 
 .coupon-day {
-  margin-top: var(--spacing-xxs);
   display: flex;
   flex-flow: row nowrap;
-  margin-bottom: var(--spacing-xxxl);
+  margin-top: 1%;
+  margin-bottom: 10%;
 }
 
 .coupon-day svg {
-  width: 30%;
+  width: 10%;
   max-width: 10vw;
   height: auto;
 }
