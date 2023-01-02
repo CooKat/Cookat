@@ -802,19 +802,24 @@ button {
   background-color: transparent;
 }
 
+/* @@@@@@@@@@@@@fotter @@@@@@@@*/
 .footer {
   margin-top: 0;
 }
 
-/* h2 폰트 사이즈 스타일 */
 .footer h2 {
-  font-size: 13px;
+  font-size: min(3vw, var(--text-xs));
 }
+
+/* 푸터 상단 스타일 */
 .center-info {
   font-weight: 600;
 }
 
-/* 푸터 상단 스타일 */
+.time-info {
+  font-size: min(3vw, var(--text-xs));
+}
+
 .center-info-container {
   padding: 16px;
   position: relative;
@@ -831,16 +836,18 @@ button {
 .center-contact {
   color: #46433f;
   font-weight: bold;
+  font-size: min(3vw, var(--text-xs));
   position: absolute;
   top: 50%;
   right: 16px;
-  width: 83px;
-  padding: 10px 13px 10px 26px;
+  width: 20%;
+  height: auto;
+  padding: 2% 2% 2% 5%;
   transform: translateY(-50%);
   border: 1px solid #bbb8b5;
   border-radius: 3px;
   background: url(https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-call-black.svg)
-    no-repeat;
+    no-repeat center/10%;
   background-position: 16% 50%;
 }
 
@@ -875,13 +882,11 @@ button {
 .business-info {
   font-weight: 600;
 }
+
 .center-info-flexcontent-container {
   display: flex;
 }
 .center-info-content-container {
-  display: flex;
-  flex-flow: row wrap;
-  width: 50%;
   line-height: 1.5em;
   padding-top: 2px;
 }
@@ -889,6 +894,8 @@ button {
   font-weight: bold;
   text-decoration: underline;
   color: #5b5752;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .copyright {
