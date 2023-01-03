@@ -2,6 +2,7 @@
 @import url(./reset.css);
 @import url(./theme.css);
 @import url(./responsive.css);
+@import url(./cart.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden,
@@ -61,12 +62,12 @@ video {
 /* 헤더 */
 .header {
   position: fixed;
-  top:0;
+  top: 0;
   padding: var(--spacing-m) 0 0;
   width: min(var(--max-width), 100%);
   background-color: var(--color-white);
   border-bottom: 1px solid #eee;
-  z-index: 2;
+  z-index: 999;
 }
 
 .logo {
@@ -78,8 +79,8 @@ video {
   margin: var(--spacing-m) 0 0 0;
   overflow: hidden;
   font-size: var(--text-sm);
-  padding-left:var(--spacing-xxs);
-  margin-bottom:-1px;
+  padding-left: var(--spacing-xxs);
+  margin-bottom: -1px;
 }
 
 .menu li {
@@ -381,11 +382,11 @@ li:nth-child(6) .img-wrap {
 }
 
 .product-title {
-  font-size: var(--text-xl);
+  font-size: min(5vw, var(--text-xl));
   font-weight: 700;
   margin: var(--spacing-xxl) 0 var(--spacing-xxs);
   padding: 0 var(--spacing-sm);
-  width:calc(100% - 90px);
+  width: calc(100% - 90px);
 }
 
 .prd-sub-text {
@@ -393,15 +394,14 @@ li:nth-child(6) .img-wrap {
   margin-bottom: var(--spacing-md);
   line-height: 1.4;
   padding: 0 var(--spacing-sm);
-  font-size: var(--text-sm);
+  font-size: min(3.5vw, var(--text-sm));
 }
 
 .prd-thumb {
   position: relative;
   border-radius: 8px;
-  overflow:hidden;
+  overflow: hidden;
 }
-
 
 .prd-thumb a {
   display: block;
@@ -412,7 +412,7 @@ li:nth-child(6) .img-wrap {
   outline-offset: -2px;
 }
 
-.prd-video{
+.prd-video {
   aspect-ratio: 1/1;
 }
 
@@ -423,7 +423,7 @@ li:nth-child(6) .img-wrap {
 }
 
 .prd-info h2 {
-  font-size: var(--text-sm);
+  font-size: min(3vw, var(--text-sm));
   line-height: 1.2;
   margin-bottom: var(--spacing-sxxs);
 }
@@ -432,7 +432,7 @@ li:nth-child(6) .img-wrap {
 .prd-info em {
   display: inline-block;
   font-weight: 700;
-  font-size: var(--text-base);
+  font-size: min(3.5vw, var(--text-base));
   letter-spacing: -0.5px;
   margin: 0 var(--spacing-xxs) var(--spacing-xxs) 0;
   line-height: 1.2;
@@ -457,27 +457,29 @@ li:nth-child(6) .img-wrap {
   color: var(--color-deep-orange);
 }
 
-.icon{
+.icon {
   position: absolute;
   top: 10px;
   left: 10px;
   font-size: var(--text-xxs);
   padding: var(--spacing-sxxs) var(--spacing-xxs);
   border-radius: 4px;
-  font-weight:700;
+  font-weight: 700;
 }
 
-.sale-icon{
+.sale-icon {
   background: var(--color-deep-orange);
   color: var(--color-white);
 }
 
-.new-icon{
+.new-icon {
   background: var(--color-white);
   color: var(--color-black);
 }
 
 .cart-btn {
+  width: 25%;
+  max-width: 12vw;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -503,20 +505,20 @@ li:nth-child(6) .img-wrap {
   background: url(../images/ic-16-next-fit.svg) no-repeat center/6px;
 }
 
-.review-count{
+.review-count {
   display: block;
   font-size: var(--text-sxxs);
   color: var(--color-cement);
-  background:url(../images/ic-rate-nold.svg) no-repeat left center;
+  background: url(../images/ic-rate-nold.svg) no-repeat left center;
   margin-bottom: var(--spacing-xs);
   padding-left: var(--spacing-m);
 }
 
-.cookat-shipping-icon{
+.cookat-shipping-icon {
   display: inline-block;
   font-size: var(--text-sxxs);
   color: var(--color-deep-orange);
-  background:rgba(245, 91, 4, 0.1) url(../images/ic-cookat-delivery-red.svg) no-repeat 2px center;
+  background: rgba(245, 91, 4, 0.1) url(../images/ic-cookat-delivery-red.svg) no-repeat 2px center;
   margin-bottom: var(--spacing-xxs);
   padding: var(--spacing-xxs) var(--spacing-xxs) var(--spacing-xxs) var(--spacing-l);
   border-radius: 4px;
@@ -658,8 +660,6 @@ li:nth-child(6) .img-wrap {
   margin: var(--spacing-l) 0;
 }
 
-
-
 /* 슬라이드 상품 */
 .slide-prd {
   padding: var(--spacing-l) 0;
@@ -800,19 +800,24 @@ button {
   background-color: transparent;
 }
 
+/* @@@@@@@@@@@@@fotter @@@@@@@@*/
 .footer {
   margin-top: 0;
 }
 
-/* h2 폰트 사이즈 스타일 */
 .footer h2 {
-  font-size: 13px;
+  font-size: min(3vw, var(--text-xs));
 }
+
+/* 푸터 상단 스타일 */
 .center-info {
   font-weight: 600;
 }
 
-/* 푸터 상단 스타일 */
+.time-info {
+  font-size: min(3vw, var(--text-xs));
+}
+
 .center-info-container {
   padding: 16px;
   position: relative;
@@ -829,16 +834,18 @@ button {
 .center-contact {
   color: #46433f;
   font-weight: bold;
+  font-size: min(3vw, var(--text-xs));
   position: absolute;
   top: 50%;
   right: 16px;
-  width: 83px;
-  padding: 10px 13px 10px 26px;
+  width: 20%;
+  height: auto;
+  padding: 2% 2% 2% 5%;
   transform: translateY(-50%);
   border: 1px solid #bbb8b5;
   border-radius: 3px;
   background: url(https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-call-black.svg)
-    no-repeat;
+    no-repeat center/10%;
   background-position: 16% 50%;
 }
 
@@ -873,13 +880,11 @@ button {
 .business-info {
   font-weight: 600;
 }
+
 .center-info-flexcontent-container {
   display: flex;
 }
 .center-info-content-container {
-  display: flex;
-  flex-flow: row wrap;
-  width: 50%;
   line-height: 1.5em;
   padding-top: 2px;
 }
@@ -887,6 +892,8 @@ button {
   font-weight: bold;
   text-decoration: underline;
   color: #5b5752;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .copyright {
@@ -935,9 +942,8 @@ button {
   border-left: 1px solid #8e8e8e;
 }
 
-@media (max-width: 499px){
-  
-  .prd-info h2{
+@media (max-width: 499px) {
+  .prd-info h2 {
     font-size: var(--text-xxs);
   }
   .prd-info h2,
@@ -946,24 +952,24 @@ button {
     margin-bottom: var(--spacing-xs);
   }
 
-  .prd-info .custom{
-    font-size:var(--text-xxs);
+  .prd-info .custom {
+    font-size: var(--text-xxs);
     margin-bottom: var(--spacing-xxs);
   }
-  .visual .text-wrap{
+  .visual .text-wrap {
     left: 1.25rem;
   }
-  .visual .text-wrap p{
+  .visual .text-wrap p {
     font-size: var(--text-md);
     margin-bottom: var(--spacing-xs);
   }
 
-  .visual .text-wrap h2{
+  .visual .text-wrap h2 {
     font-size: var(--text-xl);
     margin-bottom: var(--spacing-base);
   }
 
-  .visual .text-wrap span{
+  .visual .text-wrap span {
     font-size: var(--text-xxs);
   }
 }

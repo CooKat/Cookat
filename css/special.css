@@ -70,7 +70,7 @@
   border-bottom-right-radius: var(--spacing-sm);
   border-bottom-left-radius: var(--spacing-sm);
   position: absolute;
-  bottom: 88%;
+  top: -10%;
 }
 
 .bargain-food-count em {
@@ -82,21 +82,23 @@
 }
 
 .bargain-content1 {
-  font-size: var(--text-lg);
+  font-size: min(4.5vw, var(--text-lg));
   font-weight: 700;
   line-height: 1.875rem;
+  max-height: 1vh;
 }
 
 .bargain-content2 {
   display: block;
-  font-size: var(--text-md);
+  font-size: min(4vw, var(--text-md));
   margin: 0 0 var(--spacing-xs);
   font-weight: 400;
   line-height: var(--text-base);
+  max-height: 1.2vh;
 }
 
 .bargain-content3 {
-  font-size: var(--text-sm);
+  font-size: min(4vw, var(--text-sm));
   font-weight: 500;
   line-height: var(--text-xxs);
   opacity: 0.5;
@@ -104,17 +106,18 @@
 
 .bargain-food-price em {
   color: #ff5833;
-  font-size: var(--text-lg);
+  font-size: min(4vw, var(--text-lg));
   font-weight: 700;
   margin-right: var(--spacing-xxs);
 }
 
 .bargain-food-price {
-  font-size: var(--text-lg);
+  font-size: min(4vw, var(--text-lg));
   font-weight: 700;
 }
 
 .bargain-graph {
+  height: auto;
   margin-top: 14px;
   border-radius: 8px;
   border: 1px solid #ededed;
@@ -128,7 +131,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 0.875rem;
+  font-size: min(3.5vw, 0.875rem);
   cursor: pointer;
 }
 
@@ -138,24 +141,27 @@
 
 .bargain-graph-title img {
   vertical-align: baseline;
+  width: var(--spacing-base);
+  max-width: 3vw;
 }
 
 .bargain-graph-wrap {
   max-width: 380px;
-  margin: 0 auto;
-  padding: 44px 0 40px;
+  margin: var(--spacing-xl) 4vw var(--spacing-xxl) 4vw;
+  padding-top: var(--spacing-l);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
 .bargain-bar {
-  min-width: 20px;
-  max-width: 20px;
+  width: var(--spacing-xs);
   height: 46px;
   flex: 1 1 0;
   text-align: center;
   position: relative;
+  max-width: 2.5vw;
+  max-height: 12vw;
 }
 
 .bar-box {
@@ -171,7 +177,7 @@
 .bargain-bar-date {
   display: inline-block;
   color: #bbb8b5;
-  font-size: 11px;
+  font-size: min(1vw, var(--text-sxxs));
   position: absolute;
   bottom: -22px;
   left: 50%;
@@ -185,7 +191,7 @@
 
 .bargain-graph .tooltip {
   display: inline-block;
-  font-size: 13px;
+  font-size: min(1vw, var(--text-xs));
   color: #fff;
   line-height: 18px;
   position: absolute;
@@ -193,7 +199,10 @@
   left: 50%;
   transform: translateX(-50%);
   background: #181716;
-  padding: 4px 6px;
+
+  padding-top: min(1vh, var(--spacing-xxs));
+  padding-bottom: min(1vh, var(--spacing-xxs));
+
   border-radius: 5px;
 }
 
@@ -209,7 +218,7 @@
   background-color: #181716;
 }
 
-/* 쿠캐할인 베스트  */
+/* 할인 베스트  */
 .prd-thumb {
   position: relative;
 }
@@ -218,8 +227,8 @@
   border-radius: var(--spacing-xxs);
   background-color: #ff5833;
   position: absolute;
-  font-size: 11px;
-  z-index: 500;
+  font-size: min(3vw, var(--text-xs));
+  z-index: 1;
   top: var(--spacing-xs);
   left: var(--spacing-xs);
   color: #ffffff;
@@ -229,8 +238,8 @@
   font-weight: 600;
 }
 
-@media (max-width: 399px) {
-  .bargain-food-count {
+@media (max-width: 399px) {  
+.bargain-food-count {
     height: 2vh;
     font-size: 3vw;
     bottom: 82%;

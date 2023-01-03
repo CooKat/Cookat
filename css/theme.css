@@ -5,6 +5,7 @@
   --color-cement: #9d9995;
   --color-placeholder: #bbb8b5;
   --color-deep-orange: #eb5500;
+  --color-orange: #ff5833;
   --color-border: #e9e8e2;
   --color-success: #579bdb;
   --color-black: #46434f;
@@ -13,6 +14,7 @@
 
   --spacing-sxxs: 0.125rem; /* 2px */
   --spacing-xxs: 0.25rem; /* 4px */
+  --spacing-sxs: 0.375rem; /* 6px */
   --spacing-xs: 0.5rem; /* 8px */
   --spacing-sm: 0.625rem; /* 10px */
   --spacing-xm: 0.75rem; /* 12px */

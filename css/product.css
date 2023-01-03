@@ -121,6 +121,7 @@
 
 .best-prd .prd-info{
   padding: 0 var(--spacing-sm);
+  margin-bottom :0;
 }
 
 
