@@ -117,6 +117,7 @@
 }
 
 .bargain-graph {
+  height: auto;
   margin-top: 14px;
   border-radius: 8px;
   border: 1px solid #ededed;
@@ -146,10 +147,8 @@
 
 .bargain-graph-wrap {
   max-width: 380px;
-  margin: var(--spacing-xl) auto var(--spacing-xxl) auto;
+  margin: var(--spacing-xl) 4vw var(--spacing-xxl) 4vw;
   padding-top: var(--spacing-l);
-  padding-left: var(--spacing-base);
-  padding-right: var(--spacing-base);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -161,7 +160,8 @@
   flex: 1 1 0;
   text-align: center;
   position: relative;
-  max-width: 20px;
+  max-width: 2.5vw;
+  max-height: 12vw;
 }
 
 .bar-box {
@@ -199,7 +199,10 @@
   left: 50%;
   transform: translateX(-50%);
   background: #181716;
-  padding: min(1vh, var(--spacing-sxxs)) min(1vh, var(--spacing-xxs));
+
+  padding-top: min(1vh, var(--spacing-xxs));
+  padding-bottom: min(1vh, var(--spacing-xxs));
+
   border-radius: 5px;
 }
 
