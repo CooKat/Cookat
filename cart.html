@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/1.png" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>쿠캣</title>
+  </head>
+  <body>
+    <div class="cart-container">
+      <header class="cart-header">
+        <button class="header-prev-btn">
+          <img src="./images/ic-24-arrow-perv.svg" alt="이전으로 가기" />
+        </button>
+        <span class="header-cart-title">카트</span>
+        <a class="header-home-btn">
+          <img src="./images/ic-24-home.svg" alt="홈으로 가기" />
+        </a>
+      </header>
+      <main class="main">
+        <!-- 카트 슬로건 -->
+        <article class="cart-slogan">
+          <a href="/" class="cart-slogan-img">
+            <img src="./images/cart_top_banner_221031.png" width="500px" />
+          </a>
+        </article>
+        <!-- 카트 영역 -->
+        <section class="cart">
+          <img
+            class="empty-cart-img"
+            src="./images/img-empty-cart-new.svg"
+            alt="카드가 비어있어요"
+          />
+          <div class="empty-cart-text">카트가 비어있어요.</div>
+          <a class="empty-cart-icon" href="/">
+            <span>채우러 가기</span>
+            <img src="./images/ic-16-next-orange-fit.svg" alt="채우러 가기 화살표" />
+          </a>
+        </section>
+        <!-- 실시간 베스트 상품 -->
+        <section class="realtime-best-product">
+          <h2 class="cart-title">실시간 베스트 상품</h2>
+          <ul class="swiper cartSwiper">
+            <div class="swiper-wrapper cart-wrapper">
+              <li class="swiper-slide cart-slide">
+                <a href="/">
+                  <div class="prd-thumb">
+                    <img src="./images/img1.jpg" class="cart-slide-img" />
+                    <button type="button" class="cart-btn">
+                      <img src="./images/button-2-icon-3-cart-bg.svg" alt="장바구니" />
+                    </button>
+                  </div>
+                  <div class="prd-info">
+                    <h2>쿠캣 초벌 대구막창 300g</h2>
+                    <em class="discount-rate"><span class="a11y-hidden">할인률</span>10%</em>
+                    <p><span class="a11y-hidden">판매가</span>8,010원</p>
+                    <div class="refrigerated-freezing-storage">냉장/냉동</div>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide cart-slide">
+                <a href="/">
+                  <div class="prd-thumb">
+                    <img src="./images/img1.jpg" class="cart-slide-img" />
+                    <button type="button" class="cart-btn">
+                      <img src="./images/button-2-icon-3-cart-bg.svg" alt="장바구니" />
+                    </button>
+                  </div>
+                  <div class="prd-info">
+                    <h2>쿠캣 초벌 대구막창 300g</h2>
+                    <em class="discount-rate"><span class="a11y-hidden">할인률</span>10%</em>
+                    <p><span class="a11y-hidden">판매가</span>8,010원</p>
+                    <div class="refrigerated-freezing-storage">냉장/냉동</div>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide cart-slide">
+                <a href="/">
+                  <div class="prd-thumb">
+                    <img src="./images/img1.jpg" class="cart-slide-img" />
+                    <button type="button" class="cart-btn">
+                      <img src="./images/button-2-icon-3-cart-bg.svg" alt="장바구니" />
+                    </button>
+                  </div>
+                  <div class="prd-info">
+                    <h2>쿠캣 초벌 대구막창 300g</h2>
+                    <em class="discount-rate"><span class="a11y-hidden">할인률</span>10%</em>
+                    <p><span class="a11y-hidden">판매가</span>8,010원</p>
+                    <div class="refrigerated-freezing-storage">냉장/냉동</div>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide cart-slide">
+                <a href="/">
+                  <div class="prd-thumb">
+                    <img src="./images/img1.jpg" class="cart-slide-img" />
+                    <button type="button" class="cart-btn">
+                      <img src="./images/button-2-icon-3-cart-bg.svg" alt="장바구니" />
+                    </button>
+                  </div>
+                  <div class="prd-info">
+                    <h2>쿠캣 초벌 대구막창 300g</h2>
+                    <em class="discount-rate"><span class="a11y-hidden">할인률</span>10%</em>
+                    <p><span class="a11y-hidden">판매가</span>8,010원</p>
+                    <div class="refrigerated-freezing-storage">냉장/냉동</div>
+                  </div>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var cartswiper = new Swiper('.realtime-best-product .swiper', {
+        slidesPerView: 3.5,
+        freeMode: true,
+        spaceBetween: 10,
+        slidesOffsetBefore: 18,
+        slidesOffsetAfter: 18,
+      });
+    </script>
+  </body>
+</html>
