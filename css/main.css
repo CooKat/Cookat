@@ -298,12 +298,12 @@ li:nth-child(6) .img-wrap {
   padding: 0 var(--spacing-lg) var(--spacing-xs);
 }
 
-.launching-food-link {
-  position: relative;
-}
-
 .launching-food-link img {
   border-radius: var(--spacing-sm);
+}
+
+.launching-menu-thumb {
+  position: relative;
 }
 
 .launching-food-count {
@@ -318,7 +318,7 @@ li:nth-child(6) .img-wrap {
   border-bottom-right-radius: var(--spacing-sm);
   border-bottom-left-radius: var(--spacing-sm);
   position: absolute;
-  bottom: 6.625rem;
+  bottom: 0;
 }
 
 .launching-food-count em {

@@ -22,11 +22,16 @@
   <body>
     <div class="cart-container">
       <header class="cart-header">
-        <button class="header-prev-button">
+        <button onclick="history.back();" class="header-prev-button">
           <img src="./images/ic-24-arrow-perv.svg" alt="이전으로 가기" />
         </button>
         <span class="header-cart-title">카트</span>
-        <a class="header-home-button">
+        <a
+          href="#"
+          alt="홈으로 가기"
+          onclick="location.href='index.html'"
+          class="header-home-button"
+        >
           <img src="./images/ic-24-home.svg" alt="홈으로 가기" />
         </a>
       </header>
