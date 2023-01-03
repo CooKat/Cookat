@@ -64,7 +64,7 @@
   display: block;
   width: 100%;
   height: 1.75rem;
-  font-size: var(--text-xxs);
+  font-size: min(3vw, var(--text-xxs));
   font-weight: 500;
   padding: var(--spacing-xs) 0 0 var(--spacing-xm);
   border-bottom-right-radius: var(--spacing-sm);
@@ -229,6 +229,7 @@
   font-weight: 600;
 }
 
+@media (max-width: 399px) {
   .bargain-food-count {
     height: 2vh;
     font-size: 3vw;
