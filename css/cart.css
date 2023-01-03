@@ -141,8 +141,10 @@ body {
 
 .cart-info h2 {
   width: 100%;
+  min-height: 2.125rem;
   color: #5b5752;
   font-size: 12px;
+
   line-height: 16px;
   overflow: hidden;
   position: relative;
