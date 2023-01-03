@@ -146,8 +146,10 @@
 
 .bargain-graph-wrap {
   max-width: 380px;
-  margin: var(--spacing-xl) 4vw var(--spacing-xxl) 4vw;
+  margin: var(--spacing-xl) auto var(--spacing-xxl) auto;
   padding-top: var(--spacing-l);
+  padding-left: var(--spacing-base);
+  padding-right: var(--spacing-base);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -197,10 +199,7 @@
   left: 50%;
   transform: translateX(-50%);
   background: #181716;
-
-  padding-top: min(1vh, var(--spacing-xxs));
-  padding-bottom: min(1vh, var(--spacing-xxs));
-
+  padding: min(1vh, var(--spacing-sxxs)) min(1vh, var(--spacing-xxs));
   border-radius: 5px;
 }
 
