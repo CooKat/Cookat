@@ -525,10 +525,11 @@
           <a href="tel:1668-3525" class="center-contact"> 고객센터</a>
         </div>
         <div class="business-info-container">
-          <div class="business-info-title-container">
+          <div class="business-info-title-container active">
             <h2 class="business-info">(주) 쿠캣 사업자 정보</h2>
             <button class="business-info-toggle-btn">
               <img
+                class="main-arrow-icon"
                 alt="addit-toggle-img"
                 src="	https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-close-bold.svg"
               />
@@ -681,6 +682,27 @@
         // swiper 끝나고 여백 35px 주기
         slidesOffsetAfter: 35,
       });
+    </script>
+    <script>
+      var coll = document.getElementsByClassName('business-info-title-container');
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener('click', function () {
+          this.classList.toggle('active');
+
+          var content = this.nextElementSibling;
+          var img = this.lastElementChild;
+
+          if (content.style.display === 'block') {
+            content.style.display = 'none';
+            img.style = 'transform: rotate(-180deg)';
+          } else {
+            content.style.display = 'block';
+            img.style = 'transform: rotate(0deg)';
+          }
+        });
+      }
     </script>
   </body>
 </html>

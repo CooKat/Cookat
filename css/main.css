@@ -827,8 +827,11 @@ button {
 .business-info-toggle-btn {
   border: none;
 }
+
 .business-info-toggle-btn img {
   border: none;
+  display: flex;
+  align-items: center;
 }
 
 .center-contact {
@@ -854,12 +857,15 @@ button {
   padding: 16px;
   background-color: #f9f9f9;
 }
+
 .business-info-title-container {
   padding: 12px 0;
-  display: flex;
   align-items: center;
   border-bottom: 1px solid #bbb8b5;
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .business-info-list {
