@@ -1,0 +1,137 @@
+.discount-head {
+  position: fixed;
+  background-color: #fff;
+  width: var(--max-width);
+  z-index: 999;
+  top: 0;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: var(--spacing-6);
+}
+
+.head-container {
+  position: fixed;
+  top: 0;
+  padding: var(--spacing-m) 0 0;
+  width: min(var(--max-width), 100%);
+  background-color: var(--color-white);
+  border-bottom: 1px solid #eee;
+  z-index: 999;
+  height: min(7%, var(--spacing-6));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  border-bottom: 0;
+}
+
+.head-back {
+  width: 10%;
+  padding-left: var(--spacing-sm);
+  height: auto;
+}
+
+.head-title {
+  font-size: min(4vw, var(--text-lg));
+  font-weight: 700;
+  margin-bottom: var(--spacing-sxs);
+  margin: 0 auto;
+}
+
+.head-search {
+  width: 13%;
+  border: 0;
+  padding-right: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+}
+
+/* 이벤트 이미지들 */
+.image-list-qaurter {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: -5px;
+}
+
+.event-image-list::after {
+  height: var(--spacing-xm);
+  position: relative;
+  overflow: hidden;
+  display: block;
+  background-color: rgba(237, 237, 237, 0.6);
+  content: '';
+  margin-top: -4px;
+}
+
+/* 프로모션 리스트 */
+.promotion-product {
+  margin-top: 3rem;
+}
+
+.product-list {
+  padding: 0 var(--spacing-lg);
+}
+
+.product-list-title {
+  font-size: min(7vw, var(--text-lg));
+  font-weight: 700;
+}
+
+.product-item-anchor img {
+  max-width: min(30vw, 140px);
+  max-height: min(30vh, 140px);
+  border-radius: var(--spacing-sm);
+}
+
+.product-list li {
+  padding-top: var(--spacing-l);
+  display: flex;
+}
+
+.product-item-container {
+  position: relative;
+  margin-left: var(--spacing-l);
+}
+
+.product-item-container h2 {
+  width: 85%;
+  font-size: min(4.5vw, var(--text-base));
+}
+
+.discount-rate {
+  font-weight: 700;
+}
+
+.discount-rate,
+.product-item-container p {
+  font-size: min(3vw, var(--text-base));
+}
+
+.basic-price {
+  font-weight: 100;
+  color: #bbb8b5;
+  text-decoration: line-through;
+}
+
+.product-price {
+}
+
+.product-item {
+  height: auto;
+}
+
+.product-item-button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 2;
+  display: block;
+  font-size: min(3vw, var(--text-sm));
+  font-weight: 700;
+
+  border: 1px solid #ff5833;
+  border-radius: var(--spacing-sxs);
+  color: #ff5833;
+}
