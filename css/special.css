@@ -237,3 +237,77 @@
   line-height: 1.1;
   font-weight: 600;
 }
+
+@media (max-width: 399px) {
+  .bargain-food-count {
+    height: 2vh;
+    font-size: 3vw;
+    bottom: 82%;
+    padding: 2vw 0 0 3vw;
+  }
+
+  .bargain-food-count span {
+    margin-top: 1vw;
+  }
+  .bargain-food-count em {
+    margin-top: 1.5vw;
+  }
+
+  .bargain-menu-text {
+    padding-top: 0;
+  }
+
+  .bargain-content1 {
+    font-size: 4vw;
+    line-height: 2vh;
+  }
+
+  .bargain-content2 {
+    font-size: 3vw;
+    margin: 0 0 0.5vw;
+    font-weight: 400;
+    line-height: 1vh;
+  }
+
+  .bargain-content3 {
+    font-size: 0.5vw;
+    line-height: 1vh;
+  }
+
+  .bargain-food-price em {
+    font-size: 3vw;
+    margin-right: 0.3vw;
+  }
+
+  .bargain-food-price {
+    font-size: 3vw;
+  }
+
+  .bargain-graph-title {
+    padding: 3vw 3.2vw;
+    font-size: 2.5vw;
+  }
+
+  .bargain-graph-title img {
+    width: 2.5vw;
+  }
+
+  .bargain-graph-wrap {
+    margin: 0 8vw;
+  }
+
+  .bargain-bar {
+    min-width: 3vw;
+    max-width: 3vw;
+  }
+
+  .bargain-bar-date {
+    font-size: 1vw;
+  }
+
+  .bargain-graph .tooltip {
+    font-size: 1vw;
+    line-height: 4vw;
+    padding: 1vw 1.5vw;
+  }
+}

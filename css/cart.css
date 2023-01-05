@@ -214,7 +214,8 @@
   margin-bottom: 15px;
 }
 
-.normal-delivery div {
+.cart-info em,
+.cart-info p {
   display: inline-block;
 }
 
