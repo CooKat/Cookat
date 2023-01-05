@@ -168,3 +168,75 @@
   height: 12px;
   background-color: #eeeeee;
 }
+
+.total-list-price-container {
+  padding: 25px 18px;
+  background-color: #fff;
+}
+
+.total-list-price,
+.total-delivery-box {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  color: #5b5752;
+}
+
+.total-list-price span:last-child,
+.total-delivery-box span:last-child {
+  font-weight: 700;
+}
+
+.total-delivery-box {
+  margin-top: 15px;
+}
+
+.total-delivery {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.info-24 {
+  width: 16px;
+}
+
+.normal-delivery {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #8e8e8e;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9e8e2;
+  margin-bottom: 15px;
+}
+
+.normal-delivery div {
+  display: inline-block;
+}
+
+.expected-payment {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5b5752;
+}
+
+.expected-payment span:last-child {
+  color: #ff5833;
+}
+
+.total-list-price-button {
+  margin-top: 20px;
+  border: none;
+  background-color: #ff5833;
+  color: white;
+  width: 100%;
+  line-height: 48px;
+  font-size: 15px;
+  border-radius: 4px;
+  font-weight: bold;
+}
