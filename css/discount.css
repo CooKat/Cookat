@@ -68,6 +68,7 @@
 /* 프로모션 리스트 */
 .promotion-product {
   margin-top: 3rem;
+  padding-bottom: var(--spacing-xl);
 }
 
 .product-list {
@@ -91,34 +92,38 @@
 }
 
 .product-item-container {
+  width: 100%;
   position: relative;
   margin-left: var(--spacing-l);
 }
 
-.product-item-container h2 {
+.product-item-title {
   width: 85%;
-  font-size: min(4.5vw, var(--text-base));
+  font-size: min(4vw, var(--text-base));
 }
 
 .discount-rate {
   font-weight: 700;
 }
 
-.discount-rate,
-.product-item-container p {
-  font-size: min(3vw, var(--text-base));
-}
-
 .basic-price {
   font-weight: 100;
+  font-size: min(3vw, var(--text-xs));
   color: #bbb8b5;
   text-decoration: line-through;
+}
+
+.discount-rate,
+.discount-price {
+  font-size: min(3vw, var(--text-base));
 }
 
 .product-price {
 }
 
 .product-item {
+  position: relative;
+  width: 100%;
   height: auto;
 }
 
@@ -134,4 +139,41 @@
   border: 1px solid #ff5833;
   border-radius: var(--spacing-sxs);
   color: #ff5833;
+}
+
+.product-item-tag {
+  position: absolute;
+  top: 16%;
+  padding-left: var(--spacing-xs);
+  line-height: 1.1;
+}
+
+.tag-sale,
+.tag-new,
+.tag-best,
+.tag-exclusive {
+  border-radius: var(--spacing-xxs);
+  font-size: min(1%, var(--text-sxxs));
+  z-index: 1;
+  color: black;
+  display: inline-block;
+  padding: var(--spacing-sxxs) var(--spacing-xxs);
+  font-weight: 600;
+  background-color: #fff;
+}
+
+.tag-sale {
+  background-color: #ff5833;
+  color: #fff;
+}
+
+.tag-new {
+  font-weight: 800;
+}
+
+.tag-best {
+  font-weight: 800;
+}
+
+.tag-exclusive {
 }
