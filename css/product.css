@@ -6,90 +6,93 @@
   padding:0 var(--spacing-lg);
 }
 
-.product-img-category h3{
-  margin: var(--spacing-xxl) 0 var(--spacing-xs);
-  font-size: var(--text-base);
-  font-weight:700;
+.product-img-category {
+  padding: 0 var(--spacing-lg);
 }
 
-.product-img-category ul{
+.product-img-category h3 {
+  margin: var(--spacing-xxl) 0 var(--spacing-xs);
+  font-size: var(--text-base);
+  font-weight: 700;
+}
+
+.product-img-category ul {
   display: flex;
   flex-flow: row wrap;
 }
 
-.product-img-category li{
+.product-img-category li {
   color: var(--color-black);
-  font-size:var(--text-sm);
-  width:50%;
-  margin:var(--spacing-xs) 0
+  font-size: var(--text-sm);
+  width: 50%;
+  margin: var(--spacing-xs) 0;
 }
 
-.product-img-category a{
+.product-img-category a {
   display: flex;
-  flex-flow:row nowrap;
+  flex-flow: row nowrap;
   align-items: center;
-  gap:10px;
+  gap: 10px;
 }
 
-.product-img-category a::before{
+.product-img-category a::before {
   content: '';
   display: inline-block;
   width: 2.8125rem;
   height: 2.8125rem;
   background-color: #eee;
   background-repeat: no-repeat;
-  background-size: 2.25rem; 
+  background-size: 2.25rem;
   border-radius: 50%;
   background-position: center;
-  margin-right:var(--spacing-xxs);
+  margin-right: var(--spacing-xxs);
 }
 
-.soup a::before{
+.soup a::before {
   background-image: url(../images/ic-60-category-soup.png);
 }
 
-.roast a::before{
+.roast a::before {
   background-image: url(../images/ic-60-category-fried.png);
 }
 
-.snackbar a::before{
+.snackbar a::before {
   background-image: url(../images/ic-60-category-snack-food.png);
 }
 
-.rice a::before{
+.rice a::before {
   background-image: url(../images/ic-60-category-rice.png);
 }
 
-.instant a::before{
+.instant a::before {
   background-image: url(../images/ic-60-category-mealkit.png);
 }
 
-.dessert a::before{
+.dessert a::before {
   background-image: url(../images/ic-60-category-dessert.png);
 }
 
-.diet a::before{
+.diet a::before {
   background-image: url(../images/ic-60-category-healthy.png);
 }
 
-.fresh a::before{
+.fresh a::before {
   background-image: url(../images/ic-60-category-fresh.png);
 }
 
-.alcohol a::before{
+.alcohol a::before {
   background-image: url(../images/ic-60-category-traditional-liquor.png);
 }
 
-.living a::before{
+.living a::before {
   background-image: url(../images/ic-60-category-homeliving-221007.png);
 }
 
-
-.best-prd{
+.best-prd {
   position: relative;
 }
 
-.thunder-icon{
+.thunder-icon {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -97,20 +100,20 @@
   vertical-align: bottom;
 }
 
-.best-prd .swiper{
-  padding-bottom: var(--spacing-xxl)
+.best-prd .swiper {
+  padding-bottom: var(--spacing-xxl);
 }
 
-.best-prd .swiper .swiper-pagination-bullet{
-  background:rgba(0, 0, 0, 0.35);
+.best-prd .swiper .swiper-pagination-bullet {
+  background: rgba(0, 0, 0, 0.35);
 }
 
-.best-prd .product-wrap{
+.best-prd .product-wrap {
   position: absolute;
   left: 0;
   bottom: 0;
   display: flex;
-  flex-flow : row nowrap;
+  flex-flow: row nowrap;
   background: var(--color-white);
   overflow: hidden;
   border-radius: 8px;
@@ -118,24 +121,24 @@
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
 }
 
-.best-prd .prd-thumb{
+.best-prd .prd-thumb {
   border-radius: 8px 0 0 8px;
-  width:25%;
+  width: 25%;
 }
 
-.best-prd .prd-info{
+.best-prd .prd-info {
   padding: 0 var(--spacing-sm);
-  margin-bottom :0;
+  margin-bottom: 0;
 }
 
-
-.banner-wrap{
+.banner-wrap {
   font-size: 0;
   border-radius: 8px;
   overflow: hidden;
   margin-top: var(--spacing-sm);
 }
 
-.best-prd .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+.best-prd .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 0;
 }

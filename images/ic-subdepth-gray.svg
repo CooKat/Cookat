@@ -1,0 +1,37 @@
+<svg width="6" height="12" viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-4.9%" y="-2.6%" width="109.7%" height="105.1%" filterUnits="objectBoundingBox" id="w1fjvmrfua">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0685565655 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter x="-4.3%" y="-11%" width="108.6%" height="117.8%" filterUnits="objectBoundingBox" id="y9lht8xkld">
+            <feOffset dy="-4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" in="shadowBlurOuter1"/>
+        </filter>
+        <path id="e6b2n33kpb" d="M0 0h360v685H0z"/>
+        <path id="wfvsghwkte" d="M0 0h396v191H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#EBEBEB" d="M-512-629H836v840H-512z"/>
+        <g filter="url(#w1fjvmrfua)" transform="translate(-18 -528)">
+            <mask id="pazyoa15cc" fill="#fff">
+                <use xlink:href="#e6b2n33kpb"/>
+            </mask>
+            <use fill="#FFF" xlink:href="#e6b2n33kpb"/>
+            <g mask="url(#pazyoa15cc)">
+                <rect x=".5" y=".5" width="323" height="249" rx="8" transform="translate(18 367)" fill="#FFF" stroke="#EDEDED"/>
+                <g transform="translate(-18 434)">
+                    <use fill="#000" filter="url(#y9lht8xkld)" xlink:href="#wfvsghwkte"/>
+                    <use fill="#FFF" xlink:href="#wfvsghwkte"/>
+                </g>
+                <path d="M19 529v5h4v1h-5v-6h1z" fill="#8E8E8E" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+</svg>

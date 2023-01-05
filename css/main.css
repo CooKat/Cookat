@@ -2,6 +2,9 @@
 @import url(./reset.css);
 @import url(./theme.css);
 
+@import url(./empty-cart.css);
+@import url(./cart.css);
+
 /* 숨김 콘텐츠 */
 .a11y-hidden,
 legend {
@@ -296,12 +299,12 @@ li:nth-child(6) .img-wrap {
   padding: 0 var(--spacing-lg) var(--spacing-xs);
 }
 
-.launching-food-link {
-  position: relative;
-}
-
 .launching-food-link img {
   border-radius: var(--spacing-sm);
+}
+
+.launching-menu-thumb {
+  position: relative;
 }
 
 .launching-food-count {
@@ -316,7 +319,7 @@ li:nth-child(6) .img-wrap {
   border-bottom-right-radius: var(--spacing-sm);
   border-bottom-left-radius: var(--spacing-sm);
   position: absolute;
-  bottom: 6.625rem;
+  bottom: 0;
 }
 
 .launching-food-count em {
@@ -825,8 +828,11 @@ button {
 .business-info-toggle-btn {
   border: none;
 }
+
 .business-info-toggle-btn img {
   border: none;
+  display: flex;
+  align-items: center;
 }
 
 .center-contact {
@@ -852,12 +858,15 @@ button {
   padding: 16px;
   background-color: #f9f9f9;
 }
+
 .business-info-title-container {
   padding: 12px 0;
-  display: flex;
   align-items: center;
   border-bottom: 1px solid #bbb8b5;
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .business-info-list {
