@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/1.png" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>쿠캣</title>
+  </head>
+  <body>
+    <div class="delivery-container">
+      <header class="delivery-header">
+        <span class="header-delivery-title">배송지 입력</span>
+        <button onclick="location.href='cart.html'">
+          <img src="./images/ic-24-close-black.svg" alt="닫기" />
+        </button>
+      </header>
+      <form class="delivery">
+        <!-- 배송지 이름 -->
+        <label class="label-title delivery-label" for="shipping-name">배송지 이름</label>
+        <div class="delivery-name-box">
+          <input
+            class="input-box"
+            id="shipping-name"
+            type="text"
+            placeholder="배송지 이름을 입력해주세요."
+            required
+          />
+        </div>
+        <!-- 받는 사람 -->
+        <label class="label-title" for="recipient">받는 사람</label>
+        <div class="recipient-box">
+          <input
+            class="input-box"
+            id="recipient"
+            type="text"
+            placeholder="받는 사람 이름을 입력해주세요."
+            required
+          />
+        </div>
+        <!-- 연락처 -->
+        <label class="label-title" for="phone-number">연락처</label>
+        <div class="phone-number-box">
+          <select class="phone-number-input" name="receiver-phone" id="phone-first-number">
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+          </select>
+          <input
+            class="phone-number-input"
+            id="phone-middle-number"
+            type="tel"
+            maxlength="4"
+            required
+          />
+          <input
+            class="phone-number-input"
+            id="phone-last-number"
+            type="tel"
+            maxlength="4"
+            required
+          />
+        </div>
+        <!-- 주소 -->
+        <label class="label-title" for="address">주소</label>
+        <div class="find-address-box">
+          <div class="find-address">
+            <input id="zone-code-address" type="text" required />
+            <button onclick="findAddr()">주소찾기</button>
+          </div>
+          <input class="input-box" id="road-address" type="text" placeholder="주소" required />
+          <input class="input-box" type="text" placeholder="상세주소 (50자 이내)" required />
+          <span>아파트 동, 호수 등 상세주소를 확인해주세요.</span>
+        </div>
+        <!--   배송메시지 -->
+        <label class="delivery-message-label label-title" for="delivery-message">배송메시지</label>
+        <div class="delivery-message-box">
+          <select
+            name="delivery-message-list"
+            id="delivery-message"
+            aria-valuetext="배송 메시지 선택"
+          >
+            <option value="배송 메시지 선택">배송 메시지 선택</option>
+            <option value="부재 시 경비실에 맡겨주세요.">부재 시 경비실에 맡겨주세요.</option>
+            <option value="부재 시 연락주세요.">부재 시 연락주세요.</option>
+            <option value="배송 전 연락주세요.">배송 전 연락주세요.</option>
+          </select>
+        </div>
+        <div class="check-list">
+          <strong>꼭 확인해 주세요!</strong>
+          <ul>
+            <li>배송지는 30개까지 등록할 수 있습니다.</li>
+            <li>
+              주문이 완료되면 배송지 및 수령 장소를 변경할 수 없어요. 다시 한번 주소 정보를 확인해
+              주세요.
+            </li>
+            <li>
+              배송지, 연락처 오기재로 인해 상품이 반송되는 경우 교환, 환불 및 재발송이 어려워요.
+            </li>
+          </ul>
+        </div>
+        <button class="total-list-price-button">등록</button>
+      </form>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var cartswiper = new Swiper('.realtime-best-product .swiper', {
+        slidesPerView: 3.5,
+        freeMode: true,
+        spaceBetween: 10,
+        slidesOffsetBefore: 18,
+        slidesOffsetAfter: 18,
+      });
+    </script>
+    <!-- 주소 찾기 -->
+    <script>
+      function findAddr() {
+        new daum.Postcode({
+          oncomplete: function (data) {
+            console.log(data);
+
+            // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+            // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+            // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+            var roadAddr = data.roadAddress; // 도로명 주소 변수
+            var jibunAddr = data.jibunAddress; // 지번 주소 변수
+            // 우편번호와 주소 정보를 해당 필드에 넣는다.
+            document.getElementById('zone-code-address').value = data.zonecode;
+            if (roadAddr !== '') {
+              document.getElementById('road-address').value = roadAddr;
+            } else if (jibunAddr !== '') {
+              document.getElementById('road-address').value = jibunAddr;
+            }
+          },
+        }).open();
+      }
+    </script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  </body>
+</html>
