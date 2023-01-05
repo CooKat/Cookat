@@ -2,6 +2,7 @@
 @import url(./reset.css);
 @import url(./theme.css);
 @import url(./responsive.css);
+@import url(./empty-cart.css);
 @import url(./cart.css);
 
 /* 숨김 콘텐츠 */

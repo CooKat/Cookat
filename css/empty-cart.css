@@ -1,0 +1,183 @@
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.cart-container {
+  max-width: var(--max-width);
+  height: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* 카트 헤더 영역 */
+.cart-header {
+  position: fixed;
+  top: 0;
+  padding: var(--spacing-m) 0 0;
+  width: min(var(--max-width), 100%);
+  background-color: var(--color-white);
+  border-bottom: 1px solid #eee;
+  z-index: 999;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  border-bottom: 0;
+}
+
+.header-prev-button {
+  height: inherit;
+  border: none;
+}
+
+.header-cart-title {
+  font-size: 18px;
+  line-height: 18px;
+  color: #46433f;
+  pointer-events: auto;
+  font-weight: bold;
+}
+
+.header-home-button {
+  cursor: pointer;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  margin-top: 60px;
+}
+
+/* 슬로건 */
+.cart-slogan {
+  margin-bottom: 20px;
+}
+
+/* 카트 영역 */
+.empty-cart {
+  padding: 40px 0;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+
+.empty-cart-img {
+  margin-bottom: 8px;
+}
+
+.empty-cart-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #bbb8b5;
+  margin-bottom: 2px;
+}
+
+.empty-cart-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.empty-cart-icon span {
+  color: #ff5833;
+  line-height: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.empty-cart::after {
+  background: rgba(237, 237, 237, 0.6);
+  content: '';
+  width: 100%;
+  height: 12px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* 실시간 베스트 상품 */
+.realtime-best-product {
+  padding: 20px 0;
+  height: fit-content;
+}
+
+.cart-title {
+  padding: 0 18px;
+  display: block;
+  color: #5b5752;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.cart-thumb {
+  position: relative;
+}
+
+.cart-slide-img {
+  width: calc(100%+2px);
+  border-radius: 8px;
+}
+
+.cart-button {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  right: 0px;
+  bottom: 0px;
+  width: 32%;
+  margin: 5px;
+}
+
+.cart-info h2 {
+  width: 100%;
+  min-height: 2.125rem;
+  color: #5b5752;
+  font-size: 12px;
+
+  line-height: 16px;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
+
+.cart-discount-price {
+  display: block;
+}
+
+.cart-info em,
+p {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cart-info p {
+  color: #323232;
+  line-height: 20px;
+  margin: 1px 0 0;
+}
+
+.refrigerated-freezing-storage {
+  background-color: rgba(87, 155, 219, 0.15);
+  border-radius: 2px;
+  color: #579bdb;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 21px;
+  margin: 5px 2px 0 0;
+  padding: 0 5px;
+  font-weight: 500;
+}

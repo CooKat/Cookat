@@ -43,90 +43,18 @@
           </a>
         </article>
         <!-- 카트 영역 -->
-        <section class="cart">
-          <button class="cart-address-input-btn">
-            <img src="./images/ic-24-add-circle.svg" alt="배송지 입력 추가" />
-            <span>배송지 입력</span>
-          </button>
-          <div class="cart-list">
-            <div class="cart-list-header">
-              <div class="cart-list-header-check">
-                <img src="./images/ic-check-on-final.svg" alt="전체 선택 체크" />
-                <h3>전체 선택(2/2)</h3>
-              </div>
-              <div class="cart-list-header-delete">
-                <span>선택 삭제</span>
-                <span>품절상품 삭제</span>
-              </div>
-            </div>
-            <ul class="cart-list-content">
-              <li class="cart-item-info">
-                <div class="cart-item-title">
-                  <img src="./images/ic-check-on-final.svg" alt="메뉴 선택" />
-                  <img src="./images/jabu_1585705385_4983_120.jpg" alt="딸기모찌" />
-                  <span>쿠캣 딸기쏙우유 찹쌀떡 540g</span>
-                </div>
-                <div class="cart-item-content">
-                  <div class="cart-item-content-title">
-                    <span>딸기쏙우유 & 망고쏙우유 찹쌀떡 세트 (+11,400원)</span>
-                    <img src="./images/ic-24-close-bold.svg" alt="삭제하기" />
-                  </div>
-                  <div class="cart-item-count-price">
-                    <div class="cart-item-count">
-                      <span class="cart-item-count-minus"
-                        ><img src="./images/ic-greyish-brown-picker-minus-o.svg" alt="하나 감소"
-                      /></span>
-                      <span class="cart-item-count-number">1</span>
-                      <span class="cart-item-count-plus"
-                        ><img src="./images/ic-greyish-brown-picker-plus-o.svg" alt="하나 증가"
-                      /></span>
-                    </div>
-                    <span class="cart-item-price">22,900</span>
-                    <span>원</span>
-                  </div>
-                </div>
-                <div class="cart-item-plus-delivery">
-                  상품금액 <em>22,900원 </em>+
-                  <span class="refrigerated-freezing-storage">냉장/냉동</span> 배송비
-                  <em>4,000</em>원
-                  <span class="cart-item-plus-delivery-total"> =26,900원</span>
-                </div>
-              </li>
-              <li class="cart-item-info">
-                <div class="cart-item-title">
-                  <img class="check" src="./images/ic-check-on-final.svg" alt="메뉴 선택" />
-                  <img src="./images/siwo_1659577171_7463_120.jpg" alt="뚝배기 불고기" />
-                  <span>쿠캣 쿠가네 뚝배기불고기 400g</span>
-                </div>
-                <div class="cart-item-content">
-                  <div class="cart-item-content-title">
-                    <span>쿠가네 뚝배기불고기 3개 SET (400g*3ea) (+9,000원)</span>
-                    <img src="./images/ic-24-close-bold.svg" alt="삭제하기" />
-                  </div>
-                  <div class="cart-item-count-price">
-                    <div class="cart-item-count">
-                      <span class="cart-item-count-minus"
-                        ><img src="./images/ic-greyish-brown-picker-minus-o.svg" alt="하나 감소"
-                      /></span>
-                      <span class="cart-item-count-number">1</span>
-                      <span class="cart-item-count-plus"
-                        ><img src="./images/ic-greyish-brown-picker-plus-o.svg" alt="하나 증가"
-                      /></span>
-                    </div>
-                    <span class="cart-item-price">13,900</span>
-                    <span>원</span>
-                  </div>
-                </div>
-                <div class="cart-item-plus-delivery">
-                  상품금액 <em>13,900원 </em>+
-                  <span class="refrigerated-freezing-storage">냉장/냉동</span> 배송비 <em>0</em>원
-                  <span class="cart-item-plus-delivery-total"> =13,900원</span>
-                </div>
-              </li>
-            </ul>
-          </div>
+        <section class="empty-cart">
+          <img
+            class="empty-cart-img"
+            src="./images/img-empty-cart-new.svg"
+            alt="카드가 비어있어요"
+          />
+          <div class="empty-cart-text">카트가 비어있어요.</div>
+          <a class="empty-cart-icon" href="/">
+            <span>채우러 가기</span>
+            <img src="./images/ic-16-next-orange-fit.svg" alt="채우러 가기 화살표" />
+          </a>
         </section>
-        <div class="space-line"></div>
         <!-- 실시간 베스트 상품 -->
         <section class="realtime-best-product">
           <h2 class="cart-title">실시간 베스트 상품</h2>
@@ -204,33 +132,6 @@
               </li>
             </div>
           </ul>
-        </section>
-        <div class="space-line"></div>
-        <section class="total-list-price-container">
-          <div class="total-list-price-content">
-            <div class="total-list-price">
-              <span>총 상품금액</span>
-              <span>36,800원</span>
-            </div>
-            <div class="total-delivery-price">
-              <div class="total-delivery">
-                <span>총 배송비 <img src="./images/ic-24-info.svg" alt="배송 상세 정보" /></span>
-                <span>4,000원</span>
-              </div>
-              <div class="normal-delivery">
-                <div>
-                  <img src="./images/ic-subdepth-gray.svg" alt="" />
-                  <span>일반 배송비</span>
-                </div>
-                <span>4,000원</span>
-              </div>
-            </div>
-            <div class="expected-payment">
-              <span>결제예정금액</span>
-              <span>40,800원</span>
-            </div>
-          </div>
-          <button class="total-list-price-button">2건 주문하기</button>
         </section>
       </main>
     </div>
