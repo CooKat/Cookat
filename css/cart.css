@@ -159,7 +159,7 @@ body {
 }
 
 .cart-info em,
-p {
+.cart-info p {
   display: inline-block;
   font-size: 14px;
   font-weight: bold;

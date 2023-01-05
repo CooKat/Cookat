@@ -1,3 +1,7 @@
+.product-title{
+  margin-top:0
+}
+
 .product-img-category{
   padding:0 var(--spacing-lg);
 }

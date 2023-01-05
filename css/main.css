@@ -1,8 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./theme.css);
-@import url(./responsive.css);
-@import url(./cart.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden,
@@ -54,9 +52,9 @@ video {
 
 .container {
   max-width: var(--max-width);
-  margin: 0 auto 3.437rem auto;
+  margin: 0 auto;
   background: #fff;
-  margin-top: 104px;
+  padding-top: 104px;
 }
 
 /* 헤더 */

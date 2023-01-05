@@ -1,0 +1,85 @@
+.header{
+  display: flow-root;
+  overflow: hidden;
+  padding-top:0;
+  border:0
+}
+
+.header-prev-button{
+  display: inline-block;
+  float: left;
+  padding: var(--spacing-base);
+}
+
+.header a:focus {
+  outline-offset: -1px;
+}
+
+.container{
+  padding-top:60px;
+  min-height:100vh;
+}
+
+.my-menu-list{
+  margin-top : var(--spacing-xm);
+  background: var(--color-white);
+  color:var(--color-greyish-brown)
+}
+
+.my-menu-list h2{
+  font-size: 1.5rem;
+  padding:0 var(--spacing-lg);
+  font-weight:700;
+}
+
+.my-menu-list ul{
+  padding: var(--spacing-base) 0;
+}
+
+.my-menu-list li{
+  font-size: var(--text-sm);
+  color: var(--color-black);
+  background: url(../images/ic-cement-next-small-new-o.svg) no-repeat right 15px center/24px;
+}
+
+.my-menu-list a{
+  display: block;
+  padding: var(--spacing-lg);
+}
+
+.cs-center{
+  border-top: 15px solid #eee;
+  padding: var(--spacing-xxl) var(--spacing-lg);
+}
+
+.cs-center h2{
+  position: relative;
+  padding-left:var(--spacing-xl);
+  background: url(../images/ic-cs-telephone.svg) no-repeat;
+  font-size: var(--text-xs);
+  color:var(--color-greyish-brown);
+  line-height:1.6
+}
+
+.cs-center p{
+  font-size:var(--text-lg);
+  font-weight:700;
+  color:var(--color-greyish-brown);
+  margin:var(--spacing-xs) 0;
+}
+
+.cs-center span{
+  font-size: var(--text-xs);
+  color:var(--color-gray)
+}
+
+.cs-center a{
+  position: absolute;
+  right:0;
+  top:0;
+  font-size:var(--text-md);
+  color:var(--color-deep-orange);
+  text-decoration: underline;
+  background: url(../images/ic-orange-right-arrow-o.svg) no-repeat right;
+  padding-right:var(--spacing-md);
+}
