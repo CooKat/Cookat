@@ -1,6 +1,8 @@
+/* 상품 카트 영역 */
 .cart {
   padding: 19px;
   padding-top: 0;
+  background-color: #fff;
 }
 
 .cart-address-input-btn {
@@ -103,29 +105,41 @@
 
 .cart-item-count-price {
   margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .cart-item-count {
-  display: inline-block;
+  display: flex;
   margin-right: 8px;
   background-color: #fff;
   height: 30px;
   border: 1px solid #e9e8e2;
   border-radius: 4px;
-  /* vertical-align: middle; */
+  width: 92px;
 }
 
 .cart-item-count-minus,
 .cart-item-count-plus,
 .cart-item-count-number {
-  display: inline-block;
   min-width: 30px;
   width: 30px;
   height: 30px;
   line-height: 30px;
   margin: 0;
-  text-align: center;
   color: #5b5752;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-item-count-minus,
+.cart-item-count-plus {
+  cursor: pointer;
+  border: none;
+  height: 28px;
+  padding: 0;
 }
 
 .cart-item-count-number {
