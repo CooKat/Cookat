@@ -15,32 +15,47 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>쿠캣</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <a href="/" class="logo"><img src="./images/logo-main.svg" alt="쿠캣마켓" /></a>
+        <a href="/" class="logo"
+          ><img src="./images/logo-main.svg" alt="쿠캣마켓"
+        /></a>
         <div class="menu swiper">
           <ul class="swiper-wrapper" role="menubar" aria-hidden="false">
-            <li role="none" class="swiper-slide active">
+            <li role="none" class="swiper-slide categori-list active">
               <a role="menuitem" href="/">쿠캣추천</a>
             </li>
-            <li class="swiper-slide" role="none">
-              <a role="menuitem" href="./discount.html">10% 할인</a>
+            <li class="swiper-slide categori-list" role="none">
+              <a href="./discount.html">
+                <div class="catogori_swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide discount-categori">
+                      새해 챌린지
+                    </div>
+                    <div class="swiper-slide discount-categori">10% 할인</div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </a>
             </li>
-            <li class="swiper-slide" role="none">
+            <li class="swiper-slide categori-list" role="none">
               <a role="menuitem" href="./best.html">베스트</a>
             </li>
-            <li class="swiper-slide" role="none">
+            <li class="swiper-slide categori-list" role="none">
               <a role="menuitem" href="./new.html">신상품</a>
             </li>
-            <li class="swiper-slide" role="none">
+            <li class="swiper-slide categori-list" role="none">
               <a role="menuitem" href="./specialPrice.html">특가</a>
             </li>
-            <li class="swiper-slide" role="none">
+            <li class="swiper-slide categori-list" role="none">
               <a role="menuitem" href="./event.html">이벤트</a>
             </li>
           </ul>
@@ -53,10 +68,17 @@
         <section class="visual" id="visual">
           <div class="swiper" role="none">
             <div class="swiper-wrapper" role="none">
-              <div class="swiper-slide" role="group" aria-roledescription="slide">
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="slide"
+              >
                 <a href="/">
                   <div class="img-wrap">
-                    <img src="./images/nupi_1670597237_5876_720.jpg" alt="M포인트 카드" />
+                    <img
+                      src="./images/nupi_1670597237_5876_720.jpg"
+                      alt="M포인트 카드"
+                    />
                   </div>
                   <div class="text-wrap white">
                     <p>4만원 이상 결제 시</p>
@@ -68,10 +90,17 @@
                   </div>
                 </a>
               </div>
-              <div class="swiper-slide" role="group" aria-roledescription="slide">
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="slide"
+              >
                 <a href="/">
                   <div class="img-wrap">
-                    <img src="./images/vaka_1670196949_2169_720.jpg" alt="돈까스 떡볶이" />
+                    <img
+                      src="./images/vaka_1670196949_2169_720.jpg"
+                      alt="돈까스 떡볶이"
+                    />
                   </div>
                   <div class="text-wrap">
                     <p>내 몸과 마음을 채워줄 원픽은?</p>
@@ -83,10 +112,17 @@
                   </div>
                 </a>
               </div>
-              <div class="swiper-slide" role="group" aria-roledescription="slide">
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="slide"
+              >
                 <a href="/">
                   <div class="img-wrap">
-                    <img src="./images/zidi_1670818306_2103_720.jpg" alt="다이어트 도시락" />
+                    <img
+                      src="./images/zidi_1670818306_2103_720.jpg"
+                      alt="다이어트 도시락"
+                    />
                   </div>
                   <div class="text-wrap">
                     <p>내 체중과 지갑을 지키는 방법</p>
@@ -104,7 +140,11 @@
               aria-controls="visual"
               aria-label="Previous Slide"
             ></div>
-            <div class="swiper-button-next" aria-controls="visual" aria-label="Next Slide"></div>
+            <div
+              class="swiper-button-next"
+              aria-controls="visual"
+              aria-label="Next Slide"
+            ></div>
             <div class="swiper-pagination"></div>
           </div>
         </section>
@@ -149,11 +189,18 @@
         <article class="fixed-advertise-container">
           <!-- 쿠캣 배송 한 눈에 보기 -->
           <a href="/" class="cookat-deliver-link">
-            <img src="./images/pc-right-banner-img-220422.png" alt="쿠캣 배송 자세히 알아보기" />
+            <img
+              src="./images/pc-right-banner-img-220422.png"
+              alt="쿠캣 배송 자세히 알아보기"
+            />
           </a>
           <!-- 앱 QR 코드 -->
           <div class="qr-info">
-            <img class="qr-code" src="./images/qr-code-20220210.png" alt="앱 설치 QR" />
+            <img
+              class="qr-code"
+              src="./images/qr-code-20220210.png"
+              alt="앱 설치 QR"
+            />
             <img
               class="qr-text"
               src="./images/qr-banner-text-221031.png"
@@ -170,13 +217,18 @@
               <li class="launching-food swiper-slide">
                 <a href="/" class="launching-food-link">
                   <div class="launching-menu-thumb">
-                    <img src="./images/zafe_1605233914_4937_720.jpg" alt="치킨" />
+                    <img
+                      src="./images/zafe_1605233914_4937_720.jpg"
+                      alt="치킨"
+                    />
                     <span class="launching-food-count"
                       ><em>매진임박!</em> | 남은 수량 <em>50%</em></span
                     >
                   </div>
                   <div class="launching-menu-text">
-                    <span class="launching-content1">옛 부추전 갬성 그대로 담았다</span>
+                    <span class="launching-content1"
+                      >옛 부추전 갬성 그대로 담았다</span
+                    >
                     <span class="launching-content2">고추 부추전 600g</span>
                     <!-- <s> 는 stikethrough 라는 뜻의 태그로, 더 이상 관련이 없거나 더 이상 정확하지 않은 요소 -->
                     <s class="launching-content3">
@@ -192,13 +244,18 @@
               <li class="launching-food swiper-slide">
                 <a href="/" class="launching-food-link">
                   <div class="launching-menu-thumb">
-                    <img src="./images/zafe_1605233914_4937_720.jpg" alt="치킨" />
+                    <img
+                      src="./images/zafe_1605233914_4937_720.jpg"
+                      alt="치킨"
+                    />
                     <span class="launching-food-count"
                       ><em>매진임박!</em> | 남은 수량 <em>50%</em></span
                     >
                   </div>
                   <div class="launching-menu-text">
-                    <span class="launching-content1">차원이 다른 바삭함, 탱탱한 순살</span>
+                    <span class="launching-content1"
+                      >차원이 다른 바삭함, 탱탱한 순살</span
+                    >
                     <span class="launching-content2">치킨 텐더 700g</span>
                     <!-- <s> 는 stikethrough 라는 뜻의 태그로, 더 이상 관련이 없거나 더 이상 정확하지 않은 요소 -->
                     <s class="launching-content3">
@@ -214,13 +271,18 @@
               <li class="launching-food swiper-slide">
                 <a href="/" class="launching-food-link">
                   <div class="launching-menu-thumb">
-                    <img src="./images/zafe_1605233914_4937_720.jpg" alt="치킨" />
+                    <img
+                      src="./images/zafe_1605233914_4937_720.jpg"
+                      alt="치킨"
+                    />
                     <span class="launching-food-count"
                       ><em>매진임박!</em> | 남은 수량 <em>50%</em></span
                     >
                   </div>
                   <div class="launching-menu-text">
-                    <span class="launching-content1">옛 부추전 갬성 그대로 담았다</span>
+                    <span class="launching-content1"
+                      >옛 부추전 갬성 그대로 담았다</span
+                    >
                     <span class="launching-content2">고추 부추전 600g</span>
                     <!-- <s> 는 stikethrough 라는 뜻의 태그로, 더 이상 관련이 없거나 더 이상 정확하지 않은 요소 -->
                     <s class="launching-content3">
@@ -236,13 +298,18 @@
               <li class="launching-food swiper-slide">
                 <a href="/" class="launching-food-link">
                   <div class="launching-menu-thumb">
-                    <img src="./images/zafe_1605233914_4937_720.jpg" alt="치킨" />
+                    <img
+                      src="./images/zafe_1605233914_4937_720.jpg"
+                      alt="치킨"
+                    />
                     <span class="launching-food-count"
                       ><em>매진임박!</em> | 남은 수량 <em>50%</em></span
                     >
                   </div>
                   <div class="launching-menu-text">
-                    <span class="launching-content1">차원이 다른 바삭함, 탱탱한 순살</span>
+                    <span class="launching-content1"
+                      >차원이 다른 바삭함, 탱탱한 순살</span
+                    >
                     <span class="launching-content2">치킨 텐더 700g</span>
                     <!-- <s> 는 stikethrough 라는 뜻의 태그로, 더 이상 관련이 없거나 더 이상 정확하지 않은 요소 -->
                     <s class="launching-content3">
@@ -258,13 +325,18 @@
               <li class="launching-food swiper-slide">
                 <a href="/" class="launching-food-link">
                   <div class="launching-menu-thumb">
-                    <img src="./images/zafe_1605233914_4937_720.jpg" alt="치킨" />
+                    <img
+                      src="./images/zafe_1605233914_4937_720.jpg"
+                      alt="치킨"
+                    />
                     <span class="launching-food-count"
                       ><em>매진임박!</em> | 남은 수량 <em>50%</em></span
                     >
                   </div>
                   <div class="launching-menu-text">
-                    <span class="launching-content1">옛 부추전 갬성 그대로 담았다</span>
+                    <span class="launching-content1"
+                      >옛 부추전 갬성 그대로 담았다</span
+                    >
                     <span class="launching-content2">고추 부추전 600g</span>
                     <!-- <s> 는 stikethrough 라는 뜻의 태그로, 더 이상 관련이 없거나 더 이상 정확하지 않은 요소 -->
                     <s class="launching-content3">
@@ -280,13 +352,18 @@
               <li class="launching-food swiper-slide">
                 <a href="/" class="launching-food-link">
                   <div class="launching-menu-thumb">
-                    <img src="./images/zafe_1605233914_4937_720.jpg" alt="치킨" />
+                    <img
+                      src="./images/zafe_1605233914_4937_720.jpg"
+                      alt="치킨"
+                    />
                     <span class="launching-food-count"
                       ><em>매진임박!</em> | 남은 수량 <em>50%</em></span
                     >
                   </div>
                   <div class="launching-menu-text">
-                    <span class="launching-content1">차원이 다른 바삭함, 탱탱한 순살</span>
+                    <span class="launching-content1"
+                      >차원이 다른 바삭함, 탱탱한 순살</span
+                    >
                     <span class="launching-content2">치킨 텐더 700g</span>
                     <!-- <s> 는 stikethrough 라는 뜻의 태그로, 더 이상 관련이 없거나 더 이상 정확하지 않은 요소 -->
                     <s class="launching-content3">
@@ -302,13 +379,18 @@
               <li class="launching-food swiper-slide">
                 <a href="/" class="launching-food-link">
                   <div class="launching-menu-thumb">
-                    <img src="./images/zafe_1605233914_4937_720.jpg" alt="치킨" />
+                    <img
+                      src="./images/zafe_1605233914_4937_720.jpg"
+                      alt="치킨"
+                    />
                     <span class="launching-food-count"
                       ><em>매진임박!</em> | 남은 수량 <em>50%</em></span
                     >
                   </div>
                   <div class="launching-menu-text">
-                    <span class="launching-content1">옛 부추전 갬성 그대로 담았다</span>
+                    <span class="launching-content1"
+                      >옛 부추전 갬성 그대로 담았다</span
+                    >
                     <span class="launching-content2">고추 부추전 600g</span>
                     <!-- <s> 는 stikethrough 라는 뜻의 태그로, 더 이상 관련이 없거나 더 이상 정확하지 않은 요소 -->
                     <s class="launching-content3">
@@ -324,13 +406,18 @@
               <li class="launching-food swiper-slide">
                 <a href="/" class="launching-food-link">
                   <div class="launching-menu-thumb">
-                    <img src="./images/zafe_1605233914_4937_720.jpg" alt="치킨" />
+                    <img
+                      src="./images/zafe_1605233914_4937_720.jpg"
+                      alt="치킨"
+                    />
                     <span class="launching-food-count"
                       ><em>매진임박!</em> | 남은 수량 <em>50%</em></span
                     >
                   </div>
                   <div class="launching-menu-text">
-                    <span class="launching-content1">차원이 다른 바삭함, 탱탱한 순살</span>
+                    <span class="launching-content1"
+                      >차원이 다른 바삭함, 탱탱한 순살</span
+                    >
                     <span class="launching-content2">치킨 텐더 700g</span>
                     <!-- <s> 는 stikethrough 라는 뜻의 태그로, 더 이상 관련이 없거나 더 이상 정확하지 않은 요소 -->
                     <s class="launching-content3">
@@ -353,42 +440,65 @@
           <ul class="grid1">
             <li tabindex="0">
               <div class="prd-thumb">
-                <a href="/"><img src="./images/riti_1670800042_9027_500.jpg" alt="막창" /></a>
+                <a href="/"
+                  ><img src="./images/riti_1670800042_9027_500.jpg" alt="막창"
+                /></a>
                 <button type="button" class="cart-btn">
-                  <img src="./images/button-2-icon-3-cart-bg.svg" alt="장바구니" />
+                  <img
+                    src="./images/button-2-icon-3-cart-bg.svg"
+                    alt="장바구니"
+                  />
                 </button>
               </div>
               <div class="prd-info">
                 <h2><a href="/">쿠캣 초벌 대구막창 300g</a></h2>
-                <em class="discount-rate"><span class="a11y-hidden">할인률</span>10%</em>
+                <em class="discount-rate"
+                  ><span class="a11y-hidden">할인률</span>10%</em
+                >
                 <p><span class="a11y-hidden">판매가</span>8,010원</p>
-                <p class="custom in-block"><span class="a11y-hidden">정상가</span>10,500원</p>
+                <p class="custom in-block">
+                  <span class="a11y-hidden">정상가</span>10,500원
+                </p>
               </div>
             </li>
           </ul>
         </section>
         <section class="prd-list">
           <h2 class="product-title">산타도 감탄하는 선물 리스트</h2>
-          <p class="prd-sub-text">한 해 동안 감사한 사람에게 산타가 되어주세요</p>
+          <p class="prd-sub-text">
+            한 해 동안 감사한 사람에게 산타가 되어주세요
+          </p>
           <ul class="grid2">
             <li tabindex="0">
               <div class="prd-thumb">
-                <a href="/"><img src="./images/xolu_1670811324_5368_640.jpg" alt="막창" /></a>
+                <a href="/"
+                  ><img src="./images/xolu_1670811324_5368_640.jpg" alt="막창"
+                /></a>
                 <button type="button" class="cart-btn">
-                  <img src="./images/button-2-icon-3-cart-bg.svg" alt="장바구니" />
+                  <img
+                    src="./images/button-2-icon-3-cart-bg.svg"
+                    alt="장바구니"
+                  />
                 </button>
               </div>
               <div class="prd-info">
                 <h2><a href="/">쿠캣 초벌 대구막창 300g</a></h2>
-                <em class="discount-rate"><span class="a11y-hidden">할인률</span>10%</em>
+                <em class="discount-rate"
+                  ><span class="a11y-hidden">할인률</span>10%</em
+                >
                 <p><span class="a11y-hidden">판매가</span>8,010원</p>
               </div>
             </li>
             <li tabindex="0">
               <div class="prd-thumb">
-                <a href="/"><img src="./images/xolu_1670811324_5368_640.jpg" alt="막창" /></a>
+                <a href="/"
+                  ><img src="./images/xolu_1670811324_5368_640.jpg" alt="막창"
+                /></a>
                 <button type="button" class="cart-btn">
-                  <img src="./images/button-2-icon-3-cart-bg.svg" alt="장바구니" />
+                  <img
+                    src="./images/button-2-icon-3-cart-bg.svg"
+                    alt="장바구니"
+                  />
                 </button>
               </div>
               <div class="prd-info">
@@ -400,9 +510,14 @@
             </li>
             <li tabindex="0">
               <div class="prd-thumb">
-                <a href="/"><img src="./images/xolu_1670811324_5368_640.jpg" alt="막창" /></a>
+                <a href="/"
+                  ><img src="./images/xolu_1670811324_5368_640.jpg" alt="막창"
+                /></a>
                 <button type="button" class="cart-btn">
-                  <img src="./images/button-2-icon-3-cart-bg.svg" alt="장바구니" />
+                  <img
+                    src="./images/button-2-icon-3-cart-bg.svg"
+                    alt="장바구니"
+                  />
                 </button>
               </div>
               <div class="prd-info">
@@ -414,9 +529,16 @@
             </li>
             <li tabindex="0">
               <div class="prd-thumb">
-                <a href="/"><img src="./images/xope_1670811148_2355_640.jpg" alt="부추전" /></a>
+                <a href="/"
+                  ><img
+                    src="./images/xope_1670811148_2355_640.jpg"
+                    alt="부추전"
+                /></a>
                 <button type="button" class="cart-btn">
-                  <img src="./images/button-2-icon-3-cart-bg.svg" alt="장바구니" />
+                  <img
+                    src="./images/button-2-icon-3-cart-bg.svg"
+                    alt="장바구니"
+                  />
                 </button>
               </div>
               <div class="prd-info">
@@ -453,25 +575,36 @@
               <div class="swiper-slide video-slide">
                 <a href="/">
                   <img src="./images/img1.jpg" class="video-slide-img" />
-                  <div class="img-content">바닐라빈 쏟아부어 만든 고급진 맛 끝판왕 바치케</div>
+                  <div class="img-content">
+                    바닐라빈 쏟아부어 만든 고급진 맛 끝판왕 바치케
+                  </div>
                 </a>
               </div>
               <div class="swiper-slide video-slide">
                 <a href="/">
                   <img src="./images/img2.jpg" class="video-slide-img" />
-                  <div class="img-content">지겨운 닭가슴살의 한줄기 희망[매콤칠리 닭가슴살]</div>
+                  <div class="img-content">
+                    지겨운 닭가슴살의 한줄기 희망[매콤칠리 닭가슴살]
+                  </div>
                 </a>
               </div>
               <div class="swiper-slide video-slide">
                 <a href="/">
                   <img src="./images/img3.jpg" class="video-slide-img" />
-                  <div class="img-content">요알못인 내가 만들어먹기 귀찮은 HTML</div>
+                  <div class="img-content">
+                    요알못인 내가 만들어먹기 귀찮은 HTML
+                  </div>
                 </a>
               </div>
               <div class="swiper-slide video-slide">
                 <a href="/">
-                  <img src="./images/wami_1670811276_6167_640.jpg" class="video-slide-img" />
-                  <div class="img-content">너무졸려서 아무렇게나 쓰고있는데 모르겠지</div>
+                  <img
+                    src="./images/wami_1670811276_6167_640.jpg"
+                    class="video-slide-img"
+                  />
+                  <div class="img-content">
+                    너무졸려서 아무렇게나 쓰고있는데 모르겠지
+                  </div>
                 </a>
               </div>
             </div>
@@ -510,7 +643,10 @@
         <article class="slogan">
           <!-- 여기에 class="a11y-hidden" 어떻게 쓰지? -->
           <a href="/" class="slogan-img">
-            <img src="./images/footer-img-banner-delivery-220503.png" width="500px" />
+            <img
+              src="./images/footer-img-banner-delivery-220503.png"
+              width="500px"
+            />
           </a>
         </article>
       </main>
@@ -518,8 +654,8 @@
         <div class="center-info-container">
           <h2 class="center-info">쿠캣 고객센터</h2>
           <span class="time-info"
-            >평일 <time>10:00</time> ~ <time>18:00</time> (점심시간 <time>13:00</time> ~
-            <time>14:00</time>)</span
+            >평일 <time>10:00</time> ~ <time>18:00</time> (점심시간
+            <time>13:00</time> ~ <time>14:00</time>)</span
           >
 
           <a href="tel:1668-3525" class="center-contact"> 고객센터</a>
@@ -538,12 +674,14 @@
 
           <ul class="business-info-list">
             <li class="business-info-item">
-              <label for="representative">대표자</label><span id="representative">이문주</span>
+              <label for="representative">대표자</label
+              ><span id="representative">이문주</span>
             </li>
             <li class="business-info-item">
               <label for="address">주소</label>
               <address id="address">
-                서울특별시 강남구 영동대로112길 36, 3층, 지하 1층 (삼성동, 오티씨타워)
+                서울특별시 강남구 영동대로112길 36, 3층, 지하 1층 (삼성동,
+                오티씨타워)
               </address>
             </li>
             <li class="business-info-item">
@@ -553,7 +691,9 @@
                 >사업자등록번호</label
               ><span id=" business-number">
                 110-86-12995
-                <a class="business-info-check" href="/">사업자정보 확인</a></span
+                <a class="business-info-check" href="/"
+                  >사업자정보 확인</a
+                ></span
               >
             </li>
             <li class="business-info-item">
@@ -566,8 +706,8 @@
                 <div class="center-info-content-container">
                   <a id="service-center" href="tel:1668-3525">1668-3525</a>
                   <div class="service-center-time">
-                    평일 <time>10:00</time> ~ <time>18:00</time> (점심시간 <time>13:00</time> ~
-                    <time>14:00</time>)
+                    평일 <time>10:00</time> ~ <time>18:00</time> (점심시간
+                    <time>13:00</time> ~ <time>14:00</time>)
                   </div>
                   <div class="service-center-time">
                     주말
@@ -595,7 +735,9 @@
             </li>
           </ul>
 
-          <small class="copyright"> Copyright © 쿠캣. All rights reserved.</small>
+          <small class="copyright">
+            Copyright © 쿠캣. All rights reserved.</small
+          >
           <ul class="more-details-list">
             <li><a class="more-details" href="/">이용약관</a></li>
             <li>
@@ -625,6 +767,16 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
+      var categori_swiper = new Swiper('.mySwiper', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+      });
+
       var visual = new Swiper('.visual .swiper', {
         pagination: {
           el: '.visual .swiper-pagination',
@@ -684,7 +836,9 @@
       });
     </script>
     <script>
-      var coll = document.getElementsByClassName('business-info-title-container');
+      var coll = document.getElementsByClassName(
+        'business-info-title-container'
+      );
       var i;
 
       for (i = 0; i < coll.length; i++) {
