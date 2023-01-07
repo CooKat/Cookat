@@ -1,0 +1,200 @@
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.delivery-container {
+  max-width: var(--max-width);
+  height: 100%;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+
+.delivery-header {
+  top: 0;
+  width: min(var(--max-width), 100%);
+  background-color: var(--color-white);
+  border-bottom: 1px solid #eee;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.delivery-header button {
+  position: absolute;
+  right: 10px;
+  border: none;
+}
+
+.delivery {
+  padding: 5px 20px;
+  background-color: #fff;
+}
+
+.label-title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #46433f;
+  display: block;
+  line-height: 1.31;
+  margin-bottom: 10px;
+}
+
+.delivery-label {
+  padding-top: 26px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box {
+  width: 100%;
+  display: inline-block;
+  height: 43px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  color: #46433f;
+  letter-spacing: 0.5px;
+  padding: 0 12px;
+  border-radius: 4px;
+}
+
+.input-box::placeholder {
+  color: #9d999d;
+}
+
+.input-box:focus {
+  outline: 1px solid #46433f;
+}
+
+.phone-number-input {
+  width: 31.57%;
+  display: inline-block;
+  height: 43px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  color: #46433f;
+  letter-spacing: 0.5px;
+  padding: 0 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-bottom: 25px;
+}
+
+#phone-last-number {
+  margin-right: 0px;
+}
+
+.phone-number-input:focus {
+  outline: 1px solid #46433f;
+}
+
+.find-address {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+#zone-code-address {
+  background-color: #ededed;
+  flex-grow: 1;
+  height: 43px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  color: #46433f;
+  letter-spacing: 0.5px;
+  padding: 0 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.find-address button {
+  border: 1px solid #ff5833;
+  border-radius: 4px;
+  color: #ff5833;
+  font-size: 14px;
+  line-height: 43px;
+  height: 43px;
+  padding: 0 22px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.find-address-box input {
+  margin-bottom: 12px;
+}
+
+.find-address-box input:nth-child(3) {
+  margin-bottom: 4px;
+}
+
+.find-address-box span {
+  color: #579bdb;
+  font-size: 12px;
+  padding: 0 0 24px 0;
+  display: block;
+}
+
+.delivery-message-label {
+  margin-top: 50px;
+}
+
+#delivery-message {
+  width: 100%;
+  display: inline-block;
+  height: 43px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  color: #46433f;
+  letter-spacing: 0.5px;
+  padding: 0 12px;
+  border-radius: 4px;
+}
+
+#delivery-message:focus {
+  outline: 1px solid #46433f;
+}
+
+.check-list {
+  margin-top: 16px;
+  margin-bottom: 20px;
+  padding: 18px 16px;
+  background-color: rgba(255, 88, 51, 0.05);
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 4px;
+  color: #ff5833;
+}
+
+.check-list strong {
+  font-weight: bolder;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.check-list li {
+  position: relative;
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 8px;
+}
+
+.check-list li::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  display: block;
+  width: 2px;
+  height: 2px;
+  background-color: #ff5833;
+  border-radius: 50%;
+}
