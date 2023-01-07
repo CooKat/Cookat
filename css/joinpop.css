@@ -26,6 +26,7 @@
   padding: var(--spacing-md);
   border-radius:8px;
   text-align: left;
+  animation: moveEffect 800ms ease-in-out infinite alternate-reverse;
 }
 .popup-title p::after{
   content: '';
@@ -114,4 +115,14 @@
   border:0;
   color:var(--color-deep-orange);
   padding:var(--spacing-lg);
+}
+
+@keyframes moveEffect {
+  0% {
+    transform: translate(-50%, 0);
+  }
+
+  100% {
+    transform: translate(-50%, 8px);
+  }
 }
