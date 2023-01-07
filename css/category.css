@@ -1,11 +1,11 @@
 main {
   padding: 0 var(--spacing-lg);
-  margin-top: 50px;
 }
 
 .container {
   margin: 0 auto;
   width: var(--max-width);
+  padding-top: var(--spacing-6);
 }
 
 /* 헤더 (검색창) */
@@ -47,7 +47,7 @@ main {
 
 /* 카테고리 */
 .category-menu {
-  padding-top: var(--spacing-xxl);
+  padding-top: var(--spacing-xl);
 }
 
 .category-menu-title {
