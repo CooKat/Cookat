@@ -1,11 +1,13 @@
-.container{
-  position: relative;
-  min-height:100vh;
-  padding-top:160px;
-}
-
 .member-join-form{
-  padding:0 var(--spacing-lg)
+  position: absolute;
+  top:0;
+  left:50%;
+  width: min(500px, 100%);
+  transform: translateX(-50%);
+  padding:160px var(--spacing-lg) 0;
+  background: var(--color-white);
+  height:100vh;
+  z-index: 11111;
 }
 
 .popup-title{
@@ -24,6 +26,7 @@
   padding: var(--spacing-md);
   border-radius:8px;
   text-align: left;
+  animation: moveEffect 800ms ease-in-out infinite alternate-reverse;
 }
 .popup-title p::after{
   content: '';
@@ -112,4 +115,14 @@
   border:0;
   color:var(--color-deep-orange);
   padding:var(--spacing-lg);
+}
+
+@keyframes moveEffect {
+  0% {
+    transform: translate(-50%, 0);
+  }
+
+  100% {
+    transform: translate(-50%, 8px);
+  }
 }
