@@ -198,3 +198,28 @@ body {
   background-color: #ff5833;
   border-radius: 50%;
 }
+
+/* select 및 option 디자인 */
+
+.delivery-message-box {
+}
+
+select {
+  -webkit-appearance: none; /* for chrome */
+  -moz-appearance: none; /*for firefox*/
+  appearance: none;
+  background: url('../images/ic-16-open-bold.svg') no-repeat 98% 50%;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select:focus {
+  background: url('../images/ic-16-close-bold.svg') no-repeat 95% 50%;
+}
+
+select option {
+  border-radius: 0;
+  height: 34px;
+}

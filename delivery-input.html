@@ -78,7 +78,7 @@
         <label class="label-title" for="address">주소</label>
         <div class="find-address-box">
           <div class="find-address">
-            <input id="zone-code-address" type="text" required />
+            <input id="zone-code-address" disabled type="text" required />
             <button onclick="findAddr()">주소찾기</button>
           </div>
           <input class="input-box" id="road-address" type="text" placeholder="주소" required />
@@ -97,6 +97,9 @@
             <option value="부재 시 경비실에 맡겨주세요.">부재 시 경비실에 맡겨주세요.</option>
             <option value="부재 시 연락주세요.">부재 시 연락주세요.</option>
             <option value="배송 전 연락주세요.">배송 전 연락주세요.</option>
+            <!-- <span class="select-arrow-icon">
+              <img src="./images/ic-16-close-bold.svg" alt="" />
+            </span> -->
           </select>
         </div>
         <div class="check-list">
