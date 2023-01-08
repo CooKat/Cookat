@@ -34,8 +34,18 @@
             <li role="none" class="swiper-slide">
               <a role="menuitem" href="./index.html">쿠캣추천</a>
             </li>
-            <li class="swiper-slide" role="none">
-              <a role="menuitem" href="./discount.html">10% 할인</a>
+            <li class="swiper-slide categori-list" role="none">
+              <a href="./discount.html">
+                <div class="categori_swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide discount-categori">
+                      새해 챌린지
+                    </div>
+                    <div class="swiper-slide discount-categori">10% 할인</div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </a>
             </li>
             <li class="swiper-slide active" role="none">
               <a role="menuitem" href="./best.html">베스트</a>
@@ -314,6 +324,16 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
+      var categori_swiper = new Swiper('.categori_swiper', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+      });
       let menu = new Swiper('.menu.swiper', {
         slidesPerView: 'auto',
         freeMode: true,
