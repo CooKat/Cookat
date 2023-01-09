@@ -885,6 +885,10 @@ button {
   gap: 8px;
 }
 
+.business-info-item {
+  font-size: min(3vw, var(--text-xs));
+}
+
 .business-info-list {
   margin-top: 12px;
   line-height: 2.3em;
@@ -910,19 +914,19 @@ button {
 .center-info-content-container {
   line-height: 1.5em;
   padding-top: 2px;
+  display: flex;
+  flex-flow: column wrap;
 }
 .center-info-content-container a {
   font-weight: bold;
   text-decoration: underline;
   color: #5b5752;
-  display: flex;
-  flex-flow: column nowrap;
 }
 
 .copyright {
   color: #bbb8b5;
   margin-top: 12px;
-  font-size: 13px;
+  font-size: min(3vw, var(--text-xs));
   display: inline-block;
 }
 
@@ -932,7 +936,7 @@ button {
 }
 .more-details-list li {
   margin-right: 5px;
-  font-size: 13px;
+  font-size: min(3vw, var(--text-xs));
   padding: 0 10px;
 }
 
@@ -951,7 +955,7 @@ button {
   text-align: center;
   padding: 25px 0;
   border-bottom: 1px solid #cdcdcd;
-  margin-bottom: 55px;
+  padding-bottom: 5rem;
 }
 .additional-container a {
   border: none;
