@@ -29,12 +29,19 @@
   margin-top: 0;
 }
 
-.product-img-category {
-  padding: 0 var(--spacing-lg);
+.product-img-category::before {
+  width: 520px;
+  translate: -20px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  background-color: rgba(237, 237, 237, 0.6);
+  height: 12px;
+  content: '';
 }
 
 .product-img-category {
-  padding: 0 var(--spacing-lg);
+  padding: 0 var(--spacing-lg) var(--spacing-6) var(--spacing-lg);
 }
 
 .product-img-category h3 {
@@ -156,6 +163,17 @@
 .best-prd .prd-info {
   padding: 0 var(--spacing-sm);
   margin-bottom: 0;
+}
+
+.cookat-image {
+  position: relative;
+}
+
+.cookat-img {
+  position: absolute;
+  top: -215%;
+  left: 3%;
+  width: min(5vw, var(--spacing-6));
 }
 
 .banner-wrap {
