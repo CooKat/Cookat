@@ -8,7 +8,6 @@ body {
   max-width: var(--max-width);
   height: 100%;
   margin: 0 auto;
-  background: #fff;
   position: relative;
 }
 
@@ -202,24 +201,75 @@ body {
 /* select 및 option 디자인 */
 
 .delivery-message-box {
+  margin: 0 auto;
+  width: 100%;
+  height: 44px;
+  margin-top: 15px;
+  position: relative;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  text-align: left;
+  display: flex;
+  align-items: center;
 }
-
-select {
-  -webkit-appearance: none; /* for chrome */
-  -moz-appearance: none; /*for firefox*/
-  appearance: none;
-  background: url('../images/ic-16-open-bold.svg') no-repeat 97% 50%;
+.delivery-message-box span {
+  cursor: pointer;
+  display: block;
+  color: #000;
+  line-height: 34px;
+  width: 100%;
+  padding: 0 20px 0 10px;
+  font-size: 14px;
+  text-decoration: none;
 }
-
-select::-ms-expand {
+.select_icon {
+  display: block;
+  content: '';
+  clear: both;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 14px;
+  height: 14px;
+  background: url('../images/ic-16-open-bold.svg') no-repeat 96% 50%;
+  z-index: 999;
+}
+.select_icon.active {
+  border-top: none;
+  width: 14px;
+  height: 14px;
+  background: url('../images/ic-16-close-bold.svg') no-repeat 96% 50%;
+}
+.delivery-message {
+  width: 100%;
+  position: absolute;
   display: none;
+  top: 42px;
+  z-index: 999;
+}
+.delivery-message.active {
+  display: block;
+}
+.delivery-message li {
+  line-height: 34px;
+  border: 1px solid #000;
+  text-align: left;
+  padding-left: 10px;
+  cursor: pointer;
+  height: 44px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
 }
 
-select:focus {
-  background: url('../images/ic-16-close-bold.svg') no-repeat 97% 50%;
+.delivery-message li:last-child {
+  border-bottom: 1px solid #000;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
-select option {
-  border-radius: 0;
-  height: 34px;
+.delivery-message li + li {
+  border-top: none;
 }
