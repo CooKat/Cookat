@@ -9,6 +9,7 @@ body {
   height: 100%;
   margin: 0 auto;
   position: relative;
+  background-color: #fff;
 }
 
 .delivery-header {
@@ -32,7 +33,7 @@ body {
 }
 
 .delivery {
-  padding: 5px 20px;
+  padding: 5px 15px;
   background-color: #fff;
 }
 
@@ -73,18 +74,97 @@ body {
   outline: 1px solid #46433f;
 }
 
+.phone-number-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  margin-bottom: 20px;
+}
+
+/* 폰 넘버 select */
+.phone-number-wrapper {
+  width: 31.57%;
+  height: 44px;
+  position: relative;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  text-align: left;
+  display: inline-block;
+}
+.phone-number-wrapper span {
+  cursor: pointer;
+  color: #000;
+  line-height: 34px;
+  height: 44px;
+  width: 100%;
+  padding: 0 20px 0 10px;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+}
+.phone_select_icon {
+  display: block;
+  content: '';
+  clear: both;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 14px;
+  height: 14px;
+  background: url('../images/ic-16-open-bold.svg') no-repeat 96% 50%;
+  z-index: 999;
+}
+.phone_select_icon.selected-number {
+  border-top: none;
+  width: 14px;
+  height: 14px;
+  background: url('../images/ic-16-close-bold.svg') no-repeat 96% 50%;
+}
+.phone-first-number {
+  width: 100%;
+  position: absolute;
+  display: none;
+  top: 42px;
+  z-index: 999;
+}
+.phone-first-number.selected-number {
+  display: block;
+}
+.phone-first-number li {
+  line-height: 34px;
+  border: 1px solid #000;
+  text-align: left;
+  padding-left: 10px;
+  cursor: pointer;
+  height: 44px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.phone-first-number li:last-child {
+  border-bottom: 1px solid #000;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.phone-first-number li + li {
+  border-top: none;
+}
+
 .phone-number-input {
   width: 31.57%;
   display: inline-block;
-  height: 43px;
+  height: 44px;
   border: 1px solid #e0e0e0;
   font-size: 14px;
   color: #46433f;
   letter-spacing: 0.5px;
   padding: 0 12px;
   border-radius: 4px;
-  margin-right: 8px;
-  margin-bottom: 25px;
+  /* margin-right: 8px; */
+  /* margin-bottom: 25px; */
 }
 
 #phone-last-number {
@@ -103,7 +183,7 @@ body {
 
 #zone-code-address {
   background-color: #ededed;
-  flex-grow: 1;
+  width: calc(100% - 111px);
   height: 43px;
   border: 1px solid #e0e0e0;
   font-size: 14px;
@@ -199,7 +279,6 @@ body {
 }
 
 /* select 및 option 디자인 */
-
 .delivery-message-box {
   margin: 0 auto;
   width: 100%;
