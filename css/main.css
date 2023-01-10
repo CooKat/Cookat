@@ -889,7 +889,9 @@ button {
 .business-info-list {
   margin-top: 12px;
   line-height: 2.3em;
+  height: 260px;
   overflow: hidden;
+  transition: 0.5s;
 }
 .business-info-item label {
   color: #bbb8b5;
