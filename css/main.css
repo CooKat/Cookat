@@ -31,10 +31,9 @@ a {
 body {
   font-size: 1rem;
   color: #191919;
-  font-family: 'Pretendard Variable', Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
-    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
   background: #eee;
 }
 
@@ -533,11 +532,9 @@ li:nth-child(6) .img-wrap {
   display: inline-block;
   font-size: var(--text-sxxs);
   color: var(--color-deep-orange);
-  background: rgba(245, 91, 4, 0.1) url(../images/ic-cookat-delivery-red.svg)
-    no-repeat 2px center;
+  background: rgba(245, 91, 4, 0.1) url(../images/ic-cookat-delivery-red.svg) no-repeat 2px center;
   margin-bottom: var(--spacing-xxs);
-  padding: var(--spacing-xxs) var(--spacing-xxs) var(--spacing-xxs)
-    var(--spacing-l);
+  padding: var(--spacing-xxs) var(--spacing-xxs) var(--spacing-xxs) var(--spacing-l);
   border-radius: 4px;
   font-weight: 400;
 }
@@ -892,6 +889,7 @@ button {
 .business-info-list {
   margin-top: 12px;
   line-height: 2.3em;
+  overflow: hidden;
 }
 .business-info-item label {
   color: #bbb8b5;

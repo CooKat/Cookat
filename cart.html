@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <title>쿠캣</title>
   </head>
   <body>
@@ -52,7 +53,7 @@
           <div class="cart-list">
             <div class="cart-list-header">
               <div class="cart-list-header-check">
-                <img src="./images/ic-check-on-final.svg" alt="전체 선택 체크" />
+                <input type="checkbox" id="userState" name="userState" required />
                 <h3>전체 선택(2/2)</h3>
               </div>
               <div class="cart-list-header-delete">
@@ -62,8 +63,8 @@
             </div>
             <ul class="cart-list-content">
               <li class="cart-item-info">
+                <input class="cart-check-box" type="checkbox" required />
                 <div class="cart-item-title">
-                  <img src="./images/ic-check-on-final.svg" alt="메뉴 선택" />
                   <img src="./images/jabu_1585705385_4983_120.jpg" alt="딸기모찌" />
                   <span>쿠캣 딸기쏙우유 찹쌀떡 540g</span>
                 </div>
@@ -96,8 +97,8 @@
                 </div>
               </li>
               <li class="cart-item-info">
+                <input class="cart-check-box" type="checkbox" required />
                 <div class="cart-item-title">
-                  <img class="check" src="./images/ic-check-on-final.svg" alt="메뉴 선택" />
                   <img src="./images/siwo_1659577171_7463_120.jpg" alt="뚝배기 불고기" />
                   <span>쿠캣 쿠가네 뚝배기불고기 400g</span>
                 </div>
