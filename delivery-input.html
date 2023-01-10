@@ -173,7 +173,7 @@
         $('.phone_select_icon').toggleClass('selected-number');
       });
       $('body').click(function (e) {
-        var box = document.querySelector('.phone-number-wrapper');
+        var box = document.querySelector('.phone-number-wrapper span');
         if ($('.phone-first-number').hasClass('selected-number')) {
           if (!$('.phone-number-wrapper').has(e.target).length) {
             $('.phone-first-number').removeClass('selected-number');
@@ -210,7 +210,7 @@
         $('.select_icon').toggleClass('active');
       });
       $('body').click(function (e) {
-        var box = document.querySelector('.delivery-message-box');
+        var box = document.querySelector('.delivery-message-box span');
         var checkList = document.querySelector('.check-list');
         if ($('.delivery-message').hasClass('active')) {
           if (!$('.delivery-message-box').has(e.target).length) {
