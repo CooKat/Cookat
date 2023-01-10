@@ -5,7 +5,6 @@
 .best-list {
   display: flex;
   flex-flow: row nowrap;
-  overflow: scroll;
 }
 
 .best-categori-item {
@@ -80,6 +79,47 @@
   border-radius: 50%;
   background-position: center;
   margin-right: var(--spacing-xxs);
+}
+
+.best-coupon {
+  padding: 0 var(--spacing-base);
+}
+
+.best-coupon a {
+  margin: 0 var(--spacing-base);
+}
+
+.coupon-container {
+  position: relative;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  padding: var(--spacing-lg) var(--spacing-l);
+  border-radius: var(--spacing-xs);
+  border: 1px solid rgb(185, 185, 185);
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.coupon-content {
+  font-size: min(3vw, var(--text-xs));
+  line-height: 1.5;
+  padding-left: var(--spacing-base);
+}
+
+.coupon-strong {
+  font-weight: 600;
+}
+
+.coupon-img {
+  background: url(/images/best-coupon.svg) no-repeat 0 0;
+}
+
+.coupon-arrow {
+  width: min(3vw, var(--spacing-lg));
+  transform: scaleX(-1);
+  position: absolute;
+  right: 3%;
+  top: 40%;
 }
 
 .soup a::before {

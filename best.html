@@ -66,9 +66,10 @@
         </button>
       </header>
       <main class="main">
+        <!-- 스크롤 -->
         <section class="best-categori-list">
-          <div class="best-categori-list-div">
-            <ul class="swiper-wrapper best-list">
+          <div class="best-categori-list-div swiper">
+            <ul class="swiper-wrapper best-list" role="menu">
               <li class="swipet-slide best-categori-item on">전체</li>
               <li class="swipet-slide best-categori-item">국/탕/찌개</li>
               <li class="swipet-slide best-categori-item">구이/볶음/찜</li>
@@ -80,8 +81,9 @@
               <li class="swipet-slide best-categori-item">육류/수산/과일</li>
             </ul>
           </div>
-          <div class="best-categori-list-container"></div>
         </section>
+
+        <!-- 2열 이미지 -->
         <section class="prd-list">
           <ul class="grid2">
             <li tabindex="0">
@@ -199,7 +201,24 @@
             </li>
           </ul>
         </section>
+
+        <!-- 쿠폰 -->
+        <section class="best-coupon">
+          <a href="" alt="10% 할인쿠폰">
+            <div class="coupon-container">
+              <img class="coupon-img" src="./images/best-coupon.svg" />
+              <div class="coupon-content">
+                지금 가입하고
+                <strong class="coupon-strong">10% 할인 쿠폰</strong>과<br />
+                <strong class="coupon-strong">무료배송 쿠폰</strong> 받으세요!
+              </div>
+              <img class="coupon-arrow" src="./images/ic-24-arrow-perv.svg" />
+            </div>
+          </a>
+        </section>
       </main>
+
+      <!-- 추가 상품 카테고리 -->
       <nav class="product-img-category">
         <h3>다른 상품들도 있어요</h3>
         <ul>
@@ -350,7 +369,7 @@
         },
         loop: true,
       });
-      let menu = new Swiper('.menu.swiper', {
+      var menu = new Swiper('.menu.swiper', {
         slidesPerView: 'auto',
         freeMode: true,
       });
