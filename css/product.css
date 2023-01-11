@@ -5,10 +5,11 @@
 .best-list {
   display: flex;
   flex-flow: row nowrap;
+  overflow: hidden;
 }
 
 .best-categori-item {
-  width: 100%;
+  width: auto;
   white-space: nowrap;
   background-color: rgb(245, 245, 245);
   border-radius: var(--spacing-l);
