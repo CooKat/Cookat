@@ -1,8 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./theme.css);
-@import url('./cart.css');
-@import url('./empty-cart.css');
 
 /* 숨김 콘텐츠 */
 .a11y-hidden,
@@ -83,6 +81,16 @@ video {
   margin-bottom: -1px;
 }
 
+.sub-page-title{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size:var(--text-lg);
+  font-weight:700;
+}
+
 /* 카테고리 swiper */
 .categori-list {
   height: var(--spacing-xxl);
@@ -134,6 +142,7 @@ video {
   font-size: 2em;
   background: none;
   border: 0;
+  font-size: 0;
 }
 
 /* 메인배너 */
