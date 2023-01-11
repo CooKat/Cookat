@@ -1,6 +1,7 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./theme.css);
+@import url(./search.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden,
@@ -81,14 +82,14 @@ video {
   margin-bottom: -1px;
 }
 
-.sub-page-title{
+.sub-page-title {
   position: absolute;
-  left:50%;
-  top:50%;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size:var(--text-lg);
-  font-weight:700;
+  font-size: var(--text-lg);
+  font-weight: 700;
 }
 
 /* 카테고리 swiper */
