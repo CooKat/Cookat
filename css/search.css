@@ -1,0 +1,32 @@
+.search-container {
+  background-color: #fff;
+  width: 500px;
+  height: 100%;
+}
+
+.search-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.search-prev-btn {
+}
+
+.search-input {
+}
+
+.erase-btn {
+  display: none;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background: url('../images/ic-24-finder.svg') no-repeat;
+}
