@@ -30,11 +30,22 @@
 }
 
 .tab-content time{
+  display: block;
+  line-height:1.6;
   font-size:var(--text-xxs);
   color:var(--color-gray);
+  transition: all .3s;
 }
 
 .board-content{
   overflow: hidden;
   display: none;
+}
+
+.board-content > p{
+  padding: 16px 0;
+}
+
+.js-slide time{
+
 }

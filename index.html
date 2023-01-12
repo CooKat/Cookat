@@ -617,6 +617,7 @@
           <a href="/">로그인</a>
           <a id="app-down" href="/"> APP다운</a>
         </div>
+        <a href="#" class="top-button"><img src="./images/ic-floating-button.svg" alt="최상단으로 가기" /></a>
       </footer>
       <nav class="fix-footer-menu">
         <ul>
@@ -701,6 +702,16 @@
         // swiper 끝나고 여백 35px 주기
         slidesOffsetAfter: 35,
       });
+
+      const topButton = document.querySelector('.top-button');
+
+      function topEvent(e){
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      topButton.addEventListener('click',topEvent);
+      
     </script>
     <!-- 사업자 정보 접었다 펼치기 -->
     <script>

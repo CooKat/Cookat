@@ -2,6 +2,7 @@
 @import url(./reset.css);
 @import url(./theme.css);
 
+
 /* 숨김 콘텐츠 */
 .a11y-hidden,
 legend {
@@ -976,6 +977,15 @@ button {
 
 #app-down {
   border-left: 1px solid #8e8e8e;
+}
+
+.top-button{
+  position: fixed;
+  left:calc(50% + 210px);
+  bottom: 80px;
+  border:0;
+  transform: translateX(-50%);
+  z-index: 99999;
 }
 
 @media (max-width: 499px) {

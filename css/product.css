@@ -4,23 +4,28 @@
 
 .best-categori-list-div {
   overflow: hidden;
+  padding:var(--spacing-sxxs) var(--spacing-base);
 }
 
 .best-categori-item {
   width: auto;
   white-space: nowrap;
-  background-color: rgb(245, 245, 245);
+  border : 1px solid #eee;
   border-radius: var(--spacing-l);
   text-align: center;
   justify-items: center;
   font-size: var(--text-xs);
-  margin-left: var(--spacing-l);
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 8%);
+}
+
+.best-categori-item button{
+  border:0;
   padding: var(--spacing-sm) var(--spacing-md);
 }
 
 .best-list .on {
-  color: var(--color-white);
-  background-color: var(--color-black);
+  border-color: var(--color-black);
+  font-weight:600;
 }
 
 .product-title {
@@ -28,7 +33,7 @@
 }
 
 .product-img-category::before {
-  width: 520px;
+  width: min(500px, 100%);
   translate: -20px;
   position: relative;
   overflow: hidden;
