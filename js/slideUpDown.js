@@ -48,7 +48,7 @@ function jSlideDown(t, target) {
   t.classList.add("active");
   t.classList.add("js-slide");
   target.style.display = 'block';
-  let h = target.clientHeight;
+  let h = target.offsetHeight;
   target.style.height = '0px';
   setTimeout(function() {
     target.style.transition = 'height '+ transitionTime +'s';

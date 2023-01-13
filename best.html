@@ -70,15 +70,15 @@
         <section class="best-categori-list">
           <div class="best-categori-list-div best_swiper">
             <ul class="swiper-wrapper best-list">
-              <li class="swiper-slide best-categori-item on">전체</li>
-              <li class="swiper-slide best-categori-item">국/탕/찌개</li>
-              <li class="swiper-slide best-categori-item">구이/볶음/찜</li>
-              <li class="swiper-slide best-categori-item">분식</li>
-              <li class="swiper-slide best-categori-item">밥/도시락/면</li>
-              <li class="swiper-slide best-categori-item">즉석식품/반찬</li>
-              <li class="swiper-slide best-categori-item">떡/간식</li>
-              <li class="swiper-slide best-categori-item">식단/건강관리</li>
-              <li class="swiper-slide best-categori-item">육류/수산/과일</li>
+              <li class="swiper-slide best-categori-item on"><button type="button">전체</button></li>
+              <li class="swiper-slide best-categori-item"><button type="button">국/탕/찌개</button></li>
+              <li class="swiper-slide best-categori-item"><button type="button">구이/볶음/찜</button></li>
+              <li class="swiper-slide best-categori-item"><button type="button">분식</button></li>
+              <li class="swiper-slide best-categori-item"><button type="button">밥/도시락/면</button></li>
+              <li class="swiper-slide best-categori-item"><button type="button">즉석식품/반찬</button></li>
+              <li class="swiper-slide best-categori-item"><button type="button">떡/간식</button></li>
+              <li class="swiper-slide best-categori-item"><button type="button">식단/건강관리</button></li>
+              <li class="swiper-slide best-categori-item"><button type="button">육류/수산/과일</button></li>
             </ul>
           </div>
         </section>
@@ -358,8 +358,17 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/css.js"></script>
     <script>
-      var categori_swiper = new Swiper('.categori_swiper', {
+      const best_swiper = new Swiper('.best_swiper', {
+        slidesPerView: 'auto',
+        freeMode: true,
+        spaceBetween: 10,
+        slideToClickedSlide : true, 
+        centeredSlides : true,
+        centeredSlidesBounds : true,
+      });
+      const categori_swiper = new Swiper('.categori_swiper', {
         direction: 'vertical',
         slidesPerView: 1,
         spaceBetween: 0,
@@ -369,10 +378,21 @@
         },
         loop: true,
       });
-      var best_swiper = new Swiper('.best_swiper', {
-        slidesPerView: 'auto',
-        freeMode: true,
-      });
+      
+      function menuClickEvent(){
+        let tabList = document.querySelectorAll('.best-categori-item');
+        
+        for(let i = 0; i < tabList.length; i++){
+          tabList[i].querySelector('button').addEventListener('click', function(e){
+            e.preventDefault();
+            for(let j = 0; j < tabList.length; j++){
+              tabList[j].classList.remove('on');
+            }
+            this.parentNode.classList.add('on');
+          });
+        }
+      }
+      menuClickEvent();
     </script>
   </body>
 </html>

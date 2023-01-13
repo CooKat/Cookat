@@ -57,52 +57,7 @@
           <img src="./images/ic-24-finder.svg" alt="검색 아이콘" />
         </button>
       </header>
-      <!-- 검색 페이지 -->
-      <article class="search-container">
-        <div class="search-header">
-          <button class="search-prev-btn" type="button">
-            <img src="./images/ic-24-arrow-perv.svg" alt="홈으로 가기" />
-          </button>
-          <div class="search-input-box">
-            <input class="search-input" type="text" />
-            <button type="button" class="erase-btn" aria-label="다 지우기"></button>
-            <button type="button" class="search-btn" aria-label="검색하기"></button>
-          </div>
-        </div>
-        <section class="recommend-search">
-          <div class="recommend-search-title">추천 검색어</div>
-          <div class="recommend-search-buttons">
-            <button type="button">설 선물세트</button>
-            <button type="button">감바스</button>
-            <button type="button">닭발</button>
-            <button type="button">갈비탕</button>
-            <button type="button">불고기</button>
-            <button type="button">곱창</button>
-            <button type="button">닭가습살</button>
-            <button type="button">감자탕</button>
-            <button type="button">닭갈비</button>
-            <button type="button">막창</button>
-            <button type="button">만두</button>
-            <button type="button">띵커바디</button>
-            <button type="button">부대찌개</button>
-          </div>
-        </section>
-        <section class="popular-search">
-          <div class="popular-search-title">인기 검색어</div>
-          <div class="popular-search-buttons">
-            <button type="button">찹쌀떡</button>
-            <button type="button">선물세트</button>
-            <button type="button">새우</button>
-            <button type="button">볶음밥</button>
-            <button type="button">대창</button>
-            <button type="button">떡</button>
-            <button type="button">도시락</button>
-            <button type="button">쭈꾸미</button>
-            <button type="button">띵커바디</button>
-            <button type="button">만두</button>
-          </div>
-        </section>
-      </article>
+
       <!-- 메인 -->
       <main class="main">
         <section class="visual" id="visual">
@@ -664,6 +619,7 @@
           <a href="/">로그인</a>
           <a id="app-down" href="/"> APP다운</a>
         </div>
+        <a href="#" class="top-button"><img src="./images/ic-floating-button.svg" alt="최상단으로 가기" /></a>
       </footer>
       <nav class="fix-footer-menu">
         <ul>
@@ -675,6 +631,52 @@
         </ul>
       </nav>
     </div>
+    <!-- 검색 페이지 -->
+    <article class="search-container">
+      <div class="search-header">
+        <button class="search-close-btn" type="button"></button>
+        <div class="search-input-box">
+          <input class="search-input" type="text" placeholder="검색어를 입력해 주세요." required />
+          <button type="button" class="erase-btn" aria-label="다 지우기"></button>
+          <button type="button" class="search-btn" aria-label="검색하기"></button>
+        </div>
+      </div>
+      <div class="search-language-box">
+        <section class="search-language">
+          <div class="search-language-title">추천 검색어</div>
+          <div class="search-language-buttons">
+            <button type="button">설 선물세트</button>
+            <button type="button">감바스</button>
+            <button type="button">닭발</button>
+            <button type="button">갈비탕</button>
+            <button type="button">불고기</button>
+            <button type="button">곱창</button>
+            <button type="button">닭가습살</button>
+            <button type="button">감자탕</button>
+            <button type="button">닭갈비</button>
+            <button type="button">막창</button>
+            <button type="button">만두</button>
+            <button type="button">띵커바디</button>
+            <button type="button">부대찌개</button>
+          </div>
+        </section>
+        <section class="search-language">
+          <div class="search-language-title">인기 검색어</div>
+          <div class="search-language-buttons">
+            <button type="button">찹쌀떡</button>
+            <button type="button">선물세트</button>
+            <button type="button">새우</button>
+            <button type="button">볶음밥</button>
+            <button type="button">대창</button>
+            <button type="button">떡</button>
+            <button type="button">도시락</button>
+            <button type="button">쭈꾸미</button>
+            <button type="button">띵커바디</button>
+            <button type="button">만두</button>
+          </div>
+        </section>
+      </div>
+    </article>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -748,6 +750,16 @@
         // swiper 끝나고 여백 35px 주기
         slidesOffsetAfter: 35,
       });
+
+      const topButton = document.querySelector('.top-button');
+
+      function topEvent(e){
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      topButton.addEventListener('click',topEvent);
+      
     </script>
     <!-- 사업자 정보 접었다 펼치기 -->
     <script>

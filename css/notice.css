@@ -37,3 +37,11 @@
   overflow: hidden;
   display: none;
 }
+
+.board-content > p{
+  padding: 16px 0;
+}
+
+.js-slide time{
+
+}

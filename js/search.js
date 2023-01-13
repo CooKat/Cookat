@@ -1,5 +1,10 @@
 var btn = document.querySelector('.home-search');
+const searchInput = document.querySelector('.search-input');
 var searchContainer = document.querySelector('.search-container');
+var searchCloseButton = document.querySelector('.search-close-btn');
+var EraseButton = document.querySelector('.erase-btn');
+var searchButton = document.querySelector('.search-btn');
+const fixedAdvertiseContainer = document.querySelector('.fixed-advertise-container');
 
 btn.addEventListener('click', function (e) {
   e.preventDefault();
@@ -9,8 +14,34 @@ btn.addEventListener('click', function (e) {
 
   if (btn.classList.contains('is--active')) {
     btn.setAttribute('aria-label', '메뉴 닫기');
-    menuList.style.cssText = 'transition:all 350ms ease-in-out';
+    // menuList.style.cssText = 'transition:all 350ms ease-in-out';
+    searchContainer.style.display = 'block';
+    fixedAdvertiseContainer.style.display = 'none';
   } else {
     btn.setAttribute('aria-label', '메뉴 열기');
+    searchContainer.style.display = 'none';
+    fixedAdvertiseContainer.style.display = 'block';
   }
+});
+
+searchCloseButton.addEventListener('click', function (e) {
+  e.preventDefault();
+  searchContainer.style.display = 'none';
+  btn.classList.remove('is--active');
+  fixedAdvertiseContainer.style.display = 'block';
+});
+
+searchInput.oninput = function (e) {
+  if (searchInput.value.length > 0) {
+    EraseButton.style.display = 'none';
+    searchButton.style.display = 'block';
+  }
+  EraseButton.style.display = 'block';
+  searchButton.style.display = 'none';
+};
+
+EraseButton.addEventListener('click', function (e) {
+  searchInput.value = '';
+  EraseButton.style.display = 'none';
+  searchButton.style.display = 'block';
 });
