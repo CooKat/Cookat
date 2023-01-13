@@ -1,0 +1,52 @@
+.food-container {
+  width: 500px;
+  background-color: var(--color-white);
+  margin: 0 auto;
+  z-index: 4;
+}
+
+.food-header {
+  width: 100%;
+  height: min(8vh, var(--spacing-6));
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-prev-button {
+  border: none;
+}
+
+.header-more-buttons {
+}
+
+.header-more-buttons {
+  width: min(8vw, var(--spacing-xxxl));
+  height: min(8vh, var(--spacing-6));
+}
+
+.main-swiper {
+  overflow: hidden;
+  height: min(70vh, 500px);
+}
+.swiper-slide img {
+  z-index: -1;
+}
+
+.discount-time {
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(44, 44, 43);
+  font-size: min(3vw, var(--text-sm));
+  padding: var(--spacing-sm);
+}
+
+.time-title {
+  margin-right: var(--spacing-sm);
+  color: var(--color-white);
+}
+
+.time-count {
+  color: tan;
+  font-weight: 700;
+}
