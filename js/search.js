@@ -15,7 +15,6 @@ btn.addEventListener('click', function (e) {
 
   if (btn.classList.contains('is--active')) {
     btn.setAttribute('aria-label', '메뉴 닫기');
-    // menuList.style.cssText = 'transition:all 350ms ease-in-out';
     searchContainer.style.display = 'block';
     fixedAdvertiseContainer.style.display = 'none';
     body.style.overflowY = 'hidden';
