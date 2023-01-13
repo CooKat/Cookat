@@ -270,9 +270,11 @@
 }
 
 .popup {
-  position: absolute;
-  top: 85%;
+  position: fixed;
+  bottom: -20%;
   left: 50%;
+  right: 50%;
+  max-height: calc(100vh - 32px - 60px);
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.9);
@@ -283,12 +285,17 @@
 
   /* 임시 지정 */
   width: 500px;
-  height: 31%;
+  height: 41%;
 }
 
 .pop-container {
   height: var(--spacing-xxl);
 }
+.pop-container > hr {
+  margin: var(--spacing-xxl) var(--spacing-base) var(--spacing-xl)
+    var(--spacing-base);
+}
+
 .pop-title {
   position: relative;
   text-align: center;
@@ -306,25 +313,59 @@
 .pop-option-title {
   color: var(--color-cement);
   font-size: var(--spacing-xm);
-  margin-bottom: var(--spacing-md);
 }
 
 .pop-option-select {
-  padding: var(--spacing-sxs) var(--spacing-base);
-  border-radius: var(--spacing-xs);
-  border: 1px var(--color-cement) solid;
   font-size: var(--text-md);
   line-height: 1.6;
+  margin-top: var(--spacing-sm);
   margin-bottom: var(--spacing-l);
+  position: relative;
+}
+
+.pop-option-select-list.active {
+  display: block;
+}
+
+.pop-option-select span {
+  height: 44px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #000;
+  line-height: 34px;
+  width: 100%;
+  padding: 0 20px 0 10px;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 3px;
 }
 .pop-option-select::after {
+  display: block;
   content: '';
+  clear: both;
   position: absolute;
-  left: 0px;
-  bottom: -2px;
-  height: 3px;
-  width: 100px;
-  background: red;
+  right: 10px;
+  top: 16px;
+  width: 14px;
+  height: 14px;
+  background: url('../images/ic-16-open-bold.svg') no-repeat 96% 50%;
+  z-index: 999;
+}
+
+.pop-option-select-list li {
+  line-height: 34px;
+  border: 1px solid rgb(161, 161, 161);
+  text-align: left;
+  padding-left: 10px;
+  cursor: pointer;
+  height: 44px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
 }
 
 .pop-count {
