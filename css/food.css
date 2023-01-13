@@ -42,11 +42,62 @@
 }
 
 .time-title {
-  margin-right: var(--spacing-sm);
+  margin: 0 var(--spacing-xs);
   color: var(--color-white);
 }
 
 .time-count {
-  color: tan;
+  color: var(--color-yellow);
   font-weight: 700;
+}
+
+.main-menu-wrap {
+  padding: var(--spacing-md) var(--spacing-base);
+}
+
+.main-menu-categori {
+  font-size: min(3vw, var(--text-xxs));
+  color: var(--color-cement);
+  margin-bottom: var(--spacing-xs);
+}
+
+.main-menu-title {
+  font-size: min(3vw, var(--text-base));
+  font-weight: 500;
+  margin-bottom: var(--spacing-l);
+  color: var(--color-darkblack);
+}
+
+.discount-price {
+  font-size: min(3vw, var(--text-xxs));
+  color: var(--color-cement);
+  margin-bottom: var(--spacing-xxs);
+  text-decoration: line-through;
+}
+
+.selling-price {
+  font-size: min(3vw, var(--text-l));
+  margin-bottom: var(--spacing-sm);
+}
+
+.discount-rate,
+.menu-price {
+  font-weight: 800;
+}
+
+.origin-wrap {
+  font-size: min(2vw, var(--text-sxxs));
+  color: var(--color-cement);
+  margin-bottom: var(--spacing-md);
+}
+
+.review-star {
+  font-size: min(3vw, var(--text-base));
+  color: #ffb123;
+  font-weight: 600;
+  margin-bottom: var(--spacing-xxs);
+}
+
+.review-count {
+  text-decoration: underline;
 }
