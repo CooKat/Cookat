@@ -10,6 +10,7 @@
   height: min(8vh, var(--spacing-6));
   display: flex;
   justify-content: space-between;
+  background-color: #c7c7c7;
 }
 
 .header-prev-button {
@@ -17,19 +18,19 @@
 }
 
 .header-more-buttons {
+  right: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  line-height: 4.5;
 }
 
-.header-more-buttons {
-  width: min(8vw, var(--spacing-xxxl));
-  height: min(8vh, var(--spacing-6));
+.header-button-list {
+  width: min(10vw, var(--spacing-xxxl));
 }
 
 .main-swiper {
   overflow: hidden;
   height: min(70vh, 500px);
-}
-.swiper-slide img {
-  z-index: -1;
 }
 
 .discount-time {
@@ -53,6 +54,7 @@
 
 .main-menu-wrap {
   padding: var(--spacing-md) var(--spacing-base);
+  position: relative;
 }
 
 .main-menu-categori {
@@ -76,7 +78,7 @@
 }
 
 .selling-price {
-  font-size: min(3vw, var(--text-l));
+  font-size: min(4vw, var(--text-l));
   margin-bottom: var(--spacing-sm);
 }
 
@@ -100,4 +102,172 @@
 
 .review-count {
   text-decoration: underline;
+}
+.product-share-button {
+  position: absolute;
+  background: image('./');
+  bottom: var(--spacing-xl);
+  right: var(--spacing-base);
+}
+
+.space-div {
+  content: '';
+  background: #eee;
+  height: var(--spacing-xm);
+}
+
+.menu-rec-wrap {
+  height: min(35vh, 25rem);
+}
+
+.menu-rec-title {
+  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-md)
+    var(--spacing-lg);
+  font-size: min(3vw, var(--text-base));
+  font-weight: 700;
+  color: var(--color-black);
+  width: 100%;
+}
+
+.rec-Swiper {
+  height: min(35vh, 25rem);
+}
+
+.menu-rec-item img {
+  width: min(20vw, 5.625rem);
+  border-radius: var(--spacing-sm);
+}
+
+.swiper-rec {
+  height: min(23vh, 10rem);
+  padding-left: var(--spacing-xm);
+}
+
+.swiper-slide:last-child {
+  padding-right: var(--spacing-xm);
+}
+
+.rec-swiper-bar {
+  width: 450px;
+  margin-top: 170px;
+  border-radius: var(--spacing-md);
+  background-color: var(--color-orange);
+  margin-bottom: var(--spacing-xl);
+}
+
+.recmenu-title {
+  font-size: min(3vw, var(--text-xxs));
+  line-height: 1.2;
+}
+
+.recmenu-price {
+  font-size: min(3vw, var(--text-sm));
+  font-weight: 700;
+}
+
+.menu-rec-ad {
+  height: 100%;
+}
+
+/* 상품정보 / 구매정보/ 후기 / Q&A */
+
+.product-tab-bar {
+  display: flex;
+  text-align: center;
+  padding-top: min(2.5vh, var(--spacing-lg));
+  height: min(10vh, 50px);
+}
+
+.product-tab-content {
+  flex-grow: 1;
+  height: 100%;
+  font-size: min(3vw, var(--text-sm));
+  font-weight: 500;
+  color: var(--color-black);
+  padding: auto 0;
+}
+
+.active a {
+  color: var(--color-orange);
+  border-bottom: 2px solid var(--color-orange);
+  padding-bottom: min(2vh, var(--spacing-md));
+}
+
+.product-tab-content a {
+  height: 100%;
+}
+
+.product-video img {
+  width: 100%;
+}
+
+.product-main-title {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.main-title-img {
+  width: auto;
+  margin-top: var(--spacing-xxxl);
+}
+
+.main-title-img img {
+  width: auto;
+  margin: 0 auto;
+}
+
+.product-content-wrap {
+  text-align: center;
+}
+
+.main-product-content {
+  color: #5b5752;
+  font-size: min(5vw, var(--text-l));
+  margin-top: var(--spacing-xxs);
+}
+
+.main-product-title {
+  width: 100%;
+  color: #5b5752;
+  font-size: min(5vw, 30px);
+  font-weight: 700;
+  padding: var(--spacing-xxs);
+  border-top: 2px solid #5b5752;
+  border-bottom: 2px solid #5b5752;
+  margin-top: var(--spacing-xxs);
+  margin-bottom: var(--spacing-l);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              /* footer 구매하기버튼 */
+/* --------------------------------------------------------------------------*/
+
+.purchase {
+  height: min(10vh, var(--spacing-6));
+  background-color: var(--color-orange);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.purchase-like {
+  display: flex;
+  width: min(35vw, var(--spacing-6));
+}
+.purchase-line {
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.purchase-button {
+  width: 100%;
+  font-size: min(3vw, var(--text-base));
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
 }
