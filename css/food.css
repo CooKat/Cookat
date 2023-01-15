@@ -93,11 +93,29 @@
   margin-bottom: var(--spacing-md);
 }
 
+.review-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .review-star {
   font-size: min(3vw, var(--text-base));
   color: #ffb123;
   font-weight: 600;
   margin-bottom: var(--spacing-xxs);
+}
+
+.review-star-img {
+  margin-left: var(--spacing-xs);
+}
+
+.review-star-img img {
+  margin-left: -3px;
+}
+
+.star-half {
+  max-width: 18px;
+  max-height: 18px;
 }
 
 .review-count {
@@ -108,12 +126,19 @@
   background: image('./');
   bottom: var(--spacing-xl);
   right: var(--spacing-base);
+  border: none;
 }
 
 .space-div {
   content: '';
   background: #eee;
   height: var(--spacing-xm);
+}
+
+.space-div1 {
+  content: '';
+  background: #eee;
+  height: 1px;
 }
 
 .menu-rec-wrap {
@@ -244,18 +269,33 @@
 /* --------------------------------------------------------------------------*/
 
 .purchase {
+  position: fixed;
+  bottom: 0;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
   height: min(10vh, var(--spacing-6));
   background-color: var(--color-orange);
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 500;
 }
 
 .purchase-like {
+  width: var(--spacing-6);
+  height: var(--spacing-6);
+  line-height: 60px;
   display: flex;
-  width: min(35vw, var(--spacing-6));
+  justify-content: center;
+  border-right: 1px solid rgb(252, 115, 93);
 }
+
+.purchase-like img {
+  width: 24px;
+}
+
 .purchase-line {
   width: 1px;
   height: 100%;
@@ -263,93 +303,107 @@
 }
 
 .purchase-button {
-  width: 100%;
+  width: 85%;
   font-size: min(3vw, var(--text-base));
   font-weight: 700;
   display: flex;
   justify-content: center;
+  padding-right: var(--spacing-l);
 }
 
-.shipping-info-wrap{
+.purchase-btn {
+  width: 100%;
+  height: 100%;
+  line-height: 3.2;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     세민?                                    */
+/* -------------------------------------------------------------------------- */
+
+.shipping-info-wrap {
   padding: var(--spacing-xl) var(--spacing-base);
   color: var(--color-gray);
-  border-top:12px solid #eee;
+  border-top: 12px solid #eee;
   font-size: var(--text-xs);
 }
-.shipping-info-wrap h2{
+.shipping-info-wrap h2 {
   font-size: var(--text-sm);
   color: var(--color-darkblack);
-  font-weight:600;
-  margin-bottom: var(--spacing-sm)
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
 }
 
-.shipping-info-wrap dl{
+.shipping-info-wrap dl {
   font-size: 0;
 }
 .shipping-info-wrap dt,
-.shipping-info-wrap dd{
+.shipping-info-wrap dd {
   display: inline-block;
   font-size: var(--text-xs);
   margin-bottom: var(--spacing-sm);
   line-height: 1.6;
 }
 
-.shipping-info-wrap dt{
-  width:20%;
+.shipping-info-wrap dt {
+  width: 20%;
   vertical-align: top;
 }
-.shipping-info-wrap dd{
-  width:80%;
+.shipping-info-wrap dd {
+  width: 80%;
 }
 
-.shipping-info-wrap dd strong{
+.shipping-info-wrap dd strong {
   display: block;
   color: var(--color-orange);
 }
-.shipping-info-wrap [class *= 'icon']{
-  font-size:var(--text-xxs);
-  padding:0 var(--spacing-sxs);
-  line-height:22px;
+.shipping-info-wrap [class*='icon'] {
+  font-size: var(--text-xxs);
+  padding: 0 var(--spacing-sxs);
+  line-height: 22px;
   display: inline-block;
   border-radius: 4px;
-  font-weight:600;
+  font-weight: 600;
   margin: 0 var(--spacing-sxxs) var(--spacing-sm) 0;
 }
 
-.shipping-info-wrap .shipping-fast-icon{
+.shipping-info-wrap .shipping-fast-icon {
   background-color: rgb(255, 249, 183);
   color: #947b1f;
 }
 
-.shipping-icon{
+.shipping-icon {
   background: rgb(253, 233, 223);
-  color: var(--color-orange)
+  color: var(--color-orange);
 }
 
-.precautions{
-  border-top:1px solid #eee;
+.precautions {
+  border-top: 1px solid #eee;
   padding: var(--spacing-xl) var(--spacing-base);
-  line-height:1.6;
-  color:var(--color-orange);
+  line-height: 1.6;
+  color: var(--color-orange);
 }
 
-.precautions h3{
+.precautions h3 {
   font-size: var(--text-sm);
-  font-weight:600;
-  margin-bottom:var(--spacing-xxs);
-  line-height:18px
+  font-weight: 600;
+  margin-bottom: var(--spacing-xxs);
+  line-height: 18px;
 }
 
-.precautions h3::before{
-  content:'';
+.precautions h3::before {
+  content: '';
   display: inline-block;
   background: url(../images/ic-24-customer-info.svg) center/18px;
-  width:18px;
-  height:18px;
+  width: 18px;
+  height: 18px;
   vertical-align: middle;
-  margin-right:var(--spacing-xs)
+  margin-right: var(--spacing-xs);
 }
 
-.precautions p{
-  font-size: var(--text-xs)
+.precautions p {
+  font-size: var(--text-xs);
 }

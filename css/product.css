@@ -269,6 +269,11 @@
   top: var(--spacing-base);
 }
 
+#close img {
+  max-width: var(--spacing-xl);
+  max-height: var(--spacing-xl);
+}
+
 .popup {
   position: fixed;
   bottom: -20%;
