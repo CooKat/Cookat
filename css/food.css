@@ -1,5 +1,5 @@
 .food-container {
-  width: 500px;
+  width: min(500px, 100%);
   background-color: var(--color-white);
   margin: 0 auto;
   z-index: 4;
@@ -171,6 +171,10 @@
 
 /* 상품정보 / 구매정보/ 후기 / Q&A */
 
+.product-tab{
+  overflow: hidden;
+}
+
 .product-tab-bar {
   text-align: center;
   /* padding-top: min(2.5vh, var(--spacing-lg));
@@ -185,14 +189,14 @@
   padding: auto 0;
 }
 
-.active a {
-  color: var(--color-orange);
-  border-bottom: 2px solid var(--color-orange);
-  padding-bottom: min(2vh, var(--spacing-md));
+.product-tab-content button span{
+  font-size: var(--text-sxxs);
+  margin-left: var(--spacing-xs);
+  color:var(--color-gray)
 }
 
-.product-tab-content a {
-  height: 100%;
+.product-tab-content.active button span{
+  color: var(--color-orange)
 }
 
 .product-video img {
@@ -237,6 +241,41 @@
   border-bottom: 2px solid #5b5752;
   margin-top: var(--spacing-xxs);
   margin-bottom: var(--spacing-l);
+}
+
+.shopping-info h3{
+  line-height: 50px;
+  text-align: left;
+  padding:0 0 0 var(--spacing-base);
+  background-color: #F9F9F9;
+  color:var(--color-black);
+  font-weight:400
+}
+
+.shopping-info .arrow-icon{
+  float: right;
+  background:url(../images/ic-16-open.svg) no-repeat center;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.active-content{
+  display: none;
+  overflow: hidden;
+}
+
+.active-content > p{
+  padding:var(--spacing-xl) var(--spacing-base);
+  text-align: left;
+  font-weight:400;
+  color:var(--color-gray);
+  font-size: var(--text-xs);
+  line-height:1.5
+}
+
+.shopping-info .active .arrow-icon{
+  transform: rotate(-180deg);
 }
 
 /* -------------------------------------------------------------------------- */

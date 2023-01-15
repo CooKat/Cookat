@@ -25,7 +25,7 @@ Array.prototype.forEach.call(menus, function(v, i, a){
   });
 });
 
-function jSlideUp(t, target) {
+function jSlideUp(t, target, arrow) {
   t.classList.remove("active");
   if (t.classList.contains('js-slide')) {
     target.style.overflow = 'hidden';
@@ -44,7 +44,7 @@ function jSlideUp(t, target) {
   }
 }
 
-function jSlideDown(t, target) {
+function jSlideDown(t, target, arrow) {
   t.classList.add("active");
   t.classList.add("js-slide");
   target.style.display = 'block';

@@ -1,5 +1,4 @@
 .tab-list{
-  display: flex;
   border-bottom: 1px solid #eee;
   padding-top:2px;
   position: relative;
@@ -18,7 +17,9 @@
 }
 
 .gird4 .tabBtn{
-  width: calc(25% - var(--spacing-base));
+  width: calc(25% - var(--spacing-base) - var(--spacing-base));
+  font-size:var(--text-sm);
+  margin:0 var(--spacing-base);
 }
 
 .gird4 li:nth-child(2) .tabBtn{
@@ -50,9 +51,9 @@
   margin-right:var(--spacing-base);
 }
 
-
 .tab-content{
   display: none;
+  width: min(500px, 100%);
   padding-top:49px;
 }
 
