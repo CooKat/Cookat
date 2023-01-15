@@ -21,6 +21,7 @@
     />
 
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/tab.css" />
     <link rel="stylesheet" href="./css/food.css" />
     <title>쿠캣</title>
   </head>
@@ -220,36 +221,51 @@
         </section>
         <div class="space-div"></div>
         <section class="product-tab">
-          <ul class="product-tab-bar">
-            <li class="product-tab-content active"><a href="#">상품정보</a></li>
-            <li class="product-tab-content"><a href="#">구매후기</a></li>
-            <li class="product-tab-content">
-              <a href="#">후기<span class="review-cnt">(9,367)</span></a>
+          <ul class="tab-list product-tab-bar gird4">
+            <li class="product-tab-content active">
+              <button type="button" class="tabBtn">상품정보</button>
+              <div class="tab-content">
+                <div class="product-video">
+                  <img src="./images/prd-title-img.png" alt="동영상" />
+                </div>
+                <div class="product-main-title">
+                  <div class="main-title-img">
+                    <img
+                      src="./images/logo-cookatmarket-simple.svg"
+                      alt="메인 로고"
+                    />
+                  </div>
+                  <div class="product-content-wrap">
+                    <div class="main-product-content">
+                      매콤달달 감칠맛 제대로 살린
+                    </div>
+                    <div class="main-product-title">메콤 닭바베큐</div>
+                  </div>
+                </div>
+                <div class="product-content-img">
+                  <img src="./images/food-content-img1.jpg" alt="예시사진1번" />
+                </div>
+              </div>
             </li>
             <li class="product-tab-content">
-              <a href="#">Q&A<span class="review-cnt">(78)</span></a>
+              <button type="button" class="tabBtn">구매후기</button>
+              <div class="tab-content">
+
+              </div>
+            </li>
+            <li class="product-tab-content">
+              <button type="button" class="tabBtn">후기<span class="review-cnt">(9,367)</span></button>
+              <div class="tab-content">
+                
+              </div>
+            </li>
+            <li class="product-tab-content">
+              <button type="button" class="tabBtn">Q&A<span class="review-cnt">(78)</span></button>
+              <div class="tab-content">
+                
+              </div>
             </li>
           </ul>
-          <div class="product-video">
-            <img src="./images/prd-title-img.png" alt="동영상" />
-          </div>
-          <div class="product-main-title">
-            <div class="main-title-img">
-              <img
-                src="./images/logo-cookatmarket-simple.svg"
-                alt="메인 로고"
-              />
-            </div>
-            <div class="product-content-wrap">
-              <div class="main-product-content">
-                매콤달달 감칠맛 제대로 살린
-              </div>
-              <div class="main-product-title">메콤 닭바베큐</div>
-            </div>
-          </div>
-          <div class="product-content-img">
-            <img src="./images/food-content-img1.jpg" alt="예시사진1번" />
-          </div>
         </section>
         <div class="space-div"></div>
       </main>
@@ -268,7 +284,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
+    <script src="./js/tab.js"></script>
     <!-- Initialize Swiper -->
     <script>
       var main_swiper = new Swiper('.mainSwiper', {});

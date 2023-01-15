@@ -172,14 +172,12 @@
 /* 상품정보 / 구매정보/ 후기 / Q&A */
 
 .product-tab-bar {
-  display: flex;
   text-align: center;
-  padding-top: min(2.5vh, var(--spacing-lg));
-  height: min(10vh, 50px);
+  /* padding-top: min(2.5vh, var(--spacing-lg));
+  height: min(10vh, 50px); */
 }
 
 .product-tab-content {
-  flex-grow: 1;
   height: 100%;
   font-size: min(3vw, var(--text-sm));
   font-weight: 500;
