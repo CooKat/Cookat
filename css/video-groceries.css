@@ -1,0 +1,92 @@
+/* 하단 고정 메뉴*/
+
+.video-footer-menu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 500px;
+  background-color: #181716;
+  border-top: 1px solid #181716;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 65px;
+  z-index: 20;
+}
+
+.video-footer-menu ul {
+  display: block;
+  font-size: 0;
+  height: 100%;
+}
+
+.video-footer-menu li {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  position: relative;
+}
+
+.video-footer-menu a {
+  padding: var(--spacing-xxl) 0 var(--spacing-sm);
+  background-repeat: no-repeat;
+  background-position: center 8px;
+  background-size: 20px;
+  color: var(--color-white);
+  font-weight: bold;
+  color: #bbb8b5;
+  display: block;
+  cursor: pointer;
+  height: 100%;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 11px;
+}
+
+.video-footer-menu .my-video.on a {
+  color: white;
+  font-weight: bold;
+}
+
+.video-footer-menu .my-home a {
+  background-image: url(../images/ic-24-home-black-version.svg);
+  background-position: center top 10px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+}
+
+.video-footer-menu .my-video a {
+  background-image: url(../images/ic-24-tv-solid-black-version-new.svg);
+}
+.video-footer-menu .my-home a:hover,
+.video-footer-menu .my-menu a:hover,
+.video-footer-menu .my-cart a:hover,
+.video-footer-menu .my-cookat a:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.video-footer-menu .my-menu a {
+  background-image: url(../images/ic-tabbar-black-version-category.svg);
+}
+
+.video-footer-menu .my-cart a {
+  background-image: url(../images/ic-tabbar-black-version-cart.svg);
+}
+
+.video-footer-menu .my-cookat a {
+  background-image: url(../images/ic-24-mycookat-tv-color.svg);
+}
+
+.footer {
+  margin: 0 auto;
+  color: #46433f;
+  font-size: 12px;
+  font-weight: 300px;
+  margin-top: 100px;
+}
+a {
+  text-decoration: none;
+}
