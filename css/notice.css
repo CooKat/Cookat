@@ -13,10 +13,6 @@
   padding: var(--spacing-base);
 }
 
-.tab-content {
-  width: max(500px, 100%);
-}
-
 .tab-content li {
   padding: var(--spacing-base);
   border-top: 1px solid #eee;
@@ -40,8 +36,4 @@
 
 .board-content > p{
   padding: 16px 0;
-}
-
-.js-slide time{
-
 }

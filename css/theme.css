@@ -6,11 +6,13 @@
   --color-placeholder: #bbb8b5;
   --color-deep-orange: #eb5500;
   --color-orange: #ff5833;
-  --color-border: #e9e8e2;
+  --color-border: #e9e2e2;
   --color-success: #579bdb;
   --color-black: #46434f;
   --color-gray: #9d999d;
   --color-greyish-brown: #5b5752;
+  --color-darkblack: rgb(59, 59, 59);
+  --color-yellow: #ffed69;
 
   --spacing-sxxs: 0.125rem; /* 2px */
   --spacing-xxs: 0.25rem; /* 4px */

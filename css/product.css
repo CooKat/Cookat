@@ -4,13 +4,13 @@
 
 .best-categori-list-div {
   overflow: hidden;
-  padding:var(--spacing-sxxs) var(--spacing-base);
+  padding: var(--spacing-sxxs) var(--spacing-base);
 }
 
 .best-categori-item {
   width: auto;
   white-space: nowrap;
-  border : 1px solid #eee;
+  border: 1px solid #eee;
   border-radius: var(--spacing-l);
   text-align: center;
   justify-items: center;
@@ -18,14 +18,14 @@
   box-shadow: 0 1px 4px 0 rgb(0 0 0 / 8%);
 }
 
-.best-categori-item button{
-  border:0;
+.best-categori-item button {
+  border: 0;
   padding: var(--spacing-sm) var(--spacing-md);
 }
 
 .best-list .on {
   border-color: var(--color-black);
-  font-weight:600;
+  font-weight: 600;
 }
 
 .product-title {
@@ -240,7 +240,6 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1000;
 
   /* 숨기기 */
   z-index: -1;
@@ -259,24 +258,137 @@
   height: 100%;
 }
 
-.close {
-  border: 0;
+#close {
+  float: right;
+  width: var(--spacing-xl);
+  height: var(--spacing-xl);
+  margin-right: var(--spacing-l);
+  border: none;
   position: absolute;
   right: 0;
+  top: var(--spacing-base);
+}
+
+#close img {
+  max-width: var(--spacing-xl);
+  max-height: var(--spacing-xl);
 }
 
 .popup {
-  position: absolute;
-  top: 85%;
+  position: fixed;
+  bottom: -20%;
   left: 50%;
+  right: 50%;
+  max-height: calc(100vh - 32px - 60px);
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.9);
   border-radius: 20px 20px 0 0;
 
+  display: flex;
+  flex-flow: column nowrap;
+
   /* 임시 지정 */
   width: 500px;
-  height: 280px;
+  height: 41%;
+}
+
+.pop-container {
+  height: var(--spacing-xxl);
+}
+.pop-container > hr {
+  margin: var(--spacing-xxl) var(--spacing-base) var(--spacing-xl)
+    var(--spacing-base);
+}
+
+.pop-title {
+  position: relative;
+  text-align: center;
+  justify-items: center;
+  padding-top: var(--spacing-base);
+  padding-bottom: var(--spacing-md);
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+
+.pop-option {
+  padding: 0 var(--spacing-base);
+}
+
+.pop-option-title {
+  color: var(--color-cement);
+  font-size: var(--spacing-xm);
+}
+
+.pop-option-select {
+  font-size: var(--text-md);
+  line-height: 1.6;
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-l);
+  position: relative;
+}
+
+.pop-option-select-list.active {
+  display: block;
+}
+
+.pop-option-select span {
+  height: 44px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #000;
+  line-height: 34px;
+  width: 100%;
+  padding: 0 20px 0 10px;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 3px;
+}
+.pop-option-select::after {
+  display: block;
+  content: '';
+  clear: both;
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  width: 14px;
+  height: 14px;
+  background: url('../images/ic-16-open-bold.svg') no-repeat 96% 50%;
+  z-index: 999;
+}
+
+.pop-option-select-list li {
+  line-height: 34px;
+  border: 1px solid rgb(161, 161, 161);
+  text-align: left;
+  padding-left: 10px;
+  cursor: pointer;
+  height: 44px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.pop-count {
+  padding: 0 var(--spacing-base);
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-md);
+  color: var(--color-cement);
+  margin: var(--spacing-md) 0;
+}
+.pop-total-count > span {
+  color: var(--color-orange);
+  font-weight: 700;
+}
+
+.pop-total-price > span {
+  color: var(--color-black);
+  font-weight: 700;
 }
 
 .cart-input {
@@ -285,4 +397,33 @@
   background-color: orange;
   color: #fff;
   width: 100%;
+}
+
+.pop-cart::before {
+  content: '';
+  background: image();
+}
+
+.pop-cart > svg {
+  margin-right: 3px;
+  height: 100%;
+}
+.pop-cart {
+  background-color: var(--color-orange);
+  color: #fff;
+  font-size: var(--text-base);
+  font-weight: 600;
+  line-height: 3.5;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.cart-img,
+.cart-title {
+  padding: 0 var(--spacing-sxs) 0 0;
+}
+
+.cart-img {
+  padding-top: 2px;
 }

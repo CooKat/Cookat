@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/1.png" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/tab.css" />
+    <link rel="stylesheet" href="./css/food.css" />
+    <title>쿠캣</title>
+  </head>
+  <body>
+    <div class="food-container">
+      <header class="food-header">
+        <button onclick="history.back();" class="header-prev-button">
+          <img src="./images/ic-24-arrow-perv.svg" alt="이전으로 가기" />
+        </button>
+
+        <div class="header-more-buttons">
+          <div class="header-button-list">
+            <a href="#"
+              ><img src="./images/ic-24-finder-white.svg" alt="검색하기"
+            /></a>
+          </div>
+          <div class="header-button-list">
+            <a
+              href="#"
+              alt="홈으로 가기"
+              onclick="location.href='index.html'"
+              class="header-home-button"
+            >
+              <img src="./images/ic-24-home.svg" alt="홈으로 가기" />
+            </a>
+          </div>
+          <div class="header-button-list">
+            <a href="#">
+              <img src="/images/ic-cart-white.svg" alt="카트" />
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="menu-main">
+          <div class="menu-photo">
+            <div class="main-swiper mainSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/foodmain.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/foodmain.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/foodmain.jpg" />3
+                </div>
+              </div>
+            </div>
+
+            <div class="discount-time">
+              <img src="./images/ic-16-clock-white.svg" />
+              <span class="time-title">타임딜 남은시간</span>
+              <span class="time-count">11:41:36</span>
+            </div>
+          </div>
+          <div class="main-menu-wrap">
+            <div class="main-menu">
+              <div class="main-menu-categori">쿠켓메이드</div>
+              <div class="main-menu-title">
+                쿠캣포차 닭바베큐 3팩 (매콤/로제치즈)
+              </div>
+            </div>
+            <div class="price-wrap">
+              <div class="discount-price">20,700원</div>
+              <div class="selling-price">
+                <span class="discount-rate">33%</span>
+                <span class="menu-price">13,900원</span>
+              </div>
+              <div class="origin-wrap">원산지표시 : 상품정보고시 참조</div>
+            </div>
+            <div class="review-wrap">
+              <div class="review-star">4.9</div>
+              <div class="review-star-img">
+                <img
+                  src="./images/ic-star-fill.svg"
+                  class="star-fill"
+                  alt="별1개"
+                />
+                <img
+                  src="./images/ic-star-fill.svg"
+                  class="star-fill"
+                  alt="별1개"
+                />
+                <img
+                  src="./images/ic-star-fill.svg"
+                  class="star-fill"
+                  alt="별1개"
+                />
+                <img
+                  src="./images/ic-star-fill.svg"
+                  class="star-fill"
+                  alt="별1개"
+                />
+                <img
+                  src="./images/ic-star-half.svg"
+                  class="star-half"
+                  alt="별 반개"
+                />
+              </div>
+            </div>
+            <div class="review-count">9,363개의 후기</div>
+            <button type="button" class="product-share-button" href="#">
+              <img src="./images/new-product-share-btn.svg" alt="공유버튼" />
+            </button>
+          </div>
+        </section>
+        <section class="shipping-info-wrap">
+          <h2>배송정보</h2>
+          <dl>
+            <dt>배송비</dt>
+            <dd>
+              4,000원 (50,000원 이상 무료)
+              <strong>
+                회원은 40,000원 이상 전상품 무료배송 <br />
+                (업체배송상품 제외)
+              </strong>
+            </dd>
+            <dt>배송형태</dt>
+            <dd>냉장/냉동배송</dd>
+            <dt>배송지역</dt>
+            <dd>국내 전 지역 (제주/도서산간 배송불가)</dd>
+            <dt>발송안내</dt>
+            <dd>
+              <span class="shipping-fast-icon">새벽배송</span>
+              <span class="shipping-icon">일반배송</span>
+              <p>
+                -냉장/냉동제품.<br />
+                오후 12시 이전 결제건까지 당일 출고 (영업일 기준)<br />
+                ※ 제주도 및 도서산간지역은 배송이 불가합니다. 주문 전
+                확인해주세요.<br />
+                ※ [배송준비중] 이후 상태에서는 배송지 변경 및 취소처리가
+                불가합니다.<br />
+                ※ 주문 폭주 및 날씨 등 예외적인 상황의 경우 출고가 다소 지연될
+                수 있습니다.<br />
+                <br />
+                -상온제품<br />
+                12시 이전 결제건까지 당일 출고 (영업일 기준)<br />
+                ※ [배송준비중] 이후 상태에서는 배송지 변경 및 취소처리가
+                불가합니다.<br />
+                ※ 주문 폭주 및 날씨 등 예외적인 상황의 경우 출고가 다소 지연될
+                수 있습니다.<br />
+              </p>
+            </dd>
+          </dl>
+        </section>
+        <section class="precautions">
+          <h3>주문 전 꼭! 확인해주세요</h3>
+          <p>
+            주말 및 공휴일이 포함되어 있거나 주문 폭주인 경우,<br />
+            출고일까지 1~3일 소요될 수 있습니다. (영업일 기준)
+          </p>
+        </section>
+        <div class="space-div"></div>
+        <!-- @@@@@@@이상품은 어떠세요? + 광고 -->
+        <section class="menu-rec">
+          <div class="menu-rec-wrap">
+            <div class="menu-rec-title">이 상품은 어떠세요?</div>
+            <div class="swiper rec-Swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-rec">
+                  <a class="menu-rec-item" href="#">
+                    <img src="./images/menu-rec1.jpg" alt="메뉴추천1" />
+                    <div class="recmenu-title">
+                      쿠캣 볶음밥 6종(감자탕/김치참치볶음밥?)
+                    </div>
+                    <div class="recmenu-price">2,900원</div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-rec">
+                  <a class="menu-rec-item" href="#">
+                    <img src="./images/menu-rec2.jpg" alt="메뉴추천1" />
+                    <div class="recmenu-title">
+                      쿠캣 볶음밥 6종(감자탕/김치참치볶음밥?)
+                    </div>
+                    <div class="recmenu-price">2,900원</div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-rec">
+                  <a class="menu-rec-item" href="#">
+                    <img src="./images/menu-rec3.jpg" alt="메뉴추천1" />
+                    <div class="recmenu-title">
+                      쿠캣 볶음밥 6종(감자탕/김치참치볶음밥?)
+                    </div>
+                    <div class="recmenu-price">2,900원</div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-rec">
+                  <a class="menu-rec-item" href="#">
+                    <img src="./images/menu-rec4.jpg" alt="메뉴추천1" />
+                    <div class="recmenu-title">
+                      쿠캣 볶음밥 6종(감자탕/김치참치볶음밥?)
+                    </div>
+                    <div class="recmenu-price">2,900원</div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-rec">
+                  <a class="menu-rec-item" href="#">
+                    <img src="./images/menu-rec5.jpg" alt="메뉴추천1" />
+                    <div class="recmenu-title">
+                      쿠캣 볶음밥 6종(감자탕/김치참치볶음밥?)
+                    </div>
+                    <div class="recmenu-price">2,900원</div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-rec">
+                  <a class="menu-rec-item" href="#">
+                    <img src="./images/menu-rec1.jpg" alt="메뉴추천1" />
+                    <div class="recmenu-title">
+                      쿠캣 볶음밥 6종(감자탕/김치참치볶음밥?)
+                    </div>
+                    <div class="recmenu-price">2,900원</div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="rec-swiper-bar"></div>
+            </div>
+          </div>
+          <div class="space-div"></div>
+          <div class="menu-rec-ad">
+            <a href="#">
+              <img src="./images/food-ad-img.jpg" alt="현대카드 광고" />
+            </a>
+          </div>
+        </section>
+        <div class="space-div"></div>
+        <section class="product-tab">
+          <ul class="tab-list product-tab-bar gird4">
+            <li class="product-tab-content active">
+              <button type="button" class="tabBtn">상품정보</button>
+              <div class="tab-content">
+                <div class="product-video">
+                  <img src="./images/prd-title-img.png" alt="동영상" />
+                </div>
+                <div class="product-main-title">
+                  <div class="main-title-img">
+                    <img
+                      src="./images/logo-cookatmarket-simple.svg"
+                      alt="메인 로고"
+                    />
+                  </div>
+                  <div class="product-content-wrap">
+                    <div class="main-product-content">
+                      매콤달달 감칠맛 제대로 살린
+                    </div>
+                    <div class="main-product-title">메콤 닭바베큐</div>
+                  </div>
+                </div>
+                <div class="product-content-img">
+                  <img src="./images/food-content-img1.jpg" alt="예시사진1번" />
+                </div>
+              </div>
+            </li>
+            <li class="product-tab-content">
+              <button type="button" class="tabBtn">구매정보</button>
+              <div class="tab-content">
+                <ul class="shopping-info slide-content">
+                  <li>
+                    <h3>결제 안내 <span class="arrow-icon"></span></h3>
+                    <div class="active-content">
+                      <p>
+                        -결제수단 안내: 신용카드 / 실시간계좌이체(에스크로) /
+                        휴대폰결제 / 무통장입금(가상계좌)<br />
+                        <br />
+                        -무통장입금(가상계좌)의 경우, 12시간 이내 미 입금 시
+                        주문이 자동 취소됩니다.<br />
+                        <br />
+                        -이용 가능한 간편 결제 : 네이버페이, 카카오페이,
+                        페이코(Payco), L.Pay, CHAI Pay, Smile Pay<br />
+                        <br />
+                        -고액결제의 경우 안전을 위해 카드사에서 확인전화를 드릴
+                        수도 있습니다. 확인과정에서 도난 카드의 사용이나 타인
+                        명의의 주문 등 정상적인 주문이 아니라고 판단될 경우
+                        임의로 주문을 보류 또는 취소할 수 있습니다.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>주문단계 안내 <span class="arrow-icon"></span></h3>
+                    <div class="active-content">
+                      <p>
+                        Eveniet animi vitae, ipsam perspiciatis consequatur
+                        fugit. Dolorum laudantium fugit blanditiis aperiam quae
+                        dolor, quisquam pariatur facere? Libero, ut mollitia
+                        repudiandae nisi provident, maiores nobis consectetur
+                        laudantium ad porro, assumenda distinctio deleniti earum
+                        blanditiis. Vitae nemo, numquam aut obcaecati quis
+                        minima esse, tempora eaque ut labore optio modi
+                        voluptates saepe cumque, libero architecto nam possimus
+                        at quam sed nulla? Voluptates sunt voluptate illum
+                        beatae sequi magnam a enim culpa dolor corrupti,
+                        suscipit quae tempore corporis quibusdam, hic dicta!
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>취소 안내 <span class="arrow-icon"></span></h3>
+                    <div class="active-content">
+                      <p>
+                        Eveniet animi vitae, ipsam perspiciatis consequatur
+                        fugit. Dolorum laudantium fugit blanditiis aperiam quae
+                        dolor, quisquam pariatur facere? Libero, ut mollitia
+                        repudiandae nisi provident, maiores nobis consectetur
+                        laudantium ad porro, assumenda distinctio deleniti earum
+                        blanditiis. Vitae nemo, numquam aut obcaecati quis
+                        minima esse, tempora eaque ut labore optio modi
+                        voluptates saepe cumque, libero architecto nam possimus
+                        at quam sed nulla? Voluptates sunt voluptate illum
+                        beatae sequi magnam a enim culpa dolor corrupti,
+                        suscipit quae tempore corporis quibusdam, hic dicta!
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>배송 안내 <span class="arrow-icon"></span></h3>
+                    <div class="active-content">
+                      <p>
+                        Eveniet animi vitae, ipsam perspiciatis consequatur
+                        fugit. Dolorum laudantium fugit blanditiis aperiam quae
+                        dolor, quisquam pariatur facere? Libero, ut mollitia
+                        repudiandae nisi provident, maiores nobis consectetur
+                        laudantium ad porro, assumenda distinctio deleniti earum
+                        blanditiis. Vitae nemo, numquam aut obcaecati quis
+                        minima esse, tempora eaque ut labore optio modi
+                        voluptates saepe cumque, libero architecto nam possimus
+                        at quam sed nulla? Voluptates sunt voluptate illum
+                        beatae sequi magnam a enim culpa dolor corrupti,
+                        suscipit quae tempore corporis quibusdam, hic dicta!
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>교환 및 반품 안내 <span class="arrow-icon"></span></h3>
+                    <div class="active-content">
+                      <p>
+                        Eveniet animi vitae, ipsam perspiciatis consequatur
+                        fugit. Dolorum laudantium fugit blanditiis aperiam quae
+                        dolor, quisquam pariatur facere? Libero, ut mollitia
+                        repudiandae nisi provident, maiores nobis consectetur
+                        laudantium ad porro, assumenda distinctio deleniti earum
+                        blanditiis. Vitae nemo, numquam aut obcaecati quis
+                        minima esse, tempora eaque ut labore optio modi
+                        voluptates saepe cumque, libero architecto nam possimus
+                        at quam sed nulla? Voluptates sunt voluptate illum
+                        beatae sequi magnam a enim culpa dolor corrupti,
+                        suscipit quae tempore corporis quibusdam, hic dicta!
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="product-tab-content">
+              <button type="button" class="tabBtn">
+                후기<span class="review-cnt">(9,367)</span>
+              </button>
+              <div class="tab-content"></div>
+            </li>
+            <li class="product-tab-content">
+              <button type="button" class="tabBtn">
+                Q&A<span class="review-cnt">(78)</span>
+              </button>
+              <div class="tab-content"></div>
+            </li>
+          </ul>
+        </section>
+
+        <div class="space-div1"></div>
+        <!-- 쿠캣 사업자 정보 -->
+        <section class="footer">
+          <div class="center-info-container">
+            <h2 class="center-info">쿠캣 고객센터</h2>
+            <span class="time-info"
+              >평일 <time>10:00</time> ~ <time>18:00</time> (점심시간
+              <time>13:00</time> ~ <time>14:00</time>)</span
+            >
+
+            <a href="tel:1668-3525" class="center-contact"> 고객센터</a>
+          </div>
+          <div class="business-info-container">
+            <div class="business-info-title-container active">
+              <h2 class="business-info">(주) 쿠캣 사업자 정보</h2>
+              <button class="business-info-toggle-btn">
+                <img
+                  class="main-arrow-icon"
+                  alt="addit-toggle-img"
+                  src="	https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-close-bold.svg"
+                />
+              </button>
+            </div>
+
+            <ul class="business-info-list">
+              <li class="business-info-item">
+                <label for="representative">대표자</label
+                ><span id="representative">이문주</span>
+              </li>
+              <li class="business-info-item">
+                <label for="address">주소</label>
+                <address id="address">
+                  서울특별시 강남구 영동대로112길 36, 3층, 지하 1층 (삼성동,
+                  오티씨타워)
+                </address>
+              </li>
+              <li class="business-info-item">
+                <label
+                  for="
+                business-number"
+                  >사업자등록번호</label
+                ><span id=" business-number">
+                  110-86-12995
+                  <a class="business-info-check" href="/"
+                    >사업자정보 확인</a
+                  ></span
+                >
+              </li>
+              <li class="business-info-item">
+                <label for="mail-order-number">통신판매업 신고번호</label>
+                <span id="mail-order-number">2018-서울강남-01681</span>
+              </li>
+              <li class="business-info-item">
+                <div class="center-info-flexcontent-container">
+                  <label for="service-center">고객센터</label>
+                  <div class="center-info-content-container">
+                    <a id="service-center" href="tel:1668-3525">1668-3525</a>
+                    <div class="service-center-time">
+                      평일 <time>10:00</time> ~ <time>18:00</time> (점심시간
+                      <time>13:00</time> ~ <time>14:00</time>)
+                    </div>
+                    <div class="service-center-time">
+                      주말
+                      <time>10:00</time> ~ <time>13:00</time>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="business-info-item">
+                <label for="marketing-email">마케팅 제휴문의</label
+                ><span id="marketing-email">marketing@cookat.co</span>
+              </li>
+              <li class="business-info-item">
+                <label
+                  for="
+                goods-email"
+                  >상품 제휴문의</label
+                ><span id=" goods-email">
+                  <span>product@cookat.co<br /></span
+                ></span>
+              </li>
+              <li class="business-info-item">
+                <label for="person-in-charge">개인정보보호 책임자</label
+                ><span id="person-in-charge">
+                  주지석 (jiseok.joo@cookat.co)</span
+                >
+              </li>
+            </ul>
+
+            <small class="copyright">
+              Copyright © 쿠캣. All rights reserved.</small
+            >
+            <ul class="more-details-list">
+              <li><a class="more-details" href="/">이용약관</a></li>
+              <li>
+                <a class="more-details" id="qkdcla" href="/"
+                  >개인정보 처리방침</a
+                >
+              </li>
+              <li><a class="more-details" href="/">공지사항</a></li>
+            </ul>
+          </div>
+
+          <div class="additional-container">
+            <a href="/">로그인</a>
+            <a id="app-down" href="/"> APP다운</a>
+          </div>
+          <a href="#" class="top-button"
+            ><img src="./images/ic-floating-button.svg" alt="최상단으로 가기"
+          /></a>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer class="purchase">
+        <div class="purchase-like">
+          <img src="./images/ic-24-heart.svg" alt="즐겨찾기" />
+        </div>
+
+        <div class="purchase-button">
+          <button type="button" class="purchase-btn" id="show">구매하기</button>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/tab.js"></script>
+    <script src="./js/slideUpDown.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var main_swiper = new Swiper('.mainSwiper', {});
+      var rec_swiper = new Swiper('.rec-Swiper', {
+        slidesPerView: 5,
+        pagination: {
+          el: '.rec-swiper-bar',
+          type: 'progressbar',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      // 구매하기 팝업창
+      function show() {
+        document.querySelector('.background').className = 'background show';
+      }
+
+      function close() {
+        document.querySelector('.background').className = 'background';
+      }
+
+      document.querySelector('#close').addEventListener('click', close);
+      document.querySelector('#show').addEventListener('click', show);
+    </script>
+  </body>
+</html>

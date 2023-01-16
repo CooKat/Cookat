@@ -1,0 +1,448 @@
+.food-container {
+  width: min(500px, 100%);
+  background-color: var(--color-white);
+  margin: 0 auto;
+  z-index: 4;
+}
+
+.food-header {
+  width: 100%;
+  height: min(8vh, var(--spacing-6));
+  display: flex;
+  justify-content: space-between;
+  background-color: #c7c7c7;
+}
+
+.header-prev-button {
+  border: none;
+}
+
+.header-more-buttons {
+  right: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  line-height: 4.5;
+}
+
+.header-button-list {
+  width: min(10vw, var(--spacing-xxxl));
+}
+
+.main-swiper {
+  overflow: hidden;
+  height: min(70vh, 500px);
+}
+
+.discount-time {
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(44, 44, 43);
+  font-size: min(3vw, var(--text-sm));
+  padding: var(--spacing-sm);
+}
+
+.time-title {
+  margin: 0 var(--spacing-xs);
+  color: var(--color-white);
+}
+
+.time-count {
+  color: var(--color-yellow);
+  font-weight: 700;
+}
+
+.main-menu-wrap {
+  padding: var(--spacing-md) var(--spacing-base);
+  position: relative;
+}
+
+.main-menu-categori {
+  font-size: min(3vw, var(--text-xxs));
+  color: var(--color-cement);
+  margin-bottom: var(--spacing-xs);
+}
+
+.main-menu-title {
+  font-size: min(3vw, var(--text-base));
+  font-weight: 500;
+  margin-bottom: var(--spacing-l);
+  color: var(--color-darkblack);
+}
+
+.discount-price {
+  font-size: min(3vw, var(--text-xxs));
+  color: var(--color-cement);
+  margin-bottom: var(--spacing-xxs);
+  text-decoration: line-through;
+}
+
+.selling-price {
+  font-size: min(4vw, var(--text-l));
+  margin-bottom: var(--spacing-sm);
+}
+
+.discount-rate,
+.menu-price {
+  font-weight: 800;
+}
+
+.origin-wrap {
+  font-size: min(2vw, var(--text-sxxs));
+  color: var(--color-cement);
+  margin-bottom: var(--spacing-md);
+}
+
+.review-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.review-star {
+  font-size: min(3vw, var(--text-base));
+  color: #ffb123;
+  font-weight: 600;
+  margin-bottom: var(--spacing-xxs);
+}
+
+.review-star-img {
+  margin-left: var(--spacing-xs);
+}
+
+.review-star-img img {
+  margin-left: -3px;
+}
+
+.star-half {
+  max-width: 18px;
+  max-height: 18px;
+}
+
+.review-count {
+  text-decoration: underline;
+}
+.product-share-button {
+  position: absolute;
+  background: image('./');
+  bottom: var(--spacing-xl);
+  right: var(--spacing-base);
+  border: none;
+}
+
+.space-div {
+  content: '';
+  background: #eee;
+  height: var(--spacing-xm);
+}
+
+.space-div1 {
+  content: '';
+  background: #eee;
+  height: 1px;
+}
+
+.menu-rec-wrap {
+  height: min(35vh, 25rem);
+}
+
+.menu-rec-title {
+  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-md)
+    var(--spacing-lg);
+  font-size: min(3vw, var(--text-base));
+  font-weight: 700;
+  color: var(--color-black);
+  width: 100%;
+}
+
+.rec-Swiper {
+  height: min(35vh, 25rem);
+}
+
+.menu-rec-item img {
+  width: min(20vw, 5.625rem);
+  border-radius: var(--spacing-sm);
+}
+
+.swiper-rec {
+  height: min(23vh, 10rem);
+  padding-left: var(--spacing-xm);
+}
+
+.swiper-slide:last-child {
+  padding-right: var(--spacing-xm);
+}
+
+.rec-swiper-bar {
+  width: 450px;
+  margin-top: 170px;
+  border-radius: var(--spacing-md);
+  background-color: var(--color-orange);
+  margin-bottom: var(--spacing-xl);
+}
+
+.recmenu-title {
+  font-size: min(3vw, var(--text-xxs));
+  line-height: 1.2;
+}
+
+.recmenu-price {
+  font-size: min(3vw, var(--text-sm));
+  font-weight: 700;
+}
+
+.menu-rec-ad {
+  height: 100%;
+}
+
+/* 상품정보 / 구매정보/ 후기 / Q&A */
+
+.product-tab{
+  overflow: hidden;
+}
+
+.product-tab-bar {
+  text-align: center;
+  /* padding-top: min(2.5vh, var(--spacing-lg));
+  height: min(10vh, 50px); */
+}
+
+.product-tab-content {
+  height: 100%;
+  font-size: min(3vw, var(--text-sm));
+  font-weight: 500;
+  color: var(--color-black);
+  padding: auto 0;
+}
+
+.product-tab-content button span{
+  font-size: var(--text-sxxs);
+  margin-left: var(--spacing-xs);
+  color:var(--color-gray)
+}
+
+.product-tab-content.active button span{
+  color: var(--color-orange)
+}
+
+.product-video img {
+  width: 100%;
+}
+
+.product-main-title {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.main-title-img {
+  width: auto;
+  margin-top: var(--spacing-xxxl);
+}
+
+.main-title-img img {
+  width: auto;
+  margin: 0 auto;
+}
+
+.product-content-wrap {
+  text-align: center;
+}
+
+.main-product-content {
+  color: #5b5752;
+  font-size: min(5vw, var(--text-l));
+  margin-top: var(--spacing-xxs);
+}
+
+.main-product-title {
+  width: 100%;
+  color: #5b5752;
+  font-size: min(5vw, 30px);
+  font-weight: 700;
+  padding: var(--spacing-xxs);
+  border-top: 2px solid #5b5752;
+  border-bottom: 2px solid #5b5752;
+  margin-top: var(--spacing-xxs);
+  margin-bottom: var(--spacing-l);
+}
+
+.shopping-info h3{
+  line-height: 50px;
+  text-align: left;
+  padding:0 0 0 var(--spacing-base);
+  background-color: #F9F9F9;
+  color:var(--color-black);
+  font-weight:400
+}
+
+.shopping-info .arrow-icon{
+  float: right;
+  background:url(../images/ic-16-open.svg) no-repeat center;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.active-content{
+  display: none;
+  overflow: hidden;
+}
+
+.active-content > p{
+  padding:var(--spacing-xl) var(--spacing-base);
+  text-align: left;
+  font-weight:400;
+  color:var(--color-gray);
+  font-size: var(--text-xs);
+  line-height:1.5
+}
+
+.shopping-info .active .arrow-icon{
+  transform: rotate(-180deg);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              /* footer 구매하기버튼 */
+/* --------------------------------------------------------------------------*/
+
+.purchase {
+  position: fixed;
+  bottom: 0;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: min(10vh, var(--spacing-6));
+  background-color: var(--color-orange);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 500;
+}
+
+.purchase-like {
+  width: var(--spacing-6);
+  height: var(--spacing-6);
+  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid rgb(252, 115, 93);
+}
+
+.purchase-like img {
+  width: 24px;
+}
+
+.purchase-line {
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.purchase-button {
+  width: 85%;
+  font-size: min(3vw, var(--text-base));
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  padding-right: var(--spacing-l);
+}
+
+.purchase-btn {
+  width: 100%;
+  height: 100%;
+  line-height: 3.2;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     세민?                                    */
+/* -------------------------------------------------------------------------- */
+
+.shipping-info-wrap {
+  padding: var(--spacing-xl) var(--spacing-base);
+  color: var(--color-gray);
+  border-top: 12px solid #eee;
+  font-size: var(--text-xs);
+}
+.shipping-info-wrap h2 {
+  font-size: var(--text-sm);
+  color: var(--color-darkblack);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.shipping-info-wrap dl {
+  font-size: 0;
+}
+.shipping-info-wrap dt,
+.shipping-info-wrap dd {
+  display: inline-block;
+  font-size: var(--text-xs);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.6;
+}
+
+.shipping-info-wrap dt {
+  width: 20%;
+  vertical-align: top;
+}
+.shipping-info-wrap dd {
+  width: 80%;
+}
+
+.shipping-info-wrap dd strong {
+  display: block;
+  color: var(--color-orange);
+}
+.shipping-info-wrap [class*='icon'] {
+  font-size: var(--text-xxs);
+  padding: 0 var(--spacing-sxs);
+  line-height: 22px;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 var(--spacing-sxxs) var(--spacing-sm) 0;
+}
+
+.shipping-info-wrap .shipping-fast-icon {
+  background-color: rgb(255, 249, 183);
+  color: #947b1f;
+}
+
+.shipping-icon {
+  background: rgb(253, 233, 223);
+  color: var(--color-orange);
+}
+
+.precautions {
+  border-top: 1px solid #eee;
+  padding: var(--spacing-xl) var(--spacing-base);
+  line-height: 1.6;
+  color: var(--color-orange);
+}
+
+.precautions h3 {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xxs);
+  line-height: 18px;
+}
+
+.precautions h3::before {
+  content: '';
+  display: inline-block;
+  background: url(../images/ic-24-customer-info.svg) center/18px;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: var(--spacing-xs);
+}
+
+.precautions p {
+  font-size: var(--text-xs);
+}
