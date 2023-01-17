@@ -196,7 +196,7 @@
 
 /* 상품정보 / 구매정보/ 후기 / Q&A */
 
-.product-tab{
+.product-tab {
   overflow: hidden;
 }
 
@@ -214,26 +214,18 @@
   padding: auto 0;
 }
 
-.product-tab-content button span{
+.product-tab-content button span {
   font-size: var(--text-sxxs);
   margin-left: var(--spacing-xs);
-  color:var(--color-gray)
+  color: var(--color-gray);
 }
 
-.product-tab-content.active button span{
-  color: var(--color-orange)
+.product-tab-content.active button span {
+  color: var(--color-orange);
 }
 
 .product-video img {
   width: 100%;
-}
-
-.product-main-title {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
 }
 
 .main-title-img {
@@ -251,55 +243,113 @@
 }
 
 .main-product-content {
-  color: #5b5752;
+  color: var(--color-text);
   font-size: min(5vw, var(--text-l));
   margin-top: var(--spacing-xxs);
 }
 
 .main-product-title {
   width: 100%;
-  color: #5b5752;
+  color: var(--color-text);
   font-size: min(5vw, 30px);
   font-weight: 700;
   padding: var(--spacing-xxs);
-  border-top: 2px solid #5b5752;
-  border-bottom: 2px solid #5b5752;
+  border-top: 2px solid var(--color-text);
+  border-bottom: 2px solid var(--color-text);
   margin-top: var(--spacing-xxs);
   margin-bottom: var(--spacing-l);
 }
 
-.shopping-info h3{
-  line-height: 50px;
-  text-align: left;
-  padding:0 0 0 var(--spacing-base);
-  background-color: #F9F9F9;
-  color:var(--color-black);
-  font-weight:400
+.product-main-title {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
-.shopping-info .arrow-icon{
+.product-wrap-left {
+  text-align: left;
+  padding: 0 var(--spacing-l);
+}
+
+.product-content-img img {
+  height: 100%;
+}
+
+.gf-text-title {
+  font-size: min(5vw, var(--text-xxl));
+  text-align: left;
+  color: var(--color-text);
+  margin-top: var(--spacing-6);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.gf-text-title strong {
+  font-weight: 700;
+}
+
+.gf-content-list {
+  color: var(--color-orange);
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-xxxl);
+}
+
+.gf-content-item img {
+  max-width: var(--spacing-l);
+}
+
+.product-option-menu {
+  margin-top: var(--spacing-6);
+  margin-bottom: var(--spacing-l);
+}
+
+.product-option-menu-title {
+  object-fit: fill;
+  border: 2px solid var(--color-cement);
+  border-radius: var(--spacing-l);
+  padding: var(--spacing-sxxs) var(--spacing-l);
+  font-size: min(3vw, var(--text-xs));
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    구매정보                                    */
+/* -------------------------------------------------------------------------- */
+.shopping-info h3 {
+  line-height: 50px;
+  text-align: left;
+  padding: 0 0 0 var(--spacing-base);
+  background-color: #f9f9f9;
+  color: var(--color-black);
+  font-weight: 400;
+}
+
+.shopping-info .arrow-icon {
   float: right;
-  background:url(../images/ic-16-open.svg) no-repeat center;
+  background: url(../images/ic-16-open.svg) no-repeat center;
   display: block;
   width: 50px;
   height: 50px;
 }
 
-.active-content{
+.active-content {
   display: none;
   overflow: hidden;
 }
 
-.active-content > p{
-  padding:var(--spacing-xl) var(--spacing-base);
+.active-content > p {
+  padding: var(--spacing-xl) var(--spacing-base);
   text-align: left;
-  font-weight:400;
-  color:var(--color-gray);
+  font-weight: 400;
+  color: var(--color-gray);
   font-size: var(--text-xs);
-  line-height:1.5
+  line-height: 1.5;
 }
 
-.shopping-info .active .arrow-icon{
+.shopping-info .active .arrow-icon {
   transform: rotate(-180deg);
 }
 
@@ -357,6 +407,88 @@
   border: none;
   color: #fff;
   font-weight: 700;
+}
+
+.option-list {
+  text-align: left;
+}
+
+.option-list-item {
+  margin-bottom: var(--spacing-xxxl);
+  width: 100%;
+  border-top: 1px solid var(--color-border);
+  padding: var(--spacing-l) var(--spacing-l) 0 var(--spacing-l);
+}
+
+.option-item-number {
+  color: var(--color-cement);
+  font-weight: 700;
+  font-size: min(3vw, var(--text-md));
+  margin-bottom: var(--spacing-xs);
+}
+
+.option-item {
+  font-size: min(4vw, var(--text-lg));
+  font-weight: 700;
+  padding-bottom: 6rem;
+  color: #404040;
+}
+
+.option-item img {
+  max-width: 170px;
+  float: right;
+  margin-top: -20px;
+}
+
+.option-item-price {
+  font-size: min(4vw, var(--text-lg));
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.product-sideoption-menu {
+  border-top: 1px solid var(--color-border);
+  padding: var(--spacing-md) 0;
+}
+
+/* 공정과정 */
+.product-make {
+  margin-top: var(--spacing-6);
+  text-align: left;
+
+  margin-bottom: var(--spacing-6);
+}
+
+.product-make-wrap {
+  padding: 0 var(--spacing-l);
+}
+
+.product-make-title {
+  font-size: min(4vw, var(--text-xxl));
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.product-make-title strong {
+  font-weight: 700;
+}
+
+.product-make-content {
+  color: var(--color-cement);
+  font-size: min(3.5vw, var(--text-lg));
+  line-height: 1.6;
+}
+
+.product-make-content strong {
+  font-weight: 700;
+}
+
+.haccp-img {
+  margin: var(--spacing-6) 0;
+  text-align: center;
+}
+.haccp-img img {
+  width: 97px;
 }
 
 /* -------------------------------------------------------------------------- */
