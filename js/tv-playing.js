@@ -1,13 +1,13 @@
-const playButton = document.querySelectorAll('.play-btn');
+const productAll = document.querySelectorAll('.prd-all');
 const play = document.querySelectorAll('.product-play-button');
 
-for (let i = 0; i < playButton.length; i++) {
-  playButton[i].addEventListener('click', function () {
-    if (playButton[i].classList.contains('stop')) {
+for (let i = 0; i < productAll.length; i++) {
+  productAll[i].addEventListener('click', function (event) {
+    if (productAll[i].classList.contains('stop')) {
       play[i].style.display = 'none';
     } else {
       play[i].style.display = 'block';
     }
-    playButton[i].classList.toggle('stop');
+    productAll[i].classList.toggle('stop');
   });
 }
