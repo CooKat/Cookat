@@ -168,10 +168,6 @@
   padding-left: var(--spacing-xm);
 }
 
-.swiper-slide:last-child {
-  padding-right: var(--spacing-xm);
-}
-
 .rec-swiper-bar {
   width: 450px;
   margin-top: 170px;
@@ -216,7 +212,7 @@
 
 .product-tab-content button span{
   font-size: var(--text-sxxs);
-  margin-left: var(--spacing-xs);
+  margin-left: var(--spacing-xxs);
   color:var(--color-gray)
 }
 
@@ -287,6 +283,7 @@
 
 .active-content{
   display: none;
+  position: relative;
   overflow: hidden;
 }
 
@@ -301,6 +298,274 @@
 
 .shopping-info .active .arrow-icon{
   transform: rotate(-180deg);
+}
+
+/* 리뷰 css */
+
+.review .swiper{
+  padding:0 var(--spacing-m) var(--spacing-l);
+  font-size: 0;
+}
+.review img{
+  border-radius: 8px;
+}
+
+.review .board-cnt{
+  font-weight:300
+}
+
+.board-title{
+  position: relative;
+}
+
+.board-title h2{
+  text-align: left;
+  font-size: var(--text-base);
+  padding:0 var(--spacing-m);
+  line-height: 60px;
+}
+
+.board-write-btn{
+  position: absolute;
+  right:30px;
+  top:50%;
+  transform: translateY(-50%);
+  font-size:var(--text-sm);
+  color: var(--color-orange);
+  text-decoration: underline;
+}
+.board-write-btn i{
+  position: absolute;
+  top:-2px;
+  right:-20px;
+  font-size:20px;
+  vertical-align: middle;
+}
+
+.review-list{
+  text-align: left;
+  font-size: 0;
+  font-weight: 300;
+}
+
+.review-list li{
+  border-top: 1px solid #eee;
+  margin-top:-1px
+}
+
+.review-list span,
+.review-list time{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 var(--spacing-sxs) var(--spacing-sxs) 0;
+}
+
+.coment-content{
+  display: flow-root;
+  padding:var(--spacing-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.review-text{
+  float: left;
+  width:90%;
+  font-size: var(--text-sm);
+  padding-right:5%;
+  box-sizing: border-box;
+  vertical-align: middle;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+
+.best-icon{
+  display: inline-block;
+  padding: var(--spacing-sxxs) var(--spacing-sxs);
+  border-radius: 30px;
+  background: var(--color-orange);
+  color:#fff;
+  font-size:var(--text-xxs);
+  font-weight:600
+}
+
+.board-writer{
+  font-size:var(--text-xxs);
+  font-weight:600;
+}
+
+.board-date{
+  font-size:var(--text-xxs);
+  color:var(--color-gray)
+}
+
+.review-list .product-option{
+  display: block;
+  color: var(--color-gray);
+  font-size:var(--text-xs);
+  line-height: 1.6;
+}
+
+.report{
+  display: none;
+  position: absolute;
+  top:13px;
+  right:10px;
+  border:0;
+  font-size: var(--text-xxs);
+  color:var(--color-gray);
+  font-weight:300;
+  padding-left:var(--spacing-base);
+  background: url(../images/ic-12-report.svg) no-repeat left center / 12px;
+}
+
+.star img{
+  width:14px
+}
+
+.coment-content .review-img{
+  float: right;
+  width:10%;
+  vertical-align: middle;
+}
+
+.active-content .review-img{
+  display: inline-block;
+  padding:0 var(--spacing-base) var(--spacing-lg);
+  border-bottom:1px solid #eee;
+}
+
+/* riview 펼침 후 css */
+
+.review-list li.active{
+  background-color: #F9F9F9;
+}
+.review-list li.active .report{
+  display: block;
+}
+.review-list li.active .review-text{
+  display: block;
+  width:100%;
+  padding:0;
+}
+
+.review-list li.active .coment-content .review-img{
+  display: none;
+}
+
+.review-list li.active .best-icon{
+  display: none;
+}
+
+.review-list .active-content > p{
+  padding:0 var(--spacing-base) var(--spacing-lg);
+  color: var(--color-black)
+}
+
+.review-list .active-content span{
+  padding:var(--spacing-lg) 0 0 var(--spacing-base)
+}
+.review-list .active-content time{
+  padding:var(--spacing-lg) 0 0 0
+}
+
+
+/* fnq css */
+
+.qna-list{
+  text-align: left;
+  font-weight:400
+}
+
+.qna-list li{
+  border-top: 1px solid #eee;
+}
+
+.qna-list h3,
+.qna-list span,
+.qna-list time{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 var(--spacing-sxs) var(--spacing-sxs) 0;
+}
+
+.qna-list h3{
+  font-size:var(--text-xxs);
+  font-weight:700;
+}
+
+.answer-icon{
+  position: absolute;
+  top:15px;
+  right:15px;
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  border-radius: 30px;
+  background: #fc7e37;
+  color:#fff;
+  font-size:var(--text-sxxs);
+  font-weight:300
+}
+
+.q-text{
+  position: relative;
+  font-size: var(--text-xs);
+  color:var(--color-black);
+  padding-top:var(--spacing-xs);
+  line-height:1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight:300;
+}
+
+.active-content > .a-text{
+  display: inline-block;
+  padding:var(--spacing-base) var(--spacing-base) var(--spacing-base) var(--spacing-xxxl);
+  border-top:1px solid #eee;
+  color:var(--color-black);
+  font-weight:300;
+}
+
+.active-content > .a-text::before{
+  content: 'A';
+  font-size: var(--text-l);
+  font-weight:600;
+  position: absolute;
+  top:14px;
+  left:15px;
+  color:var(--color-orange);
+}
+
+/* fna 펼친 후 css */
+
+.qna-list li.active{
+  background: #F9F9F9;
+}
+
+.qna-list li.active .answer-icon{
+  display: none;
+}
+
+.qna-list li.active .report{
+  display: block;
+}
+
+.qna-list li.active .q-text{
+  display: inline-block;
+  padding-left:var(--spacing-xl)
+}
+
+.qna-list li.active .q-text::before{
+  content: 'Q';
+  font-size: var(--text-l);
+  font-weight:600;
+  position: absolute;
+  top:4px;
+  left:0;
 }
 
 /* -------------------------------------------------------------------------- */

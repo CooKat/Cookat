@@ -4,7 +4,7 @@ let transitionTime = 0.5;
 Array.prototype.forEach.call(menus, function(v, i, a){
   v.addEventListener("click", function () {
     let t = this;
-    let target = t.querySelector('div');
+    let target = t.querySelector('.active-content');
 
     if (!t.classList.contains('js-slide')) {
       jSlideDown(t, target);
@@ -14,7 +14,7 @@ Array.prototype.forEach.call(menus, function(v, i, a){
     
     Array.prototype.forEach.call(a, function(sibE, sibI, sibA){
       if(i !== sibI){
-        let target = sibE.querySelector('div');
+        let target = sibE.querySelector('.active-content');
         jSlideUp(sibE, target);
       }
     });
