@@ -29,11 +29,11 @@
   color: var(--color-gray);
 }
 
-.board-content {
+.active-content {
   overflow: hidden;
   display: none;
 }
 
-.board-content > p{
-  padding: 16px 0;
+.active-content > p{
+  padding: var(--spacing-base) 0;
 }
