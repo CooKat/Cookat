@@ -29,15 +29,31 @@
     <div class="food-container">
       <header class="food-header">
         <a href="javascript:window.history.back();" class="header-prev-button">
-          <img src="./images/ic-24-arrow-perv-white.svg" class="white" alt="이전으로 가기" />
-          <img src="./images/ic-24-arrow-perv.svg" class="black" alt="이전으로 가기" />
+          <img
+            src="./images/ic-24-arrow-perv-white.svg"
+            class="white"
+            alt="이전으로 가기"
+          />
+          <img
+            src="./images/ic-24-arrow-perv.svg"
+            class="black"
+            alt="이전으로 가기"
+          />
         </a>
 
         <div class="header-more-buttons">
           <div class="header-button-list">
             <button type="button" aria-label="검색 열기">
-              <img src="./images/ic-24-finder-white.svg" class="white" alt="검색하기"/>
-              <img src="./images/ic-24-finder.svg" class="black" alt="검색하기"/>
+              <img
+                src="./images/ic-24-finder-white.svg"
+                class="white"
+                alt="검색하기"
+              />
+              <img
+                src="./images/ic-24-finder.svg"
+                class="black"
+                alt="검색하기"
+              />
             </button>
           </div>
           <div class="header-button-list">
@@ -47,8 +63,16 @@
               onclick="location.href='index.html'"
               class="header-home-button"
             >
-              <img src="./images/ic-24-home-white.svg" class="white" alt="홈으로 가기" />
-              <img src="./images/ic-24-home.svg" class="black" alt="홈으로 가기" />
+              <img
+                src="./images/ic-24-home-white.svg"
+                class="white"
+                alt="홈으로 가기"
+              />
+              <img
+                src="./images/ic-24-home.svg"
+                class="black"
+                alt="홈으로 가기"
+              />
             </a>
           </div>
           <div class="header-button-list">
@@ -1265,13 +1289,26 @@
           </div>
         </div>
       </footer>
-      <article class="search-container is--active" style="display: none;">
+      <article class="search-container is--active" style="display: none">
         <div class="search-header">
           <button class="search-close-btn" type="button"></button>
           <div class="search-input-box">
-            <input class="search-input" type="text" placeholder="검색어를 입력해 주세요." required="">
-            <button type="button" class="erase-btn" aria-label="다 지우기"></button>
-            <button type="button" class="search-btn" aria-label="검색하기"></button>
+            <input
+              class="search-input"
+              type="text"
+              placeholder="검색어를 입력해 주세요."
+              required=""
+            />
+            <button
+              type="button"
+              class="erase-btn"
+              aria-label="다 지우기"
+            ></button>
+            <button
+              type="button"
+              class="search-btn"
+              aria-label="검색하기"
+            ></button>
           </div>
         </div>
         <div class="search-language-box">
@@ -1338,18 +1375,18 @@
       });
 
       const header = document.querySelector('.food-header');
-      
+
       // header.scrollTop = recordListWrapper.scrollHeight
 
-      window.addEventListener('scroll', function(){
-        if (window.scrollY >= 100){
+      window.addEventListener('scroll', function () {
+        if (window.scrollY >= 100) {
           header.style = 'background:#fff';
           header.classList.add('scroll');
-        }else{
+        } else {
           header.style = 'background:none';
           header.classList.remove('scroll');
         }
-      })
+      });
 
       // 구매하기 팝업창
       function show() {
