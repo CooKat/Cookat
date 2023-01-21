@@ -151,47 +151,92 @@
   z-index: 200;
   display: none;
 }
-
-.share-popup-wrap {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  width: 320px;
-  background-color: #fff;
-  border-radius: 10px;
-  top: 50%;
-  transform: translateY(-50%);
+input[id*='share'] {
+  display: none;
 }
 
-.share-popup-wrap span {
-  color: #46433f;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 22px;
-  text-align: center;
-  margin-top: 30px;
+input[id*='share'] + label {
+  display: inline-block;
+}
+
+input[id*='share'] + label + div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+input[id*='share'] + label + div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 180px;
+  background-color: var(--color-white);
+  z-index: 2;
+  border-radius: 10px;
+}
+
+input[id*='share'] + label + div > div > label {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  padding: 15px;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+input[id*='share'] + label + div > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+input[id*='share'] + label + div {
+  display: none;
+}
+
+input[id*='share']:checked + label + div {
   display: block;
 }
 
-.share-close-btn {
-  position: absolute;
-  top: 15px;
-  right: 18px;
-  width: 30px;
-  height: 30px;
-  border: none;
-  background-color: transparent;
-  z-index: 200;
-  background: url(https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-24-close-black.svg)
-    no-repeat center;
-  background-size: 24px;
+.share-wrapper {
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+
+.share-wrapper label img {
+  width: px;
+}
+
+.share-title {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .share-popup-buttons {
   margin-top: 36px;
   margin-bottom: 44px;
   text-align: center;
+  font-size: 0;
 }
+
+.facebook-link,
+.kakao-link,
+.url-copy {
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  margin: 0 8.5px;
+}
+
 .space-div {
   content: '';
   background: #eee;
@@ -836,7 +881,7 @@ input[id*='product']:checked + label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 500;
+  z-index: 50;
 }
 
 .purchase-like {
