@@ -859,11 +859,11 @@ button {
   border: none;
   display: flex;
   align-items: center;
-  transform: rotate(-180deg);
+  transform: rotate(0deg);
 }
 
 .business-info-title-container.active .business-info-toggle-btn img{
-  transform: rotate(0deg);
+  transform: rotate(-180deg);
 }
 
 .center-contact {
