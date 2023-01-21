@@ -1,6 +1,6 @@
-.main {
+/* .main {
   margin-top: -60px;
-}
+} */
 
 .food-container {
   width: min(500px, 100%);
@@ -10,13 +10,28 @@
 }
 
 .food-header {
-  position: relative;
-  width: 100%;
+  position: fixed;
+  width: min(500px, 100%);
   height: min(8vh, var(--spacing-6));
   display: flex;
   justify-content: space-between;
   background-color: transparent;
   z-index: 5;
+  transition: background .5s;
+}
+
+.food-header .black,
+.food-header.scroll .white{
+  display: none
+}
+
+.food-header.scroll .black{
+  display: inline-block
+}
+
+.food-header .home-search{
+  position: static;
+  padding:0;
 }
 
 .header-prev-button {
@@ -25,19 +40,24 @@
 }
 
 .header-more-buttons {
-  right: 10px;
   display: flex;
   flex-flow: row nowrap;
   line-height: 4.5;
+  margin-right: var(--spacing-sm)
 }
 
 .header-button-list {
   width: min(10vw, var(--spacing-xxxl));
+  text-align: center;
+}
+
+.header-button-list button{
+  border:0;
 }
 
 .main-swiper {
   overflow: hidden;
-  height: min(70vh, 500px);
+  font-size:0;
 }
 
 .discount-time {
