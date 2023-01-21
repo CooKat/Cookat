@@ -15,10 +15,8 @@ for (i = 0; i < coll.length; i++) {
 
     if (content.style.display === 'block') {
       content.style = `height: 0; transition:height 0.5s`;
-      img.style = 'transform: rotate(0deg)';
     } else {
       content.style = `display:block; height: ${h}px; transition:height 0.5s`;
-      img.style = 'transform: rotate(-180deg); ';
     }
   });
 }
