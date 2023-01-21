@@ -1045,3 +1045,181 @@ input[id*='product']:checked + label {
 .precautions p {
   font-size: var(--text-xs);
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                    구매하기                                    */
+/* -------------------------------------------------------------------------- */
+
+input[id*='pop'] {
+  display: none;
+}
+
+input[id*='pop'] + label {
+  display: inline-block;
+}
+
+input[id*='pop'] + label + div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+input[id*='pop'] + label + div > div {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 500px;
+  height: 340px;
+  background-color: var(--color-white);
+  z-index: 2;
+  border-radius: var(--spacing-l) var(--spacing-l) 0 0;
+}
+
+input[id*='pop'] + label + div > div > label {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transform: translate(40%, -40%);
+  padding: 20px;
+  background: #947b1f;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+input[id*='pop'] + label + div > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+input[id*='pop'] + label + div {
+  display: none;
+}
+
+input[id*='pop']:checked + label + div {
+  display: block;
+}
+
+.pop-container {
+  height: var(--spacing-xxl);
+}
+.pop-container > hr {
+  margin: var(--spacing-xxl) var(--spacing-base) var(--spacing-xl)
+    var(--spacing-base);
+}
+
+.pop-title {
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  padding-top: var(--spacing-base);
+  padding-bottom: var(--spacing-md);
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+
+.pop-title label {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.pop-title-text {
+  color: #000;
+}
+
+.pop-option {
+  padding: 0 var(--spacing-base);
+}
+
+.pop-option-title {
+  color: var(--color-cement);
+  font-size: var(--spacing-xm);
+}
+
+.pop-option-select {
+  font-size: var(--text-md);
+  line-height: 1.6;
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-l);
+  position: relative;
+}
+
+.pop-option-select-list.active {
+  display: block;
+}
+
+.pop-option-select span {
+  height: 44px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #000;
+  line-height: 34px;
+  width: 100%;
+  padding: 0 20px 0 10px;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 3px;
+}
+.pop-option-select::after {
+  display: block;
+  content: '';
+  clear: both;
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  width: 14px;
+  height: 14px;
+  background: url('../images/ic-16-open-bold.svg') no-repeat 96% 50%;
+  z-index: 999;
+}
+
+.pop-option-select-list li {
+  line-height: 34px;
+  border: 1px solid rgb(161, 161, 161);
+  text-align: left;
+  padding-left: 10px;
+  cursor: pointer;
+  height: 44px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.pop-count {
+  padding: 0 var(--spacing-base);
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-md);
+  color: var(--color-cement);
+  margin: var(--spacing-md) 0;
+}
+.pop-total-count > span {
+  color: var(--color-orange);
+  font-weight: 700;
+}
+
+.pop-cart {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: var(--color-orange);
+  justify-content: center;
+  padding: var(--spacing-l);
+}
+.pop-cart img {
+  padding: 0 var(--spacing-sm);
+  transform: translateY(-3px);
+}

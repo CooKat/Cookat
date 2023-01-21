@@ -1171,7 +1171,7 @@
           </div>
 
           <div class="additional-container">
-            <a href="/">로그인</a>
+            <a href="./login.html">로그인</a>
             <a id="app-down" href="/"> APP다운</a>
           </div>
           <a href="#" class="top-button"
@@ -1187,7 +1187,44 @@
         </div>
 
         <div class="purchase-button">
-          <button type="button" class="purchase-btn" id="show">구매하기</button>
+          <input type="checkbox" class="purchase-btn" id="pop" />
+          <label for="pop">구매하기</label>
+          <div>
+            <div>
+              <div class="pop-title">
+                <div class="pop-title-text">옵션선택</div>
+
+                <label for="pop">
+                  <img src="./images/ic-gray-close-new-o.svg" alt="닫기버튼" />
+                </label>
+              </div>
+              <div class="pop-option">
+                <label
+                  class="pop-option-title label-title"
+                  for="pop-option-select-list"
+                  >필수옵션</label
+                >
+                <div class="pop-option-select">
+                  <span>[필수]옵션을 선택해 주세요.</span>
+                  <ul class="pop-option-select-list">
+                    <li>초벌 대구막창 300g + 어니언 시즈닝 1개</li>
+                    <li>혹시 모르는 추가 옵션</li>
+                  </ul>
+                </div>
+              </div>
+              <hr />
+              <div class="pop-count">
+                <div class="pop-total-count">총 수량 <span> 0</span> 개</div>
+                <div class="pop-total-price">총 금액 <span> 0</span> 원</div>
+              </div>
+              <div class="pop-cart">
+                <img src="./images/ic-cart-white.svg" alt="" />
+                <div class="cart-title">카트 담기</div>
+              </div>
+            </div>
+
+            <label for="pop"></label>
+          </div>
         </div>
       </footer>
     </div>
