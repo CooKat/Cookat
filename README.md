@@ -21,9 +21,10 @@
 
 ### [메인화면](https://github.com/CooKat/Cookat/blob/master/index.html)
 
+<div aling="center">
 <img src="./images/ck-main01.png" style="width:300px" height="550px">
 <img src="./images/ck-main02.png" style="width:300px" height="550px">
-
+</div>
 <br><br>
 
 ### [영상장보기]()
@@ -44,10 +45,11 @@
 
 ### [마이쿠캣]()
 
+<div aling="center">
 <img src="./images/ck-profile01.png" style="width:330px" height="450px">
 <img src="./images/ck-profile02.png" style="width:330px" height="450px">
 <img src="./images/ck-profile03.png" style="width:330px" height="450px">
-
+</div>
 <br><br>
 
 ---
