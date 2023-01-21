@@ -29,8 +29,9 @@
 
 ### [영상장보기]()
 
+<div align=center>
 <img src="./images/ck-video.png" style="width:330px" height="450px">
-
+</div>
 <br><br>
 
 ### [카테고리]()
@@ -39,8 +40,9 @@
 
 ### [카트]()
 
+<div align=center>
 <img src="./images/ck-cart02.png" style="width:300px" height="500px">
-
+</div>
 <br><br>
 
 ### [마이쿠캣]()
