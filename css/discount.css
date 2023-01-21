@@ -36,7 +36,6 @@
 .head-title {
   font-size: min(4vw, var(--text-lg));
   font-weight: 700;
-  margin-bottom: var(--spacing-sxs);
   margin: 0 auto;
 }
 
