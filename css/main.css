@@ -56,7 +56,7 @@ video {
   max-width: var(--max-width);
   margin: 0 auto;
   background: #fff;
-  padding-top: 104px;
+  padding-top: 102px;
 }
 
 /* 헤더 */
@@ -123,8 +123,8 @@ video {
   content: '';
   display: block;
   width: calc(100% - 20px);
-  border-top: var(--spacing-sxxs) solid var(--color-deep-orange);
-  margin: 0 auto;
+  border-bottom: 2px solid var(--color-deep-orange);
+  margin: -2px auto 0;
 }
 .menu a {
   display: block;
@@ -504,7 +504,6 @@ li:nth-child(6) .img-wrap {
 }
 
 .cart-btn {
-  width: 25%;
   max-width: 12vw;
   position: absolute;
   right: 0;
@@ -683,7 +682,8 @@ li:nth-child(6) .img-wrap {
 /*@@@@@@@@@ 슬로건 @@@@@@@@@@@@@@@ */
 .slogan {
   display: block;
-  margin: var(--spacing-l) 0;
+  margin: var(--spacing-l) 0 0;
+  font-size: 0;
 }
 
 /* 슬라이드 상품 */
@@ -814,6 +814,7 @@ li:nth-child(6) .img-wrap {
   font-size: 12px;
   font-weight: 300px;
   margin-top: 100px;
+  border-top:1px solid #eee
 }
 a {
   text-decoration: none;
@@ -867,9 +868,8 @@ button {
   position: absolute;
   top: 50%;
   right: 16px;
-  width: 20%;
   height: auto;
-  padding: 2% 2% 2% 5%;
+  padding: 2% 2% 2% 7%;
   transform: translateY(-50%);
   border: 1px solid #bbb8b5;
   border-radius: 3px;
@@ -903,7 +903,7 @@ button {
   line-height: 2.3em;
   height: 260px;
   overflow: hidden;
-  transition: 0.5s;
+  transition:height 0.5s;
 }
 .business-info-item label {
   color: #bbb8b5;
