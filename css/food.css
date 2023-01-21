@@ -467,9 +467,39 @@
 /* 상품정보 고시 펼치기 */
 .trigger-wrap {
   margin: var(--spacing-xxl) var(--spacing-l) 6rem;
-  border: 1px solid var(--color-border);
-  padding: var(--spacing-md);
   font-weight: 600;
+}
+
+input[id*='product'] {
+  display: none;
+}
+
+input[id*='product'] + label {
+  display: block;
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+}
+
+input[id*='product'] + label + div {
+  max-height: 0;
+  transition: all 0.35s;
+  overflow: hidden;
+}
+
+input[id*='product'] + label + div p {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+input[id*='product']:checked + label + div {
+  max-height: 1500px;
+  border: 1px solid var(--color-border);
+  border-top: 0;
+}
+
+input[id*='product']:checked + label {
+  border-bottom: 0;
 }
 
 /* -------------------------------------------------------------------------- */
