@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/tab.css" />
-    <link rel="stylesheet" href="./css/food.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
     <title>쿠캣</title>
   </head>
   <body>
@@ -86,7 +86,7 @@
       <main class="main">
         <section class="menu-main">
           <div class="menu-photo">
-            <div class="main-swiper mainSwiper">
+            <div class="main-swiper swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="./images/foodmain.jpg" />
@@ -98,6 +98,7 @@
                   <img src="./images/foodmain.jpg" />
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
 
             <div class="discount-time">
@@ -1129,7 +1130,6 @@
           </ul>
         </section>
 
-        <div class="space-div1"></div>
         <!-- 쿠캣 사업자 정보 -->
         <section class="footer">
           <div class="center-info-container">
@@ -1355,7 +1355,12 @@
     <script src="./js/search.js"></script>
     <!-- Initialize Swiper -->
     <script>
-      var main_swiper = new Swiper('.mainSwiper', {});
+      var main_swiper = new Swiper('.main-swiper', {
+        pagination: {
+          el: '.main-swiper .swiper-pagination',
+          type: 'fraction',
+        },
+      });
       var rec_swiper = new Swiper('.rec-Swiper', {
         slidesPerView: 5,
         scrollbar: {

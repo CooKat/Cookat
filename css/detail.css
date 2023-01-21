@@ -17,7 +17,7 @@
   justify-content: space-between;
   background-color: transparent;
   z-index: 5;
-  transition: background .5s;
+  transition: background 0.5s;
 }
 
 .food-header .black,
@@ -56,7 +56,6 @@
 }
 
 .main-swiper {
-  overflow: hidden;
   font-size:0;
 }
 
@@ -263,14 +262,8 @@ input[id*='share']:checked + label + div {
   height: var(--spacing-xm);
 }
 
-.space-div1 {
-  content: '';
-  background: #eee;
-  height: 1px;
-}
-
 .menu-rec-wrap {
-  height: min(35vh, 25rem);
+  padding-bottom:var(--spacing-xxl)
 }
 
 .menu-rec-title {
@@ -280,10 +273,6 @@ input[id*='share']:checked + label + div {
   font-weight: 700;
   color: var(--color-black);
   width: 100%;
-}
-
-.rec-Swiper {
-  height: min(35vh, 25rem);
 }
 
 .menu-rec-item img {
@@ -296,20 +285,38 @@ input[id*='share']:checked + label + div {
   padding-left: var(--spacing-xm);
 }
 
+.main-swiper .swiper-pagination-fraction {
+  left: auto;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  padding: 0.31rem var(--spacing-xs);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: var(--text-xxs);
+}
+
 .rec-swiper-scrollbar {
   height: 5px;
   margin: 0 var(--spacing-l);
   position: relative;
-  background: var(--color-cement);
-  color: #fc7e37;
   border-radius: 10px;
-  left: 0;
-  top: -37%;
+  background: #e7e7e7
+}
+
+.rec-Swiper .swiper-scrollbar-drag{
+  background: var(--color-orange);
 }
 
 .recmenu-title {
   font-size: min(3vw, var(--text-xxs));
-  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+  font-weight:300;
+  margin:var(--spacing-sxxs) 0
 }
 
 .recmenu-price {
@@ -318,7 +325,7 @@ input[id*='share']:checked + label + div {
 }
 
 .menu-rec-ad {
-  height: 100%;
+  font-size:0;
 }
 
 /* 상품정보 / 구매정보/ 후기 / Q&A */
@@ -331,6 +338,10 @@ input[id*='share']:checked + label + div {
   text-align: center;
   /* padding-top: min(2.5vh, var(--spacing-lg));
   height: min(10vh, 50px); */
+}
+
+.product-tab-bar .active .tabBtn::after{
+  width: calc(100% - 30px);
 }
 
 .product-tab-content {
