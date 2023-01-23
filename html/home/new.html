@@ -192,13 +192,6 @@
                           </div>
                         </div>
                         <div class="pop-cart">
-                          <div class="cart-img">
-                            <img
-                              src="/images/ic-gray-close-new-o.svg"
-                              alt="닫기버튼"
-                            />
-                          </div>
-
                           <div class="cart-title">카트 담기</div>
                         </div>
                       </div>
@@ -304,11 +297,6 @@
                 <p><span class="a11y-hidden">판매가</span>4,750원</p>
                 <span class="review-count">후기 2,023</span>
                 <p><span class="cookat-shipping-icon">쿠캣배송</span></p>
-                <img
-                  class="cookat-img"
-                  src="./images/cookatday.png"
-                  alt="쿠켓데이"
-                />
               </div>
             </li>
           </ul>
@@ -443,16 +431,78 @@
       <nav class="fix-footer-menu">
         <ul>
           <li class="my-home on"><a href="index.html">홈</a></li>
-          <li class="my-video"><a href="video-groceries.html">영상장보기</a></li>
+          <li class="my-video">
+            <a href="video-groceries.html">영상장보기</a>
+          </li>
           <li class="my-menu"><a href="category.html">카테고리</a></li>
           <li class="my-cart"><a href="empty-cart.html">카트</a></li>
           <li class="my-cookat"><a href="mypage.html">마이쿠캣</a></li>
         </ul>
       </nav>
     </div>
-
+    <!-- 검색 페이지 -->
+    <article class="search-container">
+      <div class="search-header">
+        <button class="search-close-btn" type="button"></button>
+        <div class="search-input-box">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="검색어를 입력해 주세요."
+            required
+          />
+          <button
+            type="button"
+            class="erase-btn"
+            aria-label="다 지우기"
+          ></button>
+          <button
+            type="button"
+            class="search-btn"
+            aria-label="검색하기"
+          ></button>
+        </div>
+      </div>
+      <div class="search-language-box">
+        <section class="search-language">
+          <div class="search-language-title">추천 검색어</div>
+          <div class="search-language-buttons">
+            <button type="button">설 선물세트</button>
+            <button type="button">감바스</button>
+            <button type="button">닭발</button>
+            <button type="button">갈비탕</button>
+            <button type="button">불고기</button>
+            <button type="button">곱창</button>
+            <button type="button">닭가습살</button>
+            <button type="button">감자탕</button>
+            <button type="button">닭갈비</button>
+            <button type="button">막창</button>
+            <button type="button">만두</button>
+            <button type="button">띵커바디</button>
+            <button type="button">부대찌개</button>
+          </div>
+        </section>
+        <section class="search-language">
+          <div class="search-language-title">인기 검색어</div>
+          <div class="search-language-buttons">
+            <button type="button">찹쌀떡</button>
+            <button type="button">선물세트</button>
+            <button type="button">새우</button>
+            <button type="button">볶음밥</button>
+            <button type="button">대창</button>
+            <button type="button">떡</button>
+            <button type="button">도시락</button>
+            <button type="button">쭈꾸미</button>
+            <button type="button">띵커바디</button>
+            <button type="button">만두</button>
+          </div>
+        </section>
+      </div>
+    </article>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/search.js"></script>
     <script>
       var categori_swiper = new Swiper('.categori_swiper', {
         direction: 'vertical',

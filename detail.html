@@ -22,35 +22,63 @@
 
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/tab.css" />
-    <link rel="stylesheet" href="./css/food.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
     <title>쿠캣</title>
   </head>
   <body>
     <div class="food-container">
       <header class="food-header">
-        <button onclick="history.back();" class="header-prev-button">
-          <img src="./images/ic-24-arrow-perv.svg" alt="이전으로 가기" />
-        </button>
+        <a href="javascript:window.history.back();" class="header-prev-button">
+          <img
+            src="./images/ic-24-arrow-perv-white.svg"
+            class="white"
+            alt="이전으로 가기"
+          />
+          <img
+            src="./images/ic-24-arrow-perv.svg"
+            class="black"
+            alt="이전으로 가기"
+          />
+        </a>
 
         <div class="header-more-buttons">
           <div class="header-button-list">
-            <a href="#"
-              ><img src="./images/ic-24-finder-white.svg" alt="검색하기"
-            /></a>
+            <button type="button" aria-label="검색 열기">
+              <img
+                src="./images/ic-24-finder-white.svg"
+                class="white"
+                alt="검색하기"
+              />
+              <img
+                src="./images/ic-24-finder.svg"
+                class="black"
+                alt="검색하기"
+              />
+            </button>
           </div>
           <div class="header-button-list">
             <a
-              href="#"
+              href="/index.html"
               alt="홈으로 가기"
               onclick="location.href='index.html'"
               class="header-home-button"
             >
-              <img src="./images/ic-24-home.svg" alt="홈으로 가기" />
+              <img
+                src="./images/ic-24-home-white.svg"
+                class="white"
+                alt="홈으로 가기"
+              />
+              <img
+                src="./images/ic-24-home.svg"
+                class="black"
+                alt="홈으로 가기"
+              />
             </a>
           </div>
           <div class="header-button-list">
-            <a href="#">
-              <img src="/images/ic-cart-white.svg" alt="카트" />
+            <a href="./cart.html">
+              <img src="/images/ic-cart-white.svg" class="white" alt="카트" />
+              <img src="/images/ic-cart-gray-v2.svg" class="black" alt="카트" />
             </a>
           </div>
         </div>
@@ -58,7 +86,7 @@
       <main class="main">
         <section class="menu-main">
           <div class="menu-photo">
-            <div class="main-swiper mainSwiper">
+            <div class="main-swiper swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="./images/foodmain.jpg" />
@@ -67,9 +95,10 @@
                   <img src="./images/foodmain.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./images/foodmain.jpg" />3
+                  <img src="./images/foodmain.jpg" />
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
 
             <div class="discount-time">
@@ -124,8 +153,46 @@
               </div>
             </div>
             <div class="review-count">9,363개의 후기</div>
-            <button type="button" class="product-share-button" href="#">
-              <img src="./images/new-product-share-btn.svg" alt="공유버튼" />
+            <button type="button" class="product-share-button">
+              <input type="checkbox" id="share" />
+              <label for="share"
+                ><img
+                  class="menu-content button"
+                  src="./images/new-product-share-btn.svg"
+                  alt="공유버튼"
+              /></label>
+              <div>
+                <div class="share-wrapper">
+                  <label for="share"
+                    ><img src="./images/ic-gray-close-new-o.svg" alt="닫기버튼"
+                  /></label>
+                  <span class="share-title">공유하기</span>
+                  <div class="share-popup-buttons">
+                    <a
+                      class="facebook-link"
+                      href="https://www.facebook.com/login.php?skip_api_login=1&api_key=439693369874291&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv9.0%2Fdialog%2Fshare%3Fredirect_uri%3Dhttps%253A%252F%252Fcookatmarket.com%252Fko%252Fp%252Fpopup%252Fclose_share_popup%26display%3Dtouch%26href%3Dhttps%253A%252F%252Fcookatmarket.com%252Fko%252Fcookattv%252Flist%252F646%26client_id%3D439693369874291%26ret%3Dlogin&cancel_url=https%3A%2F%2Fcookatmarket.com%2Fko%2Fp%2Fpopup%2Fclose_share_popup%3Ferror_code%3D4201%26error_message%3DUser%2Bcanceled%2Bthe%2BDialog%2Bflow%23_%3D_&display=page&locale=ko_KR"
+                    >
+                      <img
+                        src="https://crcf.cookatmarket.com/assets/img/mobile/sns/ic-facebook-new.svg"
+                        alt="페이스북 공유하기"
+                      />
+                    </a>
+                    <a class="kakao-link" href="">
+                      <img
+                        src="	https://crcf.cookatmarket.com/assets/img/mobile/sns/ic-kakao.svg"
+                        alt="카카오톡 공유하기"
+                      />
+                    </a>
+                    <a class="url-copy">
+                      <img
+                        src="	https://crcf.cookatmarket.com/assets/img/mobile/sns/ic-share-url.png"
+                        alt="URL 공유하기"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <label for="share"></label>
+              </div>
             </button>
           </div>
         </section>
@@ -238,7 +305,7 @@
                 </div>
               </div>
 
-              <div class="rec-swiper-bar"></div>
+              <div class="rec-swiper-scrollbar"></div>
             </div>
           </div>
           <div class="space-div"></div>
@@ -283,7 +350,7 @@
                     매콤 닭바베큐의<br />
                     <strong>특별한 매력</strong>
                   </div>
-    
+
                   <ul class="gf-content-list">
                     <li class="gf-content-item">
                       <img
@@ -316,7 +383,10 @@
                     <div class="option-item-number">01</div>
                     <div class="option-item">
                       매콤 닭바베큐 250g
-                      <img src="./images/option-item1.jpg" alt="옵션1번 이미지" />
+                      <img
+                        src="./images/option-item1.jpg"
+                        alt="옵션1번 이미지"
+                      />
                     </div>
                     <div class="option-item-price">6,900원</div>
                   </div>
@@ -324,7 +394,10 @@
                     <div class="option-item-number">02</div>
                     <div class="option-item">
                       매콤 닭바베큐 3개 SET
-                      <img src="./images/option-item2.jpg" alt="옵션2번 이미지" />
+                      <img
+                        src="./images/option-item2.jpg"
+                        alt="옵션2번 이미지"
+                      />
                     </div>
                     div.
                     <div class="option-item-price">19,800원</div>
@@ -333,7 +406,10 @@
                     <div class="option-item-number">03</div>
                     <div class="option-item">
                       매콤 닭바베큐 250g
-                      <img src="./images/option-item3.jpg" alt="옵션3번 이미지" />
+                      <img
+                        src="./images/option-item3.jpg"
+                        alt="옵션3번 이미지"
+                      />
                     </div>
                     <div class="option-item-price">6,900원</div>
                   </div>
@@ -341,7 +417,10 @@
                     <div class="option-item-number">04</div>
                     <div class="option-item">
                       매콤 닭바베큐 250g
-                      <img src="./images/option-item4.jpg" alt="옵션4번 이미지" />
+                      <img
+                        src="./images/option-item4.jpg"
+                        alt="옵션4번 이미지"
+                      />
                     </div>
                     <div class="option-item-price">6,900원</div>
                   </div>
@@ -354,12 +433,15 @@
                     <div class="option-item-number">01</div>
                     <div class="option-item">
                       매콤 닭바베큐 250g
-                      <img src="./images/option-item1.jpg" alt="옵션1번 이미지" />
+                      <img
+                        src="./images/option-item1.jpg"
+                        alt="옵션1번 이미지"
+                      />
                     </div>
                     <div class="option-item-price">6,900원</div>
                   </div>
                 </section>
-    
+
                 <!-- 공정과정 -->
                 <section class="product-make">
                   <div class="product-make-wrap">
@@ -367,7 +449,8 @@
                       매콤 닭바베큐는 <br /><strong>이렇게 만들어요</strong>
                     </div>
                     <div class="product-make-content">
-                      <strong>'농업회사법인 지엔티㈜'</strong>는 식자재 유통사업을
+                      <strong>'농업회사법인 지엔티㈜'</strong>는 식자재
+                      유통사업을
                       <br />
                       시작으로 식품제조·물류 사업으로 영역을 <br />
                       확대해가고 있는 젊고 열정있는 기업이에요.<br /><br />
@@ -384,6 +467,80 @@
                     <img src="./images/ic-haccp-new-1.svg" alt="haccp 마크" />
                   </div>
                 </section>
+
+                <section class="delivery">
+                  <div class="delivery-wrap">
+                    <div class="delivery-title">
+                      이렇게<br /><strong>배송됩니다</strong>
+                    </div>
+                    <div class="delivery-img">
+                      <img
+                        src="./images/ic-orange-delivery-o.svg"
+                        alt="택배배송차량 이미지"
+                      />
+                      <div class="delivery-img-content">
+                        쿠캣 닭갈비의 배송은 <br /><strong>롯데택배</strong>
+                        와 함께합니다.
+                      </div>
+                    </div>
+                    <div class="delivery-warning">
+                      *배송 상황에 따라 <strong>다른 택배사</strong>
+                      로 출고될 수 있습니다.
+                    </div>
+
+                    <div class="delivery-info-wrap">
+                      <div class="delivery-info">
+                        <span class="delivery-info-title">출고정보</span>
+                        <span class="delivery-info-content"
+                          >오후 12시 결제건까지 당일 출고<br />
+                          (영업일 기준)</span
+                        >
+                      </div>
+                      <div class="delivery-info">
+                        <span class="delivery-info-title">배송기간</span>
+                        <span class="delivery-info-content"
+                          >출고일로부터 1~2일 소요<br />
+                          (영업일 기준)<br /><br />
+                          제품의 변질을 막기위해 토요일은 출고하지 않으므로,<br />
+                          화요일~토요일까지 수령 가능합니다.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <img src="./images/delivery-img.jpg" alt="배송예시 사진" />
+                  </div>
+                  <div class="delivery-img-title">
+                    *아이스박스 안에 담겨 배송됩니다.
+                  </div>
+                </section>
+
+                <div class="trigger-wrap off">
+                  <input class="trigger-title" type="checkbox" id="product01" />
+                  <label for="product01">
+                    상품정보 고시
+                    <img
+                      src="./images/ic-greyish-brown-down-arrow-bold.svg"
+                      alt="펼치기"
+                    />
+                  </label>
+                  <div>
+                    <p>
+                      <img
+                        src="./images/product-content1.jpg"
+                        alt="상품정보고시 1번"
+                      />
+                      <img
+                        src="./images/product-content2.jpg"
+                        alt="상품정보고시 2번"
+                      />
+                      <img
+                        src="./images/product-content3.jpg"
+                        alt="상품정보고시 3번"
+                      />
+                    </p>
+                  </div>
+                </div>
               </div>
             </li>
 
@@ -494,20 +651,72 @@
               <div class="tab-content review">
                 <div class="board-title">
                   <h2>상품후기 <span class="board-cnt">(9,367)</span></h2>
-                  <a href="/" class="board-write-btn">후기 작성하기 <i class="ri-arrow-right-s-line"></i></a>
+                  <a href="/" class="board-write-btn"
+                    >후기 작성하기 <i class="ri-arrow-right-s-line"></i
+                  ></a>
                 </div>
                 <div class="swiper">
                   <ul class="swiper-wrapper">
-                    <li class="swiper-slide"><img src="./images/menu-rec1.jpg" alt="닭바베큐 3종 세트" /></li>
-                    <li class="swiper-slide"><img src="./images/menu-rec2.jpg" alt="닭바베큐 3종 세트" /></li>
-                    <li class="swiper-slide"><img src="./images/menu-rec3.jpg" alt="닭바베큐 3종 세트" /></li>
-                    <li class="swiper-slide"><img src="./images/menu-rec4.jpg" alt="닭바베큐 3종 세트" /></li>
-                    <li class="swiper-slide"><img src="./images/menu-rec5.jpg" alt="닭바베큐 3종 세트" /></li>
-                    <li class="swiper-slide"><img src="./images/menu-rec1.jpg" alt="닭바베큐 3종 세트" /></li>
-                    <li class="swiper-slide"><img src="./images/menu-rec2.jpg" alt="닭바베큐 3종 세트" /></li>
-                    <li class="swiper-slide"><img src="./images/menu-rec3.jpg" alt="닭바베큐 3종 세트" /></li>
-                    <li class="swiper-slide"><img src="./images/menu-rec4.jpg" alt="닭바베큐 3종 세트" /></li>
-                    <li class="swiper-slide"><img src="./images/menu-rec5.jpg" alt="닭바베큐 3종 세트" /></li>
+                    <li class="swiper-slide">
+                      <img
+                        src="./images/menu-rec1.jpg"
+                        alt="닭바베큐 3종 세트"
+                      />
+                    </li>
+                    <li class="swiper-slide">
+                      <img
+                        src="./images/menu-rec2.jpg"
+                        alt="닭바베큐 3종 세트"
+                      />
+                    </li>
+                    <li class="swiper-slide">
+                      <img
+                        src="./images/menu-rec3.jpg"
+                        alt="닭바베큐 3종 세트"
+                      />
+                    </li>
+                    <li class="swiper-slide">
+                      <img
+                        src="./images/menu-rec4.jpg"
+                        alt="닭바베큐 3종 세트"
+                      />
+                    </li>
+                    <li class="swiper-slide">
+                      <img
+                        src="./images/menu-rec5.jpg"
+                        alt="닭바베큐 3종 세트"
+                      />
+                    </li>
+                    <li class="swiper-slide">
+                      <img
+                        src="./images/menu-rec1.jpg"
+                        alt="닭바베큐 3종 세트"
+                      />
+                    </li>
+                    <li class="swiper-slide">
+                      <img
+                        src="./images/menu-rec2.jpg"
+                        alt="닭바베큐 3종 세트"
+                      />
+                    </li>
+                    <li class="swiper-slide">
+                      <img
+                        src="./images/menu-rec3.jpg"
+                        alt="닭바베큐 3종 세트"
+                      />
+                    </li>
+                    <li class="swiper-slide">
+                      <img
+                        src="./images/menu-rec4.jpg"
+                        alt="닭바베큐 3종 세트"
+                      />
+                    </li>
+                    <li class="swiper-slide">
+                      <img
+                        src="./images/menu-rec5.jpg"
+                        alt="닭바베큐 3종 세트"
+                      />
+                    </li>
                   </ul>
                 </div>
                 <ul class="review-list slide-content">
@@ -522,19 +731,39 @@
                       </span>
                       <span class="board-writer">윤**</span>
                       <span class="board-date">29일 전</span>
-                      <span class="product-option">[옵션] : 코다노 모짜렐라 치즈믹스 100g (1,900원)</span>
-                      <p class="review-text"><i class="best-icon">BEST</i> 로제치즈 닭갈비ㅠㅠㅠ 너무 맛있네요ㅠㅠ 딱 생각하던 그맛이예요 ㅎㅎㅎ 대파 썰어서 같이 볶아 먹으니 최고였습니당❤️</p>
-                      <div class="review-img"><img src="./images/foodmain.jpg" alt="닭바베큐 3종 세트" /></div>
+                      <span class="product-option"
+                        >[옵션] : 코다노 모짜렐라 치즈믹스 100g (1,900원)</span
+                      >
+                      <p class="review-text">
+                        <i class="best-icon">BEST</i> 로제치즈 닭갈비ㅠㅠㅠ 너무
+                        맛있네요ㅠㅠ 딱 생각하던 그맛이예요 ㅎㅎㅎ 대파 썰어서
+                        같이 볶아 먹으니 최고였습니당❤️
+                      </p>
+                      <div class="review-img">
+                        <img
+                          src="./images/foodmain.jpg"
+                          alt="닭바베큐 3종 세트"
+                        />
+                      </div>
                       <button type="button" class="report">신고하기</button>
                     </figure>
                     <div class="active-content">
-                      <div class="review-img"><img src="./images/foodmain.jpg" alt="닭바베큐 3종 세트" /></div>
+                      <div class="review-img">
+                        <img
+                          src="./images/foodmain.jpg"
+                          alt="닭바베큐 3종 세트"
+                        />
+                      </div>
                       <span class="board-writer">쿠캣마켓</span>
-                      <time class="board-date" datetime="2022-10-16">2022.10.16</time>
+                      <time class="board-date" datetime="2022-10-16"
+                        >2022.10.16</time
+                      >
                       <p>
                         소중한 후기 감사합니다.<br />
-                        쿠캣을 이용하시는 고객분들이 더욱 만족하실 수 있도록 최선을 다하겠습니다.<br/>
-                        후기 적립금은 [마이쿠캣 &gt; 적립금 &gt; 적립금 내역] 에서 확인해 주시기 바랍니다.<br/>
+                        쿠캣을 이용하시는 고객분들이 더욱 만족하실 수 있도록
+                        최선을 다하겠습니다.<br />
+                        후기 적립금은 [마이쿠캣 &gt; 적립금 &gt; 적립금 내역]
+                        에서 확인해 주시기 바랍니다.<br />
                         즐겁고 행복한 하루 보내세요♥
                       </p>
                     </div>
@@ -550,19 +779,44 @@
                       </span>
                       <span class="board-writer">윤**</span>
                       <span class="board-date">29일 전</span>
-                      <span class="product-option">[옵션] : 코다노 모짜렐라 치즈믹스 100g (1,900원)</span>
-                      <p class="review-text"><i class="best-icon">BEST</i> 저번에 한번 먹어보고 맛있어서 또 샀어요 숯불 치킨 땡길때 쿠캣꺼 계속 생각나더라고요 블프세일하길래 여러개 샀네요 라면사리 반개 하면 소스가 딱 맞아서 맛있게 먹을 수 있어요 이번에는 조리를 처음부터 후라이팬으로 했는데 신기하게도 전자레인지로 했을때 더 맛있긴해요 전자레인지로 좀 돌리고 라면사리 넣고 후라이팬에 볶아서 먹는게 제일 맛있네용 완전 추천이요~</p>
-                      <div class="review-img"><img src="./images/foodmain.jpg" alt="닭바베큐 3종 세트" /></div>
+                      <span class="product-option"
+                        >[옵션] : 코다노 모짜렐라 치즈믹스 100g (1,900원)</span
+                      >
+                      <p class="review-text">
+                        <i class="best-icon">BEST</i> 저번에 한번 먹어보고
+                        맛있어서 또 샀어요 숯불 치킨 땡길때 쿠캣꺼 계속
+                        생각나더라고요 블프세일하길래 여러개 샀네요 라면사리
+                        반개 하면 소스가 딱 맞아서 맛있게 먹을 수 있어요
+                        이번에는 조리를 처음부터 후라이팬으로 했는데 신기하게도
+                        전자레인지로 했을때 더 맛있긴해요 전자레인지로 좀 돌리고
+                        라면사리 넣고 후라이팬에 볶아서 먹는게 제일 맛있네용
+                        완전 추천이요~
+                      </p>
+                      <div class="review-img">
+                        <img
+                          src="./images/foodmain.jpg"
+                          alt="닭바베큐 3종 세트"
+                        />
+                      </div>
                       <button type="button" class="report">신고하기</button>
                     </figure>
                     <div class="active-content">
-                      <div class="review-img"><img src="./images/foodmain.jpg" alt="닭바베큐 3종 세트" /></div>
+                      <div class="review-img">
+                        <img
+                          src="./images/foodmain.jpg"
+                          alt="닭바베큐 3종 세트"
+                        />
+                      </div>
                       <span class="board-writer">쿠캣마켓</span>
-                      <time class="board-date" datetime="2022-10-16">2022.10.16</time>
+                      <time class="board-date" datetime="2022-10-16"
+                        >2022.10.16</time
+                      >
                       <p>
                         소중한 후기 감사합니다.<br />
-                        쿠캣을 이용하시는 고객분들이 더욱 만족하실 수 있도록 최선을 다하겠습니다.<br/>
-                        후기 적립금은 [마이쿠캣 &gt; 적립금 &gt; 적립금 내역] 에서 확인해 주시기 바랍니다.<br/>
+                        쿠캣을 이용하시는 고객분들이 더욱 만족하실 수 있도록
+                        최선을 다하겠습니다.<br />
+                        후기 적립금은 [마이쿠캣 &gt; 적립금 &gt; 적립금 내역]
+                        에서 확인해 주시기 바랍니다.<br />
                         즐겁고 행복한 하루 보내세요♥
                       </p>
                     </div>
@@ -578,19 +832,39 @@
                       </span>
                       <span class="board-writer">윤**</span>
                       <span class="board-date">29일 전</span>
-                      <span class="product-option">[옵션] : 코다노 모짜렐라 치즈믹스 100g (1,900원)</span>
-                      <p class="review-text"><i class="best-icon">BEST</i> 로제치즈 닭갈비ㅠㅠㅠ 너무 맛있네요ㅠㅠ 딱 생각하던 그맛이예요 ㅎㅎㅎ 대파 썰어서 같이 볶아 먹으니 최고였습니당❤️</p>
-                      <div class="review-img"><img src="./images/foodmain.jpg" alt="닭바베큐 3종 세트" /></div>
+                      <span class="product-option"
+                        >[옵션] : 코다노 모짜렐라 치즈믹스 100g (1,900원)</span
+                      >
+                      <p class="review-text">
+                        <i class="best-icon">BEST</i> 로제치즈 닭갈비ㅠㅠㅠ 너무
+                        맛있네요ㅠㅠ 딱 생각하던 그맛이예요 ㅎㅎㅎ 대파 썰어서
+                        같이 볶아 먹으니 최고였습니당❤️
+                      </p>
+                      <div class="review-img">
+                        <img
+                          src="./images/foodmain.jpg"
+                          alt="닭바베큐 3종 세트"
+                        />
+                      </div>
                       <button type="button" class="report">신고하기</button>
                     </figure>
                     <div class="active-content">
-                      <div class="review-img"><img src="./images/foodmain.jpg" alt="닭바베큐 3종 세트" /></div>
+                      <div class="review-img">
+                        <img
+                          src="./images/foodmain.jpg"
+                          alt="닭바베큐 3종 세트"
+                        />
+                      </div>
                       <span class="board-writer">쿠캣마켓</span>
-                      <time class="board-date" datetime="2022-10-16">2022.10.16</time>
+                      <time class="board-date" datetime="2022-10-16"
+                        >2022.10.16</time
+                      >
                       <p>
                         소중한 후기 감사합니다.<br />
-                        쿠캣을 이용하시는 고객분들이 더욱 만족하실 수 있도록 최선을 다하겠습니다.<br/>
-                        후기 적립금은 [마이쿠캣 &gt; 적립금 &gt; 적립금 내역] 에서 확인해 주시기 바랍니다.<br/>
+                        쿠캣을 이용하시는 고객분들이 더욱 만족하실 수 있도록
+                        최선을 다하겠습니다.<br />
+                        후기 적립금은 [마이쿠캣 &gt; 적립금 &gt; 적립금 내역]
+                        에서 확인해 주시기 바랍니다.<br />
                         즐겁고 행복한 하루 보내세요♥
                       </p>
                     </div>
@@ -606,13 +880,29 @@
                       </span>
                       <span class="board-writer">윤**</span>
                       <span class="board-date">29일 전</span>
-                      <span class="product-option">[옵션] : 코다노 모짜렐라 치즈믹스 100g (1,900원)</span>
-                      <p class="review-text"><i class="best-icon">BEST</i> 로제치즈 닭갈비ㅠㅠㅠ 너무 맛있네요ㅠㅠ 딱 생각하던 그맛이예요 ㅎㅎㅎ 대파 썰어서 같이 볶아 먹으니 최고였습니당❤️</p>
-                      <div class="review-img"><img src="./images/foodmain.jpg" alt="닭바베큐 3종 세트" /></div>
+                      <span class="product-option"
+                        >[옵션] : 코다노 모짜렐라 치즈믹스 100g (1,900원)</span
+                      >
+                      <p class="review-text">
+                        <i class="best-icon">BEST</i> 로제치즈 닭갈비ㅠㅠㅠ 너무
+                        맛있네요ㅠㅠ 딱 생각하던 그맛이예요 ㅎㅎㅎ 대파 썰어서
+                        같이 볶아 먹으니 최고였습니당❤️
+                      </p>
+                      <div class="review-img">
+                        <img
+                          src="./images/foodmain.jpg"
+                          alt="닭바베큐 3종 세트"
+                        />
+                      </div>
                       <button type="button" class="report">신고하기</button>
                     </figure>
                     <div class="active-content">
-                      <div class="review-img"><img src="./images/foodmain.jpg" alt="닭바베큐 3종 세트" /></div>
+                      <div class="review-img">
+                        <img
+                          src="./images/foodmain.jpg"
+                          alt="닭바베큐 3종 세트"
+                        />
+                      </div>
                     </div>
                   </li>
                   <li>
@@ -626,25 +916,47 @@
                       </span>
                       <span class="board-writer">윤**</span>
                       <span class="board-date">29일 전</span>
-                      <span class="product-option">[옵션] : 코다노 모짜렐라 치즈믹스 100g (1,900원)</span>
-                      <p class="review-text"><i class="best-icon">BEST</i> 로제치즈 닭갈비ㅠㅠㅠ 너무 맛있네요ㅠㅠ 딱 생각하던 그맛이예요 ㅎㅎㅎ 대파 썰어서 같이 볶아 먹으니 최고였습니당❤️</p>
-                      <div class="review-img"><img src="./images/foodmain.jpg" alt="닭바베큐 3종 세트" /></div>
+                      <span class="product-option"
+                        >[옵션] : 코다노 모짜렐라 치즈믹스 100g (1,900원)</span
+                      >
+                      <p class="review-text">
+                        <i class="best-icon">BEST</i> 로제치즈 닭갈비ㅠㅠㅠ 너무
+                        맛있네요ㅠㅠ 딱 생각하던 그맛이예요 ㅎㅎㅎ 대파 썰어서
+                        같이 볶아 먹으니 최고였습니당❤️
+                      </p>
+                      <div class="review-img">
+                        <img
+                          src="./images/foodmain.jpg"
+                          alt="닭바베큐 3종 세트"
+                        />
+                      </div>
                       <button type="button" class="report">신고하기</button>
                     </figure>
                     <div class="active-content">
-                      <div class="review-img"><img src="./images/foodmain.jpg" alt="닭바베큐 3종 세트" /></div>
+                      <div class="review-img">
+                        <img
+                          src="./images/foodmain.jpg"
+                          alt="닭바베큐 3종 세트"
+                        />
+                      </div>
                       <span class="board-writer">쿠캣마켓</span>
-                      <time class="board-date" datetime="2022-10-16">2022.10.16</time>
+                      <time class="board-date" datetime="2022-10-16"
+                        >2022.10.16</time
+                      >
                       <p>
                         소중한 후기 감사합니다.<br />
-                        쿠캣을 이용하시는 고객분들이 더욱 만족하실 수 있도록 최선을 다하겠습니다.<br/>
-                        후기 적립금은 [마이쿠캣 &gt; 적립금 &gt; 적립금 내역] 에서 확인해 주시기 바랍니다.<br/>
+                        쿠캣을 이용하시는 고객분들이 더욱 만족하실 수 있도록
+                        최선을 다하겠습니다.<br />
+                        후기 적립금은 [마이쿠캣 &gt; 적립금 &gt; 적립금 내역]
+                        에서 확인해 주시기 바랍니다.<br />
                         즐겁고 행복한 하루 보내세요♥
                       </p>
                     </div>
                   </li>
                 </ul>
-                <button type="button" class="more-view-btn">상품후기 전체보기</button>
+                <button type="button" class="more-view-btn">
+                  상품후기 전체보기
+                </button>
               </div>
             </li>
             <li class="product-tab-content">
@@ -654,22 +966,32 @@
               <div class="tab-content fnq">
                 <div class="board-title">
                   <h2>Q&amp;A <span class="board-cnt">(9,367)</span></h2>
-                  <a href="/" class="board-write-btn">Q&amp;A 작성하기 <i class="ri-arrow-right-s-line"></i></a>
+                  <a href="/" class="board-write-btn"
+                    >Q&amp;A 작성하기 <i class="ri-arrow-right-s-line"></i
+                  ></a>
                 </div>
                 <ul class="qna-list slide-content">
                   <li>
                     <figure class="coment-content">
                       <h3>배송문의</h3>
                       <span class="board-writer">윤**</span>
-                      <time class="board-date" datetime="2022-10-16">2022.10.16</time>
-                      <p class="q-text">영양성분표(칼로리,탄수화물,지방,단백질,당,나트륨,콜레스테롤) 궁금합니다.</p>
+                      <time class="board-date" datetime="2022-10-16"
+                        >2022.10.16</time
+                      >
+                      <p class="q-text">
+                        영양성분표(칼로리,탄수화물,지방,단백질,당,나트륨,콜레스테롤)
+                        궁금합니다.
+                      </p>
                       <i class="answer-icon">답변완료</i>
                       <button type="button" class="report">신고하기</button>
                     </figure>
                     <div class="active-content">
                       <p class="a-text">
-                        안녕하세요 고객님 , 문의해주신 제품은 영양성분 제공 비의무 대상 제품으로, 별도의 영양성분을 산정/보유하고 있지 않아, 정확한 정보를 제공해드리기 어려운점 양해 부탁드립니다.<br/>
-                        <br/>
+                        안녕하세요 고객님 , 문의해주신 제품은 영양성분 제공
+                        비의무 대상 제품으로, 별도의 영양성분을 산정/보유하고
+                        있지 않아, 정확한 정보를 제공해드리기 어려운점 양해
+                        부탁드립니다.<br />
+                        <br />
                         정확한 정보 제공해 드리지 못해 죄송합니다.
                       </p>
                     </div>
@@ -678,15 +1000,23 @@
                     <figure class="coment-content">
                       <h3>배송문의</h3>
                       <span class="board-writer">윤**</span>
-                      <time class="board-date" datetime="2022-10-16">2022.10.16</time>
-                      <p class="q-text">영양성분표(칼로리,탄수화물,지방,단백질,당,나트륨,콜레스테롤) 궁금합니다.</p>
+                      <time class="board-date" datetime="2022-10-16"
+                        >2022.10.16</time
+                      >
+                      <p class="q-text">
+                        영양성분표(칼로리,탄수화물,지방,단백질,당,나트륨,콜레스테롤)
+                        궁금합니다.
+                      </p>
                       <i class="answer-icon">답변완료</i>
                       <button type="button" class="report">신고하기</button>
                     </figure>
                     <div class="active-content">
                       <p class="a-text">
-                        안녕하세요 고객님 , 문의해주신 제품은 영양성분 제공 비의무 대상 제품으로, 별도의 영양성분을 산정/보유하고 있지 않아, 정확한 정보를 제공해드리기 어려운점 양해 부탁드립니다.<br/>
-                        <br/>
+                        안녕하세요 고객님 , 문의해주신 제품은 영양성분 제공
+                        비의무 대상 제품으로, 별도의 영양성분을 산정/보유하고
+                        있지 않아, 정확한 정보를 제공해드리기 어려운점 양해
+                        부탁드립니다.<br />
+                        <br />
                         정확한 정보 제공해 드리지 못해 죄송합니다.
                       </p>
                     </div>
@@ -695,15 +1025,23 @@
                     <figure class="coment-content">
                       <h3>배송문의</h3>
                       <span class="board-writer">윤**</span>
-                      <time class="board-date" datetime="2022-10-16">2022.10.16</time>
-                      <p class="q-text">영양성분표(칼로리,탄수화물,지방,단백질,당,나트륨,콜레스테롤) 궁금합니다.</p>
+                      <time class="board-date" datetime="2022-10-16"
+                        >2022.10.16</time
+                      >
+                      <p class="q-text">
+                        영양성분표(칼로리,탄수화물,지방,단백질,당,나트륨,콜레스테롤)
+                        궁금합니다.
+                      </p>
                       <i class="answer-icon">답변완료</i>
                       <button type="button" class="report">신고하기</button>
                     </figure>
                     <div class="active-content">
                       <p class="a-text">
-                        안녕하세요 고객님 , 문의해주신 제품은 영양성분 제공 비의무 대상 제품으로, 별도의 영양성분을 산정/보유하고 있지 않아, 정확한 정보를 제공해드리기 어려운점 양해 부탁드립니다.<br/>
-                        <br/>
+                        안녕하세요 고객님 , 문의해주신 제품은 영양성분 제공
+                        비의무 대상 제품으로, 별도의 영양성분을 산정/보유하고
+                        있지 않아, 정확한 정보를 제공해드리기 어려운점 양해
+                        부탁드립니다.<br />
+                        <br />
                         정확한 정보 제공해 드리지 못해 죄송합니다.
                       </p>
                     </div>
@@ -712,15 +1050,23 @@
                     <figure class="coment-content">
                       <h3>배송문의</h3>
                       <span class="board-writer">윤**</span>
-                      <time class="board-date" datetime="2022-10-16">2022.10.16</time>
-                      <p class="q-text">영양성분표(칼로리,탄수화물,지방,단백질,당,나트륨,콜레스테롤) 궁금합니다.</p>
+                      <time class="board-date" datetime="2022-10-16"
+                        >2022.10.16</time
+                      >
+                      <p class="q-text">
+                        영양성분표(칼로리,탄수화물,지방,단백질,당,나트륨,콜레스테롤)
+                        궁금합니다.
+                      </p>
                       <i class="answer-icon">답변완료</i>
                       <button type="button" class="report">신고하기</button>
                     </figure>
                     <div class="active-content">
                       <p class="a-text">
-                        안녕하세요 고객님 , 문의해주신 제품은 영양성분 제공 비의무 대상 제품으로, 별도의 영양성분을 산정/보유하고 있지 않아, 정확한 정보를 제공해드리기 어려운점 양해 부탁드립니다.<br/>
-                        <br/>
+                        안녕하세요 고객님 , 문의해주신 제품은 영양성분 제공
+                        비의무 대상 제품으로, 별도의 영양성분을 산정/보유하고
+                        있지 않아, 정확한 정보를 제공해드리기 어려운점 양해
+                        부탁드립니다.<br />
+                        <br />
                         정확한 정보 제공해 드리지 못해 죄송합니다.
                       </p>
                     </div>
@@ -729,15 +1075,23 @@
                     <figure class="coment-content">
                       <h3>배송문의</h3>
                       <span class="board-writer">윤**</span>
-                      <time class="board-date" datetime="2022-10-16">2022.10.16</time>
-                      <p class="q-text">영양성분표(칼로리,탄수화물,지방,단백질,당,나트륨,콜레스테롤) 궁금합니다.</p>
+                      <time class="board-date" datetime="2022-10-16"
+                        >2022.10.16</time
+                      >
+                      <p class="q-text">
+                        영양성분표(칼로리,탄수화물,지방,단백질,당,나트륨,콜레스테롤)
+                        궁금합니다.
+                      </p>
                       <i class="answer-icon">답변완료</i>
                       <button type="button" class="report">신고하기</button>
                     </figure>
                     <div class="active-content">
                       <p class="a-text">
-                        안녕하세요 고객님 , 문의해주신 제품은 영양성분 제공 비의무 대상 제품으로, 별도의 영양성분을 산정/보유하고 있지 않아, 정확한 정보를 제공해드리기 어려운점 양해 부탁드립니다.<br/>
-                        <br/>
+                        안녕하세요 고객님 , 문의해주신 제품은 영양성분 제공
+                        비의무 대상 제품으로, 별도의 영양성분을 산정/보유하고
+                        있지 않아, 정확한 정보를 제공해드리기 어려운점 양해
+                        부탁드립니다.<br />
+                        <br />
                         정확한 정보 제공해 드리지 못해 죄송합니다.
                       </p>
                     </div>
@@ -746,27 +1100,36 @@
                     <figure class="coment-content">
                       <h3>배송문의</h3>
                       <span class="board-writer">윤**</span>
-                      <time class="board-date" datetime="2022-10-16">2022.10.16</time>
-                      <p class="q-text">비닐을 뜯지 않고 제품 자체를 전자렌지에 돌려도 발암물질이나 환경호르몬이 안나오는 안전한 용기인가요?</p>
+                      <time class="board-date" datetime="2022-10-16"
+                        >2022.10.16</time
+                      >
+                      <p class="q-text">
+                        비닐을 뜯지 않고 제품 자체를 전자렌지에 돌려도
+                        발암물질이나 환경호르몬이 안나오는 안전한 용기인가요?
+                      </p>
                       <i class="answer-icon">답변완료</i>
                       <button type="button" class="report">신고하기</button>
                     </figure>
                     <div class="active-content">
                       <p class="a-text">
-                        안녕하세요 고객님 , 문의해주신 제품은 영양성분 제공 비의무 대상 제품으로, 별도의 영양성분을 산정/보유하고 있지 않아, 정확한 정보를 제공해드리기 어려운점 양해 부탁드립니다.<br/>
-                        <br/>
+                        안녕하세요 고객님 , 문의해주신 제품은 영양성분 제공
+                        비의무 대상 제품으로, 별도의 영양성분을 산정/보유하고
+                        있지 않아, 정확한 정보를 제공해드리기 어려운점 양해
+                        부탁드립니다.<br />
+                        <br />
                         정확한 정보 제공해 드리지 못해 죄송합니다.
                       </p>
                     </div>
                   </li>
                 </ul>
-                <button type="button" class="more-view-btn">상품문의 전체보기</button>
+                <button type="button" class="more-view-btn">
+                  상품문의 전체보기
+                </button>
               </div>
             </li>
           </ul>
         </section>
 
-        <div class="space-div1"></div>
         <!-- 쿠캣 사업자 정보 -->
         <section class="footer">
           <div class="center-info-container">
@@ -870,7 +1233,7 @@
           </div>
 
           <div class="additional-container">
-            <a href="/">로그인</a>
+            <a href="./login.html">로그인</a>
             <a id="app-down" href="/"> APP다운</a>
           </div>
           <a href="#" class="top-button"
@@ -886,38 +1249,149 @@
         </div>
 
         <div class="purchase-button">
-          <button type="button" class="purchase-btn" id="show">구매하기</button>
+          <input type="checkbox" class="purchase-btn" id="pop" />
+          <label for="pop">구매하기</label>
+          <div>
+            <div>
+              <div class="pop-title">
+                <div class="pop-title-text">옵션선택</div>
+
+                <label for="pop">
+                  <img src="./images/ic-gray-close-new-o.svg" alt="닫기버튼" />
+                </label>
+              </div>
+              <div class="pop-option">
+                <label
+                  class="pop-option-title label-title"
+                  for="pop-option-select-list"
+                  >필수옵션</label
+                >
+                <div class="pop-option-select">
+                  <span>[필수]옵션을 선택해 주세요.</span>
+                  <ul class="pop-option-select-list">
+                    <li>초벌 대구막창 300g + 어니언 시즈닝 1개</li>
+                    <li>혹시 모르는 추가 옵션</li>
+                  </ul>
+                </div>
+              </div>
+              <hr />
+              <div class="pop-count">
+                <div class="pop-total-count">총 수량 <span> 0</span> 개</div>
+                <div class="pop-total-price">총 금액 <span> 0</span> 원</div>
+              </div>
+              <div class="pop-cart">
+                <img src="./images/ic-cart-white.svg" alt="" />
+                <div class="cart-title">카트 담기</div>
+              </div>
+            </div>
+
+            <label for="pop"></label>
+          </div>
         </div>
       </footer>
+      <article class="search-container is--active" style="display: none">
+        <div class="search-header">
+          <button class="search-close-btn" type="button"></button>
+          <div class="search-input-box">
+            <input
+              class="search-input"
+              type="text"
+              placeholder="검색어를 입력해 주세요."
+              required=""
+            />
+            <button
+              type="button"
+              class="erase-btn"
+              aria-label="다 지우기"
+            ></button>
+            <button
+              type="button"
+              class="search-btn"
+              aria-label="검색하기"
+            ></button>
+          </div>
+        </div>
+        <div class="search-language-box">
+          <section class="search-language">
+            <div class="search-language-title">추천 검색어</div>
+            <div class="search-language-buttons">
+              <button type="button">설 선물세트</button>
+              <button type="button">감바스</button>
+              <button type="button">닭발</button>
+              <button type="button">갈비탕</button>
+              <button type="button">불고기</button>
+              <button type="button">곱창</button>
+              <button type="button">닭가습살</button>
+              <button type="button">감자탕</button>
+              <button type="button">닭갈비</button>
+              <button type="button">막창</button>
+              <button type="button">만두</button>
+              <button type="button">띵커바디</button>
+              <button type="button">부대찌개</button>
+            </div>
+          </section>
+          <section class="search-language">
+            <div class="search-language-title">인기 검색어</div>
+            <div class="search-language-buttons">
+              <button type="button">찹쌀떡</button>
+              <button type="button">선물세트</button>
+              <button type="button">새우</button>
+              <button type="button">볶음밥</button>
+              <button type="button">대창</button>
+              <button type="button">떡</button>
+              <button type="button">도시락</button>
+              <button type="button">쭈꾸미</button>
+              <button type="button">띵커바디</button>
+              <button type="button">만두</button>
+            </div>
+          </section>
+        </div>
+      </article>
     </div>
 
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/tab.js"></script>
     <script src="./js/slideUpDown.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/search.js"></script>
     <!-- Initialize Swiper -->
     <script>
-      var main_swiper = new Swiper('.mainSwiper', {});
+      var main_swiper = new Swiper('.main-swiper', {
+        pagination: {
+          el: '.main-swiper .swiper-pagination',
+          type: 'fraction',
+        },
+      });
       var rec_swiper = new Swiper('.rec-Swiper', {
         slidesPerView: 5,
-        pagination: {
-          el: '.rec-swiper-bar',
-          type: 'progressbar',
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+        scrollbar: {
+          el: '.rec-swiper-scrollbar',
+          hide: false,
         },
       });
 
-      const review = new Swiper('.review .swiper',{
+      const review = new Swiper('.review .swiper', {
         slidesPerView: 3.2,
         spaceBetween: 15,
         breakpoints: {
           500: {
             slidesPerView: 4.5,
-          }
+          },
         },
+      });
+
+      const header = document.querySelector('.food-header');
+
+      // header.scrollTop = recordListWrapper.scrollHeight
+
+      window.addEventListener('scroll', function () {
+        if (window.scrollY >= 100) {
+          header.style = 'background:#fff';
+          header.classList.add('scroll');
+        } else {
+          header.style = 'background:none';
+          header.classList.remove('scroll');
+        }
       });
 
       // 구매하기 팝업창
@@ -929,8 +1403,8 @@
         document.querySelector('.background').className = 'background';
       }
 
-      document.querySelector('#close').addEventListener('click', close);
-      document.querySelector('#show').addEventListener('click', show);
+      // document.querySelector('#close').addEventListener('click', close);
+      // document.querySelector('#show').addEventListener('click', show);
     </script>
   </body>
 </html>

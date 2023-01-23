@@ -147,8 +147,8 @@
 
 .bargain-graph-wrap {
   max-width: 380px;
-  margin: var(--spacing-xl) 4vw var(--spacing-xxl) 4vw;
-  padding-top: var(--spacing-l);
+  margin: var(--spacing-xl) auto var(--spacing-xxl);
+  padding: var(--spacing-l) var(--spacing-l) 0 var(--spacing-l);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -160,7 +160,7 @@
   flex: 1 1 0;
   text-align: center;
   position: relative;
-  max-width: 2.5vw;
+  max-width: 1.25rem;
   max-height: 12vw;
 }
 
@@ -200,8 +200,7 @@
   transform: translateX(-50%);
   background: #181716;
 
-  padding-top: min(1vh, var(--spacing-xxs));
-  padding-bottom: min(1vh, var(--spacing-xxs));
+  padding: min(1vh, var(--spacing-xxs));
 
   border-radius: 5px;
 }
@@ -239,12 +238,6 @@
 }
 
 @media (max-width: 399px) {
-  .bargain-food-count {
-    height: 2vh;
-    font-size: 3vw;
-    bottom: 82%;
-    padding: 2vw 0 0 3vw;
-  }
 
   .bargain-food-count span {
     margin-top: 1vw;
@@ -253,13 +246,8 @@
     margin-top: 1.5vw;
   }
 
-  .bargain-menu-text {
-    padding-top: 0;
-  }
-
   .bargain-content1 {
     font-size: 4vw;
-    line-height: 2vh;
   }
 
   .bargain-content2 {
@@ -290,15 +278,6 @@
 
   .bargain-graph-title img {
     width: 2.5vw;
-  }
-
-  .bargain-graph-wrap {
-    margin: 0 8vw;
-  }
-
-  .bargain-bar {
-    min-width: 3vw;
-    max-width: 3vw;
   }
 
   .bargain-bar-date {
