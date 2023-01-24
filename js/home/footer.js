@@ -1,6 +1,5 @@
 const businessWatchBar = document.getElementsByClassName('business-info-title-container');
 const bussinessButton = document.getElementsByClassName('business-info-toggle-btn');
-let i = 0;
 let target = document.querySelector('.business-info-list');
 let h = target.offsetHeight;
 
