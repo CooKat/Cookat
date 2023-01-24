@@ -569,14 +569,14 @@ main,
 }
 
 .video-footer-menu .my-home a {
-  background-image: url(../images/ic-24-home-black-version.svg);
+  background-image: url(/images/ic-24-home-black-version.svg);
   background-position: center top 10px;
   background-repeat: no-repeat;
   background-size: 22px;
 }
 
 .video-footer-menu .my-video a {
-  background-image: url(../images/ic-24-tv-solid-black-version-new.svg);
+  background-image: url(/images/ic-24-tv-solid-black-version-new.svg);
 }
 .video-footer-menu .my-home a:hover,
 .video-footer-menu .my-menu a:hover,
@@ -587,15 +587,15 @@ main,
 }
 
 .video-footer-menu .my-menu a {
-  background-image: url(../images/ic-tabbar-black-version-category.svg);
+  background-image: url(/images/ic-tabbar-black-version-category.svg);
 }
 
 .video-footer-menu .my-cart a {
-  background-image: url(../images/ic-tabbar-black-version-cart.svg);
+  background-image: url(/images/ic-tabbar-black-version-cart.svg);
 }
 
 .video-footer-menu .my-cookat a {
-  background-image: url(../images/ic-24-mycookat-tv-color.svg);
+  background-image: url(/images/ic-24-mycookat-tv-color.svg);
 }
 
 .footer {
