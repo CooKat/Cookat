@@ -117,9 +117,6 @@
   font-size: min(3vw, var(--text-base));
 }
 
-.product-price {
-}
-
 .product-item {
   position: relative;
   width: 100%;

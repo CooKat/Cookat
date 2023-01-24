@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" href="./images/1.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/1.png" />
     <link
       rel="stylesheet"
       as="style"
@@ -16,8 +16,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/discount.css" />
+    <link rel="stylesheet" href="/css/home/main.css" />
+    <link rel="stylesheet" href="/css/home/discount.css" />
     <title>쿠캣</title>
   </head>
   <body>
@@ -26,11 +26,11 @@
       <header class="discount-head">
         <div class="head-container">
           <a href="javascript:window.history.back();" class="header-prev-button">
-            <img src="./images/ic-24-arrow-perv.svg" alt="이전으로 가기" />
+            <img src="/images/ic-24-arrow-perv.svg" alt="이전으로 가기" />
           </a>
           <div class="head-title">[기획전] 쿠캣 새해 챌린지 ~ 15% 할인</div>
           <button type="button" class="home-search">
-            <img src="./images/ic-24-finder.svg" alt="검색 아이콘" />
+            <img src="/images/ic-24-finder.svg" alt="검색 아이콘" />
           </button>
         </div>
       </header>
@@ -38,14 +38,14 @@
       <main>
         <!-- 이벤트 이미지 -->
         <div class="event-image-list">
-          <img src="./images/discount1.jpg" alt="" />
+          <img src="/images/discount1.jpg" alt="" />
           <div class="image-list-qaurter">
-            <img src="./images/discount2.jpg" alt="" width="50%" />
-            <img src="./images/discount3.jpg" alt="" width="50%" />
-            <img src="./images/discount4.jpg" alt="" width="50%" />
-            <img src="./images/discount5.jpg" alt="" width="50%" />
+            <img src="/images/discount2.jpg" alt="" width="50%" />
+            <img src="/images/discount3.jpg" alt="" width="50%" />
+            <img src="/images/discount4.jpg" alt="" width="50%" />
+            <img src="/images/discount5.jpg" alt="" width="50%" />
           </div>
-          <img src="./images/discount6.jpg" alt="" />
+          <img src="/images/discount6.jpg" alt="" />
         </div>
 
         <!-- 다이어트 챌린지, 식단관리템 -->
@@ -58,7 +58,7 @@
                 <p class="tag-best">BEST</p>
               </div>
               <a href="/" class="product-item-anchor">
-                <img src="./images/discount-list-1.jpg" alt="" />
+                <img src="/images/discount-list-1.jpg" alt="" />
               </a>
               <div class="product-item-container">
                 <h2 class="product-item-title">띵커바디 식단관리 도시락 시즌1.5 (6종X1팩씩)</h2>
@@ -76,7 +76,7 @@
                 <p class="tag-exclusive">단독</p>
               </div>
               <a href="/" class="product-item-anchor">
-                <img src="./images/discount-list-2.jpg" alt="" />
+                <img src="/images/discount-list-2.jpg" alt="" />
               </a>
               <div class="product-item-container">
                 <h2 class="product-item-title">띵커바디 식단관리 도시락 시즌3 (5종X1팩씩)</h2>
@@ -90,7 +90,7 @@
                 <p class="tag-exclusive">단독</p>
               </div>
               <a href="/" class="product-item-anchor">
-                <img src="./images/discount-list-3.jpg" alt="" />
+                <img src="/images/discount-list-3.jpg" alt="" />
               </a>
               <div class="product-item-container">
                 <h2 class="product-item-title">
@@ -114,7 +114,7 @@
               </div>
 
               <a href="/" class="product-item-anchor">
-                <img src="./images/discount-list-4.jpg" alt="" />
+                <img src="/images/discount-list-4.jpg" alt="" />
               </a>
               <div class="product-item-container">
                 <h2 class="product-item-title">렌지쿠캣 직화 제육볶음 2종 (고추장/간장)</h2>
@@ -128,7 +128,7 @@
             </li>
             <li class="product-item">
               <a href="/" class="product-item-anchor">
-                <img src="./images/discount-list-5.jpg" alt="" />
+                <img src="/images/discount-list-5.jpg" alt="" />
               </a>
               <div class="product-item-container">
                 <h2 class="product-item-title">쿠캣 렌지용 화덕 생선구이 2종 (고등어/삼치)</h2>
@@ -138,7 +138,7 @@
             </li>
             <li class="product-item">
               <a href="/" class="product-item-anchor">
-                <img src="./images/discount-list-6.jpg" alt="" />
+                <img src="/images/discount-list-6.jpg" alt="" />
               </a>
               <div class="product-item-container">
                 <h2 class="product-item-title">쿠캣 투명만두 3종 (고기/김치/새우)</h2>
@@ -162,10 +162,11 @@
           <a href="tel:1668-3525" class="center-contact"> 고객센터</a>
         </div>
         <div class="business-info-container">
-          <div class="business-info-title-container">
+          <div class="business-info-title-container active">
             <h2 class="business-info">(주) 쿠캣 사업자 정보</h2>
             <button class="business-info-toggle-btn">
               <img
+                class="main-arrow-icon"
                 alt="addit-toggle-img"
                 src="	https://crcf.cookatmarket.com/assets/mobile/img/using_guide/ic-16-close-bold.svg"
               />
@@ -193,31 +194,22 @@
               >
             </li>
             <li class="business-info-item">
-              <label for="mail-order-number">통신판매업 신고번호</label
-              ><span
-                id="
-              mail-order-number"
-                >2018-서울강남-01681</span
-              >
+              <label for="mail-order-number">통신판매업 신고번호</label>
+              <span id="mail-order-number">2018-서울강남-01681</span>
             </li>
             <li class="business-info-item">
               <div class="center-info-flexcontent-container">
-                <label
-                  for="
-              service-center"
-                  >고객센터</label
-                >
+                <label for="service-center">고객센터</label>
                 <div class="center-info-content-container">
-                  <a
-                    id="service-center"
-                    href="tel:1668-3525
-              "
-                    >1668-3525
-                  </a>
-                  <span id="service-center"
-                    >평일 <time>10:00</time> ~ <time>18:00</time> (점심시간 <time>13:00</time> ~
-                    <time>14:00</time>) 주말 <time>10:00</time> ~ <time>13:00</time></span
-                  >
+                  <a id="service-center" href="tel:1668-3525">1668-3525</a>
+                  <div class="service-center-time">
+                    평일 <time>10:00</time> ~ <time>18:00</time> (점심시간 <time>13:00</time> ~
+                    <time>14:00</time>)
+                  </div>
+                  <div class="service-center-time">
+                    주말
+                    <time>10:00</time> ~ <time>13:00</time>
+                  </div>
                 </div>
               </div>
             </li>
@@ -251,9 +243,12 @@
         </div>
 
         <div class="additional-container">
-          <a href="/">로그인</a>
+          <a href="/login.html">로그인</a>
           <a id="app-down" href="/"> APP다운</a>
         </div>
+        <a href="#" class="top-button"
+          ><img src="/images/ic-floating-button.svg" alt="최상단으로 가기"
+        /></a>
       </footer>
 
       <!-- 하단바 -->
@@ -272,22 +267,9 @@
       <div class="search-header">
         <button class="search-close-btn" type="button"></button>
         <div class="search-input-box">
-          <input
-            class="search-input"
-            type="text"
-            placeholder="검색어를 입력해 주세요."
-            required
-          />
-          <button
-            type="button"
-            class="erase-btn"
-            aria-label="다 지우기"
-          ></button>
-          <button
-            type="button"
-            class="search-btn"
-            aria-label="검색하기"
-          ></button>
+          <input class="search-input" type="text" placeholder="검색어를 입력해 주세요." required />
+          <button type="button" class="erase-btn" aria-label="다 지우기"></button>
+          <button type="button" class="search-btn" aria-label="검색하기"></button>
         </div>
       </div>
       <div class="search-language-box">
@@ -330,13 +312,13 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
-    <script src="./js/footer.js"></script>
-    <script src="./js/search.js"></script>
     <script>
       var menu = new Swiper('.menu.swiper', {
         slidesPerView: 'auto',
         freeMode: true,
       });
     </script>
+    <script src="/js/home/footer.js"></script>
+    <script src="/js/home/search.js"></script>
   </body>
 </html>

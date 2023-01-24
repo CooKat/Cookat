@@ -858,11 +858,6 @@ button {
   border: none;
   display: flex;
   align-items: center;
-  transform: rotate(0deg);
-}
-
-.business-info-title-container.active .business-info-toggle-btn img {
-  transform: rotate(-180deg);
 }
 
 .center-contact {
@@ -904,12 +899,12 @@ button {
 }
 
 .business-info-list {
-  display: block;
   margin-top: 12px;
   line-height: 2.3em;
   overflow: hidden;
-  transition: height 0.5s;
+  height: 260px;
 }
+
 .business-info-item label {
   color: #bbb8b5;
   margin-right: 7px;

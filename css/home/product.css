@@ -34,7 +34,7 @@
 
 .product-img-category {
   padding: 0 var(--spacing-lg) var(--spacing-6) var(--spacing-lg);
-  border-top:10px solid #eee
+  border-top: 10px solid #eee;
 }
 
 .product-img-category h3 {
@@ -117,43 +117,43 @@
 }
 
 .soup a::before {
-  background-image: url(../images/ic-60-category-soup.png);
+  background-image: url(/images/ic-60-category-soup.png);
 }
 
 .roast a::before {
-  background-image: url(../images/ic-60-category-fried.png);
+  background-image: url(/images/ic-60-category-fried.png);
 }
 
 .snackbar a::before {
-  background-image: url(../images/ic-60-category-snack-food.png);
+  background-image: url(/images/ic-60-category-snack-food.png);
 }
 
 .rice a::before {
-  background-image: url(../images/ic-60-category-rice.png);
+  background-image: url(/images/ic-60-category-rice.png);
 }
 
 .instant a::before {
-  background-image: url(../images/ic-60-category-mealkit.png);
+  background-image: url(/images/ic-60-category-mealkit.png);
 }
 
 .dessert a::before {
-  background-image: url(../images/ic-60-category-dessert.png);
+  background-image: url(/images/ic-60-category-dessert.png);
 }
 
 .diet a::before {
-  background-image: url(../images/ic-60-category-healthy.png);
+  background-image: url(/images/ic-60-category-healthy.png);
 }
 
 .fresh a::before {
-  background-image: url(../images/ic-60-category-fresh.png);
+  background-image: url(/images/ic-60-category-fresh.png);
 }
 
 .alcohol a::before {
-  background-image: url(../images/ic-60-category-traditional-liquor.png);
+  background-image: url(/images/ic-60-category-traditional-liquor.png);
 }
 
 .living a::before {
-  background-image: url(../images/ic-60-category-homeliving-221007.png);
+  background-image: url(/images/ic-60-category-homeliving-221007.png);
 }
 
 .best-prd {
@@ -164,7 +164,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url(../images/ic-thunder.png) no-repeat center / 18px 24px;
+  background: url(/images/ic-thunder.png) no-repeat center / 18px 24px;
   vertical-align: bottom;
 }
 
@@ -287,8 +287,7 @@
   height: var(--spacing-xxl);
 }
 .pop-container > hr {
-  margin: var(--spacing-xxl) var(--spacing-base) var(--spacing-xl)
-    var(--spacing-base);
+  margin: var(--spacing-xxl) var(--spacing-base) var(--spacing-xl) var(--spacing-base);
 }
 
 .pop-title {
@@ -345,7 +344,7 @@
   top: 16px;
   width: 14px;
   height: 14px;
-  background: url('../images/ic-16-open-bold.svg') no-repeat 96% 50%;
+  background: url('/images/ic-16-open-bold.svg') no-repeat 96% 50%;
   z-index: 999;
 }
 
