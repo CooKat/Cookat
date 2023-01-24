@@ -48,12 +48,12 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url(../images/ic-check-off-final.svg);
+  background-image: url(/images/ic-check-off-final.svg);
   vertical-align: middle;
   margin: -3px var(--spacing-xs) 0 0;
 }
 .cart-list-header-check input[type='checkbox']:checked + label::before {
-  background-image: url(../images/ic-check-on-final.svg);
+  background-image: url(/images/ic-check-on-final.svg);
 }
 
 .cart-list-header-check label {
@@ -113,12 +113,12 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url(../images/ic-check-off-final.svg);
+  background-image: url(/images/ic-check-off-final.svg);
   vertical-align: middle;
   margin: -3px var(--spacing-s) 5px 0;
 }
 .cart-check-item input[type='checkbox']:checked + label::before {
-  background-image: url(../images/ic-check-on-final.svg);
+  background-image: url(/images/ic-check-on-final.svg);
 }
 
 .cart-item-title img:first-child {

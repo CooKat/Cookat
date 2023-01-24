@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" href="./images/1.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/1.png" />
     <link
       rel="stylesheet"
       as="style"
@@ -16,19 +16,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/login.css" />
-    <link rel="stylesheet" href="./css/joinpop.css" />
+    <link rel="stylesheet" href="/css/home/main.css" />
+    <link rel="stylesheet" href="/css/my-page/login.css" />
+    <link rel="stylesheet" href="/css/my-page/joinpop.css" />
     <title>쿠캣</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
         <a href="javascript:window.history.back();" class="header-prev-button">
-          <img src="./images/ic-24-arrow-perv.svg" alt="이전으로 가기" />
+          <img src="/images/ic-24-arrow-perv.svg" alt="이전으로 가기" />
         </a>
-        <a href="./index.html" class="header-home-button">
-          <img src="./images/ic-24-home.svg" alt="홈으로 가기" />
+        <a href="/index.html" class="header-home-button">
+          <img src="/images/ic-24-home.svg" alt="홈으로 가기" />
         </a>
       </header>
       <main class="main">
@@ -36,16 +36,32 @@
           <li class="active">
             <button type="button" class="memberBtn">회원</button>
             <section class="member-login-form">
-              <form method="POST" action="https://formspree.io/jsm7494@gmail.com" class="login-form">
+              <form
+                method="POST"
+                action="https://formspree.io/jsm7494@gmail.com"
+                class="login-form"
+              >
                 <fieldset>
                   <legend>회원 로그인 폼</legend>
                   <div class="user-email">
                     <label for="userEmail">이메일</label>
-                    <input type="email" id="userEmail" name="userEmail" placeholder="example@cookat.com" required />
+                    <input
+                      type="email"
+                      id="userEmail"
+                      name="userEmail"
+                      placeholder="example@cookat.com"
+                      required
+                    />
                   </div>
                   <div class="user-pw">
                     <label for="userPw">비밀번호</label>
-                    <input type="password" id="userPw" name="userPw" placeholder="비밀번호 입력" required />
+                    <input
+                      type="password"
+                      id="userPw"
+                      name="userPw"
+                      placeholder="비밀번호 입력"
+                      required
+                    />
                   </div>
                   <div class="login-state">
                     <input type="checkbox" id="userState" name="userState" required />
@@ -64,11 +80,23 @@
               <div class="sns-login-menu">
                 <h2>SNS 계정으로 로그인</h2>
                 <ul>
-                  <li><a href="/"><img src="./images/ic-social-kakao.svg" alt="카카오 로그인" /></a></li>
-                  <li><a href="/"><img src="./images/ic-social-naver.svg" alt="네이버 로그인" /></a></li>
-                  <li><a href="/"><img src="./images/ic-social-facebook.svg" alt="페이스북 로그인" /></a></li>
-                  <li><a href="/"><img src="./images/ic-social-google.svg" alt="구글 로그인" /></a></li>
-                  <li><a href="/"><img src="./images/ic-social-apple.svg" alt="애플 로그인" /></a></li>
+                  <li>
+                    <a href="/"><img src="/images/ic-social-kakao.svg" alt="카카오 로그인" /></a>
+                  </li>
+                  <li>
+                    <a href="/"><img src="/images/ic-social-naver.svg" alt="네이버 로그인" /></a>
+                  </li>
+                  <li>
+                    <a href="/"
+                      ><img src="/images/ic-social-facebook.svg" alt="페이스북 로그인"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="/"><img src="/images/ic-social-google.svg" alt="구글 로그인" /></a>
+                  </li>
+                  <li>
+                    <a href="/"><img src="/images/ic-social-apple.svg" alt="애플 로그인" /></a>
+                  </li>
                 </ul>
               </div>
             </section>
@@ -76,53 +104,59 @@
           <li>
             <button type="button" class="memberBtn">비회원</button>
             <section class="nan-member-login-form">
-              <form method="POST" action="https://formspree.io/jsm7494@gmail.com" class="login-form">
+              <form
+                method="POST"
+                action="https://formspree.io/jsm7494@gmail.com"
+                class="login-form"
+              >
                 <fieldset>
                   <legend>비회원 주문조회</legend>
                   <div class="user-name">
                     <label for="userName">주문자명</label>
-                    <input type="text" id="userName" name="userName" placeholder="주문자명 입력" required />
+                    <input
+                      type="text"
+                      id="userName"
+                      name="userName"
+                      placeholder="주문자명 입력"
+                      required
+                    />
                   </div>
                   <div class="user-order-num">
                     <label for="userOrderNum">주문번호</label>
-                    <input type="text" id="userOrderNum" name="userOrderNum" placeholder="예)12345678-1234567" required />
+                    <input
+                      type="text"
+                      id="userOrderNum"
+                      name="userOrderNum"
+                      placeholder="예)12345678-1234567"
+                      required
+                    />
                   </div>
                   <div class="user-order-pw">
                     <label for="userOrderPw">비회원 주문 비밀번호</label>
-                    <input type="password" id="userOrderPw" name="userOrderPw" placeholder="비밀번호 입력" required />
+                    <input
+                      type="password"
+                      id="userOrderPw"
+                      name="userOrderPw"
+                      placeholder="비밀번호 입력"
+                      required
+                    />
                   </div>
                   <button type="submit" class="login-button">주문조회</button>
-                  <a href="cart.html" class="nan-member-button">비회원 구매</a>
+                  <a href="/html/cart/cart.html" class="nan-member-button">비회원 구매</a>
                 </fieldset>
               </form>
-              <button type="button" class="join-btn simple-sign-button">간편하게 회원가입하기</button>
+              <button type="button" class="join-btn simple-sign-button">
+                간편하게 회원가입하기
+              </button>
             </section>
           </li>
         </ul>
       </main>
-
     </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/popup.js"></script>
-    <script>
-      let tabList = document.querySelectorAll('.membership-check > li');
-      let link =  document.location.href.toLowerCase();
-
-      if (link.indexOf("tab-id=2") > -1){
-        tabList[0].classList.remove('active');
-        tabList[1].classList.add('active');
-      } 
-      for(let i = 0; i < tabList.length; i++){
-        tabList[i].querySelector('.memberBtn').addEventListener('click', function(e){
-          e.preventDefault();
-          for(let j = 0; j < tabList.length; j++){
-            tabList[j].classList.remove('active');
-          }
-          this.parentNode.classList.add('active');
-        });
-      }
-    </script>
+    <script src="/js/my-page/popup.js"></script>
+    <script src="/js/my-page/member-check-tab.js"></script>
   </body>
 </html>

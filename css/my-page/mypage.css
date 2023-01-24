@@ -1,80 +1,80 @@
-.header{
-  border:0;
+.header {
+  border: 0;
 }
 
-.logo{
-  font-size:1.25rem;
-  font-weight:700;
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
-.container{
+.container {
   position: relative;
-  margin-top:0;
-  padding-top:39px;
-  min-height:100vh;
+  margin-top: 0;
+  padding-top: 39px;
+  min-height: 100vh;
 }
 
-.login-form{
-  font-size:1.25rem;
-  padding:var(--spacing-xxl) var(--spacing-base) var(--spacing-xl);
+.login-form {
+  font-size: 1.25rem;
+  padding: var(--spacing-xxl) var(--spacing-base) var(--spacing-xl);
   background: var(--color-white);
-  line-height:1.2;
+  line-height: 1.2;
 }
 
-.login-form ul{
+.login-form ul {
   display: flex;
-  gap : var(--spacing-l);
-  margin-top: var(--spacing-l)
+  gap: var(--spacing-l);
+  margin-top: var(--spacing-l);
 }
 
-.login-form li{
+.login-form li {
   width: 50%;
   text-align: center;
   font-size: var(--text-sm);
 }
 
-.login-form a{
+.login-form a {
   display: block;
   padding: var(--spacing-md) 0;
   border-radius: 4px;
   border: 1px solid var(--color-orange);
   color: var(--color-orange);
-  font-weight:600;
+  font-weight: 600;
 }
 
-.login-form li button{
+.login-form li button {
   display: block;
-  width:100%;
+  width: 100%;
   padding: var(--spacing-md) 0;
   border-radius: 4px;
-  border:1px solid var(--color-orange);
-  font-weight:600;
+  border: 1px solid var(--color-orange);
+  font-weight: 600;
   background: var(--color-orange);
   color: var(--color-white);
 }
 
-.my-menu-list{
-  margin-top : var(--spacing-xm);
+.my-menu-list {
+  margin-top: var(--spacing-xm);
   background: var(--color-white);
 }
 
-.my-menu-list ul{
+.my-menu-list ul {
   padding: var(--spacing-xs) 0;
   border-top: 15px solid #eee;
 }
 
-.my-menu-list li{
+.my-menu-list li {
   font-size: var(--text-sm);
   color: var(--color-black);
-  background: url(../images/ic-16-next-fit.svg) no-repeat right 15px center/8px;
+  background: url(/images/ic-16-next-fit.svg) no-repeat right 15px center/8px;
 }
 
-.my-menu-list a{
+.my-menu-list a {
   display: block;
   padding: var(--spacing-xm) var(--spacing-base);
 }
 
-.slogan{
+.slogan {
   position: absolute;
   bottom: 52px;
 }

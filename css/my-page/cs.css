@@ -38,7 +38,7 @@
 .my-menu-list li {
   font-size: var(--text-sm);
   color: var(--color-black);
-  background: url(../images/ic-cement-next-small-new-o.svg) no-repeat right 15px center/24px;
+  background: url(/images/ic-cement-next-small-new-o.svg) no-repeat right 15px center/24px;
 }
 
 .my-menu-list a {
@@ -54,7 +54,7 @@
 .cs-center h2 {
   position: relative;
   padding-left: var(--spacing-xl);
-  background: url(../images/ic-cs-telephone.svg) no-repeat;
+  background: url(/images/ic-cs-telephone.svg) no-repeat;
   font-size: var(--text-xs);
   color: var(--color-greyish-brown);
   line-height: 1.6;
@@ -79,6 +79,6 @@
   font-size: var(--text-md);
   color: var(--color-deep-orange);
   text-decoration: underline;
-  background: url(../images/ic-orange-right-arrow-o.svg) no-repeat right;
+  background: url(/images/ic-orange-right-arrow-o.svg) no-repeat right;
   padding-right: var(--spacing-md);
 }

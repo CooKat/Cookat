@@ -1,0 +1,229 @@
+.header {
+  display: flow-root;
+  overflow: hidden;
+  padding-top: 0;
+  border: 0;
+}
+
+.header-prev-button {
+  float: left;
+  padding: var(--spacing-base);
+}
+
+.header-home-button {
+  float: right;
+  padding: var(--spacing-base);
+}
+
+.header a:focus {
+  outline-offset: -1px;
+}
+
+.container {
+  padding-top: 60px;
+  min-height: 100vh;
+}
+
+.membership-check {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding-top: 2px;
+  position: relative;
+}
+
+.membership-check > li {
+  width: 50%;
+  padding: 0 var(--spacing-base);
+}
+
+.membership-check .memberBtn {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: var(--spacing-base) 0;
+  font-size: var(--text-base);
+  color: var(--color-black);
+  font-weight: 300;
+}
+
+.membership-check .active::after {
+  content: '';
+  display: block;
+  border-top: var(--spacing-sxxs) solid var(--color-orange);
+  margin: 0 auto -1px;
+}
+
+.membership-check .active .memberBtn {
+  color: var(--color-orange);
+  font-weight: 600;
+}
+
+.member-login-form,
+.nan-member-login-form {
+  padding: 0 var(--spacing-lg);
+  position: absolute;
+  width: min(500px, 100%);
+  left: 0;
+  display: none;
+}
+
+.active .member-login-form,
+.active .nan-member-login-form {
+  display: block;
+}
+
+[class^='user'] {
+  margin-top: var(--spacing-l);
+}
+
+[class^='user'] label,
+[class^='user'] input {
+  display: block;
+}
+
+[class^='user'] label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+[class^='user'] input {
+  margin-top: var(--spacing-md);
+  width: 100%;
+  line-height: 44px;
+  font-size: var(--text-sm);
+  border: 1px solid var(--color-placeholder);
+  padding: 0 var(--spacing-base);
+  border-radius: 4px;
+}
+
+[class^='user'] input::placeholder {
+  color: var(--color-placeholder);
+}
+
+[class^='user'] input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.login-state {
+  margin-top: var(--spacing-lg);
+  color: var(--color-placeholder);
+  font-size: var(--text-sm);
+}
+
+.login-state input[type='checkbox'] {
+  display: none;
+}
+
+.login-state input[type='checkbox'] + label {
+  cursor: pointer;
+}
+
+.login-state input[type='checkbox'] + label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(/images/ic-check-off-final.svg);
+  vertical-align: middle;
+  margin: -3px var(--spacing-xs) 0 0;
+}
+
+.login-state input[type='checkbox']:checked + label::before {
+  background-image: url(/images/ic-check-on-final.svg);
+}
+
+.login-button {
+  display: block;
+  width: 100%;
+  border: 0;
+  background-color: var(--color-orange);
+  border-radius: 4px;
+  line-height: 50px;
+  margin-top: var(--spacing-xxl);
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.user-menu {
+  text-align: center;
+  font-size: 0;
+}
+
+.user-menu li {
+  display: inline-block;
+  font-size: var(--text-sm);
+}
+
+.user-menu li::after {
+  content: '';
+  display: inline-block;
+  background: #000;
+  width: 1px;
+  height: 14px;
+  vertical-align: middle;
+}
+
+.user-menu li:last-child::after {
+  display: none;
+}
+
+.user-menu a {
+  padding: 0 var(--spacing-sm);
+  vertical-align: middle;
+  color: var(--color-greyish-brown);
+}
+
+.sns-login-menu {
+  margin-top: var(--spacing-xxxl);
+  text-align: center;
+  color: var(--color-placeholder);
+  font-size: var(--text-sm);
+}
+
+.sns-login-menu h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.sns-login-menu h2::before,
+.sns-login-menu h2::after {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background: var(--color-border);
+  vertical-align: middle;
+  margin: 0 var(--spacing-sm);
+}
+
+.sns-login-menu li {
+  display: inline-block;
+  margin: 0 var(--spacing-xs);
+}
+
+.sns-login-menu a {
+  display: block;
+  font-size: 0;
+  border-radius: 100%;
+}
+
+.nan-member-button {
+  display: block;
+  width: 100%;
+  border: 0;
+  text-align: center;
+  border: 1px solid var(--color-orange);
+  border-radius: 4px;
+  line-height: 50px;
+  margin-top: var(--spacing-lg);
+  color: var(--color-orange);
+  font-weight: 600;
+}
+
+.simple-sign-button {
+  display: block;
+  margin: var(--spacing-lg) auto;
+  border: 0;
+  color: var(--color-gray);
+  font-size: var(--text-sm);
+  text-decoration: underline;
+}
