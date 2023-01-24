@@ -19,38 +19,41 @@
 
 ## Result
 
-### [메인화면](https://github.com/CooKat/Cookat/blob/master/index.html)
+### [메인화면](https://github.com/CooKat/Cookat/tree/master/html/home)
 
 <div align=center>
-<img src="./images/ck-main01.png" style="width:300px" height="550px">
-<img src="./images/ck-main02.png" style="width:300px" height="550px">
+<img src="./images/ck-main01.png" style="width:40%">
+<img src="./images/ck-main02.png" style="width:40%">
 </div>
 <br><br>
 
-### [영상장보기]()
+### [영상장보기](https://github.com/CooKat/Cookat/tree/master/html/video)
 
 <div align=center>
-<img src="./images/ck-video.png" style="width:330px" height="450px">
+<img src="./images/ck-video.png" style="width:40%">
 </div>
 <br><br>
 
-### [카테고리]()
-
-<br><br>
-
-### [카트]()
+### [카테고리](https://github.com/CooKat/Cookat/tree/master/html/category)
 
 <div align=center>
-<img src="./images/ck-cart02.png" style="width:300px" height="500px">
+<img src="./images/ck-categori.png" style="width:40%">
 </div>
 <br><br>
 
-### [마이쿠캣]()
+### [카트](https://github.com/CooKat/Cookat/tree/master/html/cart)
 
 <div align=center>
-<img src="./images/ck-profile01.png" style="width:330px" height="450px">
-<img src="./images/ck-profile02.png" style="width:330px" height="450px">
-<img src="./images/ck-profile03.png" style="width:330px" height="450px">
+<img src="./images/ck-cart02.png" style="width:40%">
+</div>
+<br><br>
+
+### [마이쿠캣](https://github.com/CooKat/Cookat/tree/master/html/my-page)
+
+<div align=center>
+<img src="./images/ck-profile01.png" style="width:40%">
+<img src="./images/ck-profile02.png" style="width:40%">
+<img src="./images/ck-profile03.png" style="width:40%">
 </div>
 <br><br>
 
