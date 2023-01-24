@@ -30,7 +30,6 @@ searchCloseButton.addEventListener('click', function (e) {
   e.preventDefault();
   searchContainer.style.display = 'none';
   btn.classList.remove('is--active');
-  // fixedAdvertiseContainer.style.display = 'block';
   body.style.overflowY = 'auto';
 });
 
