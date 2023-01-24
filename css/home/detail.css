@@ -21,17 +21,17 @@
 }
 
 .food-header .black,
-.food-header.scroll .white{
-  display: none
+.food-header.scroll .white {
+  display: none;
 }
 
-.food-header.scroll .black{
-  display: inline-block
+.food-header.scroll .black {
+  display: inline-block;
 }
 
-.food-header .home-search{
+.food-header .home-search {
   position: static;
-  padding:0;
+  padding: 0;
 }
 
 .header-prev-button {
@@ -43,7 +43,7 @@
   display: flex;
   flex-flow: row nowrap;
   line-height: 4.5;
-  margin-right: var(--spacing-sm)
+  margin-right: var(--spacing-sm);
 }
 
 .header-button-list {
@@ -51,12 +51,12 @@
   text-align: center;
 }
 
-.header-button-list button{
-  border:0;
+.header-button-list button {
+  border: 0;
 }
 
 .main-swiper {
-  font-size:0;
+  font-size: 0;
 }
 
 .discount-time {
@@ -263,12 +263,11 @@ input[id*='share']:checked + label + div {
 }
 
 .menu-rec-wrap {
-  padding-bottom:var(--spacing-xxl)
+  padding-bottom: var(--spacing-xxl);
 }
 
 .menu-rec-title {
-  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-md)
-    var(--spacing-lg);
+  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-md) var(--spacing-lg);
   font-size: min(3vw, var(--text-base));
   font-weight: 700;
   color: var(--color-black);
@@ -301,10 +300,10 @@ input[id*='share']:checked + label + div {
   margin: 0 var(--spacing-l);
   position: relative;
   border-radius: 10px;
-  background: #e7e7e7
+  background: #e7e7e7;
 }
 
-.rec-Swiper .swiper-scrollbar-drag{
+.rec-Swiper .swiper-scrollbar-drag {
   background: var(--color-orange);
 }
 
@@ -315,8 +314,8 @@ input[id*='share']:checked + label + div {
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 1.4;
-  font-weight:300;
-  margin:var(--spacing-sxxs) 0
+  font-weight: 300;
+  margin: var(--spacing-sxxs) 0;
 }
 
 .recmenu-price {
@@ -325,7 +324,7 @@ input[id*='share']:checked + label + div {
 }
 
 .menu-rec-ad {
-  font-size:0;
+  font-size: 0;
 }
 
 /* 상품정보 / 구매정보/ 후기 / Q&A */
@@ -340,7 +339,7 @@ input[id*='share']:checked + label + div {
   height: min(10vh, 50px); */
 }
 
-.product-tab-bar .active .tabBtn::after{
+.product-tab-bar .active .tabBtn::after {
   width: calc(100% - 30px);
 }
 
@@ -592,7 +591,7 @@ input[id*='product']:checked + label {
 
 .shopping-info .arrow-icon {
   float: right;
-  background: url(../images/ic-16-open.svg) no-repeat center;
+  background: url(/images/ic-16-open.svg) no-repeat center;
   display: block;
   width: 50px;
   height: 50px;
@@ -735,7 +734,7 @@ input[id*='product']:checked + label {
   color: var(--color-gray);
   font-weight: 300;
   padding-left: var(--spacing-base);
-  background: url(../images/ic-12-report.svg) no-repeat left center / 12px;
+  background: url(/images/ic-12-report.svg) no-repeat left center / 12px;
 }
 
 .star img {
@@ -851,8 +850,7 @@ input[id*='product']:checked + label {
 
 .active-content > .a-text {
   display: inline-block;
-  padding: var(--spacing-base) var(--spacing-base) var(--spacing-base)
-    var(--spacing-xxxl);
+  padding: var(--spacing-base) var(--spacing-base) var(--spacing-base) var(--spacing-xxxl);
   border-top: 1px solid #eee;
   color: var(--color-black);
   font-weight: 300;
@@ -1111,7 +1109,7 @@ input[id*='product']:checked + label {
 .precautions h3::before {
   content: '';
   display: inline-block;
-  background: url(../images/ic-24-customer-info.svg) center/18px;
+  background: url(/images/ic-24-customer-info.svg) center/18px;
   width: 18px;
   height: 18px;
   vertical-align: middle;
@@ -1188,8 +1186,7 @@ input[id*='pop']:checked + label + div {
   height: var(--spacing-xxl);
 }
 .pop-container > hr {
-  margin: var(--spacing-xxl) var(--spacing-base) var(--spacing-xl)
-    var(--spacing-base);
+  margin: var(--spacing-xxl) var(--spacing-base) var(--spacing-xl) var(--spacing-base);
 }
 
 .pop-title {
@@ -1257,7 +1254,7 @@ input[id*='pop']:checked + label + div {
   top: 16px;
   width: 14px;
   height: 14px;
-  background: url('../images/ic-16-open-bold.svg') no-repeat 96% 50%;
+  background: url('/images/ic-16-open-bold.svg') no-repeat 96% 50%;
   z-index: 999;
 }
 
