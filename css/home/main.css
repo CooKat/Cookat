@@ -982,14 +982,11 @@ button {
 
 .top-button {
   position: fixed;
-  left: calc(50% + 210px);
   left: 50%;
   bottom: 80px;
   border: 0;
-  transform: translateX(-50%);
-  width: min(100%, 500px);
-  text-align: right;
-  padding-right: var(--spacing-base);
+  transform: translateX(185px);
+  margin-right: var(--spacing-base);
   z-index: 99999;
 }
 
@@ -1022,5 +1019,11 @@ button {
 
   .visual .text-wrap span {
     font-size: var(--text-xxs);
+  }
+
+  .top-button {
+    left:auto;
+    right:0;
+    transform: translateX(0);
   }
 }
